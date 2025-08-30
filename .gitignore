@@ -10,11 +10,8 @@ ENV/
 env.bak/
 venv.bak/
 
-# Model files (too large for git)
-models/gpt-oss-*/
-models/openai_*/
-models/EleutherAI_*/
-models/microsoft_*/
+# Model files and directory (too large for git)
+models/
 *.bin
 *.safetensors
 *.gguf

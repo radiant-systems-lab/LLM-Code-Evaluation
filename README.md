@@ -138,15 +138,22 @@ python ollama_dependency_manager.py examples/*.py --combined
 
 ### Download Models from Hugging Face
 
-**Important**: Models are NOT included in this repository due to size constraints.
+**Important**: Models are NOT included in this repository due to size constraints (~250GB total).
 
-#### Method 1: Using the Download Script (Recommended)
+#### Step 1: Create Models Directory
+```bash
+mkdir models
+```
+
+#### Step 2: Download Models
+
+**Method 1: Using the Download Script (Recommended)**
 ```bash
 # Download both models (one-time setup)
 python import_hf_to_ollama.py
 ```
 
-#### Method 2: Manual Download
+**Method 2: Manual Download**
 ```bash
 # Download individual models
 python -c "
@@ -156,9 +163,11 @@ snapshot_download('openai/gpt-oss-120b', local_dir='models/gpt-oss-120b')
 "
 ```
 
-This downloads:
+**Model Sizes:**
 - `openai/gpt-oss-20b` → `models/gpt-oss-20b/` (~13GB)
 - `openai/gpt-oss-120b` → `models/gpt-oss-120b/` (~240GB)
+
+**Note**: The `models/` directory is excluded from git to keep repository lightweight.
 
 ### Available Models
 - **gpt-oss-20b**: 20 billion parameter model
@@ -172,10 +181,9 @@ LLM-Dependency-Manager/
 │   ├── script2.py           # Web scraping example
 │   ├── script3.py           # Machine learning example
 │   └── README.md            # Usage examples
-├── models/                  # Model storage (after download)
-│   ├── gpt-oss-20b/        # 20B model files (~13GB)
-│   ├── gpt-oss-120b/       # 120B model files (~240GB)
-│   └── README.md           # Download instructions
+├── models/                  # Model storage (created after download)
+│   ├── gpt-oss-20b/        # 20B model files (~13GB) - not in repo
+│   └── gpt-oss-120b/       # 120B model files (~240GB) - not in repo
 ├── dependency_manager_main.py    # Traditional dependency manager
 ├── ollama_dependency_manager.py  # Ollama-based dependency manager
 ├── import_hf_to_ollama.py        # Model download utility
