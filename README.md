@@ -117,20 +117,22 @@ python ollama_dependency_manager.py script1.py script2.py --combined
 ### Example 1: Single Script Analysis
 ```bash
 # Analyze a single Python script for dependencies
-python ollama_dependency_manager.py my_script.py --model "gpt-oss-20b"
+python ollama_dependency_manager.py examples/script1.py --model "gpt-oss-20b"
 ```
 
 ### Example 2: Multiple Scripts with GPU Distribution
 ```bash
 # Process multiple scripts with automatic GPU distribution
-python ollama_dependency_manager.py script1.py script2.py script3.py --install --execute
+python ollama_dependency_manager.py examples/script1.py examples/script2.py examples/script3.py --install --execute
 ```
 
 ### Example 3: Combined Requirements Generation
 ```bash
 # Generate a single requirements.txt for all scripts
-python ollama_dependency_manager.py *.py --combined
+python ollama_dependency_manager.py examples/*.py --combined
 ```
+
+**Note**: Sample scripts are provided in the `examples/` directory for testing both dependency managers.
 
 ## Model Management
 
@@ -162,17 +164,22 @@ This downloads:
 - **gpt-oss-20b**: 20 billion parameter model
 - **gpt-oss-120b**: 120 billion parameter model (larger, more capable)
 
-### After Model Download, Structure Will Be:
+### Repository Structure:
 ```
 LLM-Dependency-Manager/
-├── models/
-│   ├── gpt-oss-20b/          # 20B model files (~13GB)
-│   ├── gpt-oss-120b/         # 120B model files (~240GB)
-│   └── README.md             # Download instructions
-├── dependency_manager_main.py
-├── ollama_dependency_manager.py
-├── import_hf_to_ollama.py
-└── README.md
+├── examples/                 # Sample Python scripts for testing
+│   ├── script1.py           # Data analysis example
+│   ├── script2.py           # Web scraping example
+│   ├── script3.py           # Machine learning example
+│   └── README.md            # Usage examples
+├── models/                  # Model storage (after download)
+│   ├── gpt-oss-20b/        # 20B model files (~13GB)
+│   ├── gpt-oss-120b/       # 120B model files (~240GB)
+│   └── README.md           # Download instructions
+├── dependency_manager_main.py    # Traditional dependency manager
+├── ollama_dependency_manager.py  # Ollama-based dependency manager
+├── import_hf_to_ollama.py        # Model download utility
+└── README.md                     # This file
 ```
 
 ## Troubleshooting
