@@ -1,21 +1,39 @@
 # Models Directory
 
-This directory stores downloaded language models for the dependency managers.
+This directory will store downloaded language models after you run the download scripts.
 
-## Structure
-```
-models/
-├── gpt-oss-20b/          # 20B parameter model files
-├── gpt-oss-120b/         # 120B parameter model files
-└── [other models]/
-```
+## How to Download Models
 
-## Usage
-Models are downloaded automatically when you run:
+### Method 1: Using the Download Script (Recommended)
 ```bash
+# Downloads both gpt-oss-20b and gpt-oss-120b
 python import_hf_to_ollama.py
 ```
 
-## Note
-Model files are large (several GB each) and are not included in this repository.
-Download them locally using the provided scripts.
+### Method 2: Manual Download
+```bash
+# For individual models
+python -c "
+from huggingface_hub import snapshot_download
+snapshot_download('openai/gpt-oss-20b', local_dir='models/gpt-oss-20b')
+snapshot_download('openai/gpt-oss-120b', local_dir='models/gpt-oss-120b')
+"
+```
+
+## After Download, Directory Structure Will Be:
+```
+models/
+├── gpt-oss-20b/          # 20B parameter model files (~13GB)
+├── gpt-oss-120b/         # 120B parameter model files (~240GB)
+└── README.md             # This file
+```
+
+## Model Sizes:
+- **gpt-oss-20b**: ~13GB (20 billion parameters)
+- **gpt-oss-120b**: ~240GB (120 billion parameters)
+
+## Important Notes:
+- Models are downloaded once and cached locally
+- Large storage space required (especially for 120B model)
+- Download time depends on internet connection
+- Models are not included in git repository to save space
