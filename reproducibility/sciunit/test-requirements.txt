@@ -1,0 +1,9 @@
+nose
+coverage
+mock
+pynose
+requests-mock
+freezegun
+ddt
+testpath
+numpy

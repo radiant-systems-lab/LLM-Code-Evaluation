@@ -1,0 +1,61 @@
+script,sciunit_dependencies,llm_dependencies,sciunit_count,llm_count,f1_score
+script_01,"blinker, certifi, charset_normalizer, click, flask, idna, itsdangerous, jinja2, markupsafe, numpy, numpy.libs, requests, simplejson, urllib3, werkzeug, zstandard","flask, numpy, redis, requests",16,4,0.3
+script_02,"IPython, PIL, asttokens, bottleneck, cloudpickle, colorama, comm, cycler, dateutil, defusedxml, executing, ipywidgets, jedi, joblib, kiwisolver, lz4, matplotlib, mpl_toolkits, numexpr, numpy, numpy.libs, packaging, pandas, parso, patsy, pillow.libs, prompt_toolkit, psutil, pure_eval, pyarrow, pygments, pyparsing, pytz, scipy, scipy.libs, seaborn, sklearn, stack_data, statsmodels, traitlets, wcwidth","matplotlib, numpy, pandas, seaborn, sklearn, tensorflow",41,6,0.21276595744680848
+script_03,"bs4, certifi, charset_normalizer, idna, requests, simplejson, soupsieve, urllib3, zstandard","bs4, redis, requests",9,3,0.3333333333333333
+script_04,"greenlet, psycopg2, psycopg2_binary.libs, sqlalchemy","multiprocessing, psycopg2, requests, sqlalchemy",4,4,0.5
+script_05,"aiohappyeyeballs, aiohttp, aiosignal, attr, frozenlist, idna, multidict, propcache, uvloop, yarl","aiohttp, asyncio, concurrent, concurrent.futures, flask, multiprocessing, queue, redis, requests, threading, uvloop",10,11,0.1904761904761905
+script_06,"PIL, cv2, cycler, dateutil, defusedxml, imageio, kiwisolver, lazy_loader, matplotlib, mpl_toolkits, numpy, numpy.libs, packaging, pillow.libs, pyparsing, scipy, scipy.libs, skimage","PIL, cv2, imageio, matplotlib, numpy, pillow, skimage",18,7,0.48
+script_07,,"nltk, requests, spacy, textblob, torch, transformers, wordcloud",0,7,0.0
+script_08,PyQt5,"PyQt5, flask, psycopg2, redis, requests, tkinter",1,6,0.2857142857142857
+script_09,,"base64, bcrypt, cryptography, hashlib, hmac, jwt, redis, secrets, ssl",0,9,0.0
+script_10,,"numpy, scipy, sympy",0,3,0.0
+script_11,"llvmlite, munkres, numpy, numpy.libs, packaging, pkg_resources, platformdirs, pyarrow, pygame, pygame.libs, setuptools, zstandard","flask, pillow, pygame, redis, threading, uwsgi",12,6,0.1111111111111111
+script_12,,"configparser, json, pillow, uwsgi",0,4,0.0
+script_13,,"flask, ftplib, json, psycopg2, requests, smtplib",0,6,0.0
+script_14,"iniconfig, pluggy, py, pygments, pytest","doctest, flask, multiprocessing, pytest, redis, requests, unittest",5,7,0.16666666666666666
+script_15,,"codecs, difflib, string, unicodedata",0,4,0.0
+script_16,"dateutil, pytz","calendar, dateutil, pytz",2,3,0.8
+script_17,,"bs4, json, lxml, pymongo, redis, requests, xmltodict, yaml",0,8,0.0
+script_18,"IPython, PIL, asttokens, bottleneck, cloudpickle, colorama, comm, cycler, dateutil, defusedxml, executing, ipywidgets, jedi, kiwisolver, matplotlib, mpl_toolkits, numexpr, numpy, numpy.libs, packaging, pandas, parso, patsy, pillow.libs, prompt_toolkit, pure_eval, pyarrow, pygments, pyparsing, pytz, scipy, scipy.libs, seaborn, stack_data, statsmodels, traitlets, wcwidth","bokeh, matplotlib, numpy, pandas, plotly, seaborn",37,6,0.18604651162790697
+script_19,"bottleneck, cloudpickle, dateutil, joblib, lz4, numexpr, numpy, numpy.libs, pandas, psutil, pyarrow, pytz, scipy, scipy.libs, sklearn","numpy, sklearn, tensorflow, torch, xgboost",15,5,0.2
+script_20,,"configparser, json, redis, uwsgi, yaml",0,5,0.0
+script_21,,"imaplib, poplib, requests, smtplib, ssl",0,5,0.0
+script_22,"psutil, serial","bs4, platform, psutil, pymongo, redis, serial",2,6,0.5
+script_23,"PIL, bcrypt, cryptography, defusedxml, fontTools, fpdf, numpy, numpy.libs, pillow.libs, pypdf, reportlab","fpdf, pillow, pypdf, reportlab",11,4,0.39999999999999997
+script_24,,"cv2, moviepy, numpy, pillow, pydub, redis, requests, wave",0,8,0.0
+script_25,"aiohappyeyeballs, aiohttp, aiosignal, attr, bottleneck, branca, certifi, charset_normalizer, cloudpickle, dateutil, folium, frozenlist, geographiclib, geopy, idna, jinja2, markupsafe, multidict, numexpr, numpy, numpy.libs, pandas, propcache, pyarrow, pytz, requests, simplejson, urllib3, xyzservices, yarl, zstandard","folium, geopy, pillow, redis, requests",31,5,0.16666666666666666
+script_26,"blinker, certifi, charset_normalizer, idna, oauthlib, requests, requests_oauthlib, simplejson, tweepy, urllib3, zstandard","facebook, instagram_basic_display, linkedin, redis, requests, requests_oauthlib, tweepy",11,7,0.33333333333333326
+script_27,"certifi, charset_normalizer, ecdsa, gmpy2, idna, requests, simplejson, urllib3, zstandard","base58, binascii, ecdsa, hashlib, json, redis, requests, secp256k1, threading",9,9,0.2222222222222222
+script_28,"Cython, Mako, Markdown, PennyLane, PennyLane_Lightning, PennyLane_Lightning_GPU, PyQt5, Send2Trash, accelerate, aiohappyeyeballs, aiohttp, aiosignal, alembic, anyio, arcade, archspec, astpretty, astropy, attr, azure, babel, bcrypt, blinker, bokeh, boto3, botocore, bottle, cachetools, celery, certifi, certipy, cffi, charset_normalizer, conda, conda_libmamba_solver, conda_package_handling, cryptography, dask, dateutil, debugpy, deprecated, distributed, distro, docker, docutils, durationpy, dynaconf, en_core_web_sm, fabric, fastai, fastapi, fastavro, fastcore, filetype, flask, fonttools, fpdf2, frozenlist, future, gdal, google, grpc, grpc_status, gunicorn, httpx, huggingface_hub, humanfriendly, idna, imagecodecs, imageio, importlib_metadata, invoke, ipympl, ipython, isodate, jax_cuda12_pjrt, jinja2, jmespath, json5, jsonpath_ng, jsonschema, jupyter_ai, jupyter_ai_magics, jupyter_ai_nrp, jupyter_client, jupyter_core, jupyter_events, jupyter_lsp, jupyter_server, jupyter_vscode_proxy, jupyterhub, jupyterlab, kubernetes, langchain, langchain_anthropic, langchain_community, langchain_core, langchain_mistralai, langchain_ollama, langchain_openai, langchain_text_splitters, langsmith, lightning, line_profiler, markdown_it_py, matplotlib_inline, memory_profiler, mlflow, mlflow_skinny, multidict, nacl, nbclassic, nbclient, nbconvert, nbdime, nbformat, nbgitpuller, networkx, nltk, notebook, numpy, oauthlib, openai, opentelemetry, opentelemetry_api, opentelemetry_sdk, optuna, optuna_dashboard, pandas, paramiko, pbr, pip, propcache, pulp, py_cpuinfo, pybind11, pygame, pygments, pyserial, pytest, python_dotenv, qianfan, qiskit, rasterio, ray, rdflib, requests, requests_oauthlib, rsa, sentry_sdk, setuptools, simplejson, spacy, spacy_legacy, spacy_loggers, sqlparse, srsly, stevedore, sympy, tables, tabulate, thinc, tifffile, together, torch, tqdm, transformers, triton, typer, urllib3, uvicorn, virtualenv, visualdl, wandb, watchdog, weasel, webcolors, websocket, websocket_client, wheel, wordcloud, wrapt, yaml, yarl, zipp, zstandard","azure, boto3, docker, google, kubernetes, plotly, redis, requests",186,8,0.061855670103092786
+script_29,"OpenGL, llvmlite, munkres, numpy, numpy.libs, packaging, pkg_resources, platformdirs, pyarrow, pygame, pygame.libs, setuptools, zstandard","OpenGL, glfw, moderngl, numpy, pillow, pygame, pyrr, stl, trimesh, uwsgi",13,10,0.2608695652173913
+script_30,,"matplotlib, mpl_toolkits, numba, numpy, pandas, scipy, sympy",0,7,0.0
+script_31,"anyio, attr, certifi, charset_normalizer, click, dns, h11, h2, hpack, httpcore, httpx, hyperframe, idna, paho, pygments, requests, rich, simplejson, sniffio, urllib3, zstandard","json, numpy, paho, psycopg2, queue, requests",21,6,0.14814814814814814
+script_32,"PIL, control, cycler, dateutil, defusedxml, gmpy2, kiwisolver, matplotlib, mpl_toolkits, mpmath, numpy, numpy.libs, packaging, pillow.libs, pyparsing, scipy, scipy.libs, sympy","control, matplotlib, numpy, redis, requests, scipy, sklearn, sympy",18,8,0.3846153846153846
+script_33,"bcrypt, bson, cryptography, greenlet, psycopg2, psycopg2_binary.libs, pymongo, redis, sqlalchemy","json, plotly, psycopg2, pymongo, redis, requests, sqlalchemy",9,7,0.5
+script_34,"attr, colorama, greenlet, prometheus_client, psutil, pygments, rich, structlog","prometheus_client, psutil, redis, structlog, traceback",8,5,0.4615384615384615
+script_35,"certifi, charset_normalizer, idna, requests, simplejson, urllib3, yaml, zstandard","hashlib, json, pillow, requests, transformers, yaml",8,6,0.28571428571428575
+script_36,"numpy, numpy.libs","Bio, matplotlib, networkx, numpy, pandas, redis, sklearn",2,7,0.22222222222222224
+script_37,"PIL, bottleneck, cloudpickle, cycler, dateutil, defusedxml, joblib, kiwisolver, lz4, matplotlib, mpl_toolkits, numexpr, numpy, numpy.libs, packaging, pandas, pillow.libs, psutil, pyarrow, pyparsing, pytz, scipy, scipy.libs, sklearn","matplotlib, numpy, pandas, redis, requests, scipy, sklearn, yfinance",24,8,0.3125
+script_38,"PIL, defusedxml, dill, numpy, numpy.libs, pillow.libs, qiskit, rustworkx, scipy, stevedore, symengine, symengine.libs","cirq, matplotlib, numpy, pennylane, qiskit, qiskit_aer, scipy",12,7,0.3157894736842105
+script_39,,"community, networkx, numpy, pandas, redis, scipy, sklearn, tensorflow",0,8,0.0
+script_40,"bottleneck, cloudpickle, dateutil, joblib, lz4, numexpr, numpy, numpy.libs, pandas, psutil, pyarrow, pytz, scipy, scipy.libs, sklearn","numpy, pandas, scipy, sklearn",15,4,0.4210526315789474
+script_41,"numpy, numpy.libs","concurrent, concurrent.futures, numpy, queue, redis",2,5,0.28571428571428575
+script_42,,"cvxpy, numpy, ortools, pulp, scipy, sklearn",0,6,0.0
+script_43,,"asyncio, dataclasses, inspect, pydantic, weakref",0,5,0.0
+script_44,,"cProfile, gc, line_profiler, memory_profiler, multiprocessing, numpy, objgraph, pstats, psutil, pympler, redis, tracemalloc, weakref",0,13,0.0
+script_45,,"OpenGL, arcade, dataclasses, numpy, psycopg2, pygame, pymunk, redis",0,8,0.0
+script_46,,"aubio, essentia, librosa, matplotlib, mir_eval, music21, numpy, pyaudio, pydub, scipy, soundfile, tensorflow, wave",0,13,0.0
+script_47,,"PIL, cv2, dlib, face_recognition, matplotlib, mediapipe, numpy, pillow, skimage, sklearn, tensorflow, torch, torchvision",0,13,0.0
+script_48,"bs4, certifi, charset_normalizer, idna, requests, simplejson, soupsieve, urllib3, zstandard","bs4, hashlib, nltk, numpy, pandas, pymongo, redis, requests, scrapy, selenium, textblob, wordcloud",9,12,0.1904761904761905
+script_49,"bcrypt, bottleneck, bson, cloudpickle, cryptography, dateutil, greenlet, numexpr, numpy, numpy.libs, pandas, psycopg2, psycopg2_binary.libs, pyarrow, pymongo, pytz, redis, sqlalchemy","hashlib, numpy, pandas, psycopg2, pymongo, redis, requests, sqlalchemy",18,8,0.46153846153846156
+script_50,,"base64, cryptography, hashlib, hmac, ipaddress, numpy, redis, secrets, ssl",0,9,0.0
+script_51,"PIL, bottleneck, cloudpickle, cycler, dateutil, defusedxml, kiwisolver, matplotlib, mpl_toolkits, numexpr, numpy, numpy.libs, packaging, pandas, pillow.libs, pyarrow, pyparsing, pytz","matplotlib, numpy, pandas",18,3,0.2857142857142857
+script_52,"bottleneck, bs4, certifi, charset_normalizer, cloudpickle, dateutil, idna, joblib, lz4, nltk, numexpr, numpy, numpy.libs, pandas, psutil, pyarrow, pytz, regex, requests, scipy, scipy.libs, simplejson, sklearn, soupsieve, urllib3, zstandard","bs4, json, nltk, redis, requests",26,5,0.1935483870967742
+script_53,,"joblib, json, numpy, sklearn, tensorflow",0,5,0.0
+script_54,,"PIL, cv2, matplotlib, numpy, pillow",0,5,0.0
+script_55,,"numpy, pandas, pillow, sklearn, tensorflow",0,5,0.0
+script_56,,"matplotlib, numpy, pandas, plotly, seaborn",0,5,0.0
+script_57,,"flask, hashlib, json, pandas, psycopg2, redis, requests, uwsgi",0,8,0.0
+script_58,,"bs4, matplotlib, nltk, pandas, pymongo, requests, spacy, textblob, wordcloud",0,9,0.0
+script_59,,"matplotlib, numpy, pandas, pmdarima, prophet, sklearn, statsmodels",0,7,0.0
+script_60,,"json, numpy, pandas, requests, sqlalchemy",0,5,0.0

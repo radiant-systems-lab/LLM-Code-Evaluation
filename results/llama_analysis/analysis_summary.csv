@@ -1,0 +1,61 @@
+script,dependency_count,dependencies,analysis_time
+script_01,3,"['requests', 'flask', 'numpy']",3.52
+script_02,5,"['matplotlib', 'seaborn', 'scikit-learn', 'numpy', 'pandas']",5.88
+script_03,3,"['requests', 'urllib3', 'beautifulsoup4']",5.46
+script_04,2,"['psycopg2', 'sqlalchemy']",5.16
+script_05,3,"['asyncio', 'aiohttp', 'uvloop']",4.72
+script_06,6,"['matplotlib', 'pillow', 'imageio', 'opencv', 'numpy', 'scikit-image']",6.89
+script_07,5,"['transformers', 'nltk', 'wordcloud', 'spacy', 'textblob']",6.52
+script_08,18,"['qmainwindow', 'qlabel', 'qlineedit', 'qfontmetrics', 'qwidget', 'qfiledialog', 'qpushbutton', 'pyqt6', 'qtimer', 'qstyle', 'qhboxlayout', 'tkinter', 'qtextedit', 'qmessagebox', 'pyqt5', 'qapplication', 'qfont', 'qvboxlayout']",11.1
+script_09,1,['cryptography'],6.82
+script_10,3,"['numpy', 'scipy', 'sympy']",2.17
+script_11,1,['pygame'],2.3
+script_12,1,['configparser'],4.75
+script_13,2,"['ftplib', 'smtplib']",6.29
+script_14,3,"['requests', 'pytest', 'unittest']",6.94
+script_15,3,"['unicodedata', 'codecs', 'difflib']",7.72
+script_16,2,"['pytz', 'dateutil']",5.78
+script_17,2,"['xmltodict', 'lxml']",8.98
+script_18,6,"['matplotlib', 'plotly', 'seaborn', 'bokeh', 'numpy', 'pandas']",12.29
+script_19,6,"['keras', 'xgboost', 'scikit-learn', 'numpy', 'torch', 'tensorflow']",18.03
+script_20,2,"['configparser', 'yaml']",15.12
+script_21,4,"['smtplib', 'imaplib', 'poplib', 'ssl']",17.81
+script_22,2,"['psutil', 'platform']",10.55
+script_23,4,"['fpdf', 'reportlab', 'pypdf2', 'pypdf']",12.72
+script_24,4,"['opencv-python', 'pydub', 'librosa', 'moviepy']",17.07
+script_25,3,"['geopy', 'folium', 'requests']",13.28
+script_26,5,"['facebook', 'twitter', 'instagram_basic_display', 'requests', 'requests_oauthlib']",14.58
+script_27,6,"['secp256k1', 'base58', 'binascii', 'requests', 'ecdsa', 'hashlib']",13.86
+script_28,8,"['google-cloud-storage', 'docker', 'azure', 'kubernetes', 'azure-mgmt-resource', 'requests', 'azure-identity', 'boto3']",19.13
+script_29,0,[],0
+script_30,0,[],0
+script_31,0,[],0
+script_32,0,[],0
+script_33,0,[],0
+script_34,0,[],0
+script_35,0,[],0
+script_36,0,[],0
+script_37,0,[],0
+script_38,0,[],0
+script_39,0,[],0
+script_40,0,[],0
+script_41,1,['numpy'],12.62
+script_42,0,[],0
+script_43,4,"['weakref', 'asyncio', 'inspect', 'dataclasses']",4.53
+script_44,9,"['weakref', 'tracemalloc', 'pstats', 'cprofile', 'objgraph', 'numpy', 'memory_profiler', 'pympler', 'line_profiler']",14.97
+script_45,0,[],0
+script_46,0,[],0
+script_47,0,[],0
+script_48,0,[],0
+script_49,0,[],0
+script_50,0,[],0
+script_51,3,"['matplotlib', 'pandas', 'numpy']",3.02
+script_52,3,"['requests', 'nltk', 'beautifulsoup4']",4.4
+script_53,3,"['scikit-learn', 'joblib', 'numpy']",3.39
+script_54,4,"['matplotlib', 'numpy', 'opencv-python', 'pillow']",2.86
+script_55,5,"['keras', 'numpy', 'scikit-learn', 'pandas', 'tensorflow']",6.29
+script_56,5,"['matplotlib', 'plotly', 'seaborn', 'numpy', 'pandas']",6.55
+script_57,3,"['flask', 'pandas', 'hashlib']",3.31
+script_58,6,"['matplotlib', 'nltk', 'wordcloud', 'spacy', 'textblob', 'pandas']",5.52
+script_59,7,"['matplotlib', 'sklearn', 'pmdarima', 'statsmodels', 'prophet', 'numpy', 'pandas']",6.43
+script_60,3,"['sqlalchemy', 'pandas', 'numpy']",4.05

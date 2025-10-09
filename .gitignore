@@ -39,3 +39,16 @@ Thumbs.db
 # PowerPoint files
 *.pptx
 *.ppt
+
+# Cache directories that contain large model files
+*/.cache/
+cde-package/cde-root/home/jovyan/.cache/
+code_scripts/cde-package/cde-root/home/jovyan/.cache/
+reproducibility/cde-package/cde-package/cde-root/home/jovyan/.cache/
+reproducibility/cde-package/cde-root/home/jovyan/.cache/
+cde-package/cde-root/opt/conda/
+code_scripts/cde-package/cde-root/opt/conda/
+
+# Large library files
+*.so.*
+reproducibility/cde-package/cde-root/usr/lib/

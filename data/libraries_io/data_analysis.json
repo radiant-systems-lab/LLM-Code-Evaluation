@@ -1,0 +1,38 @@
+{
+  "total_packages": 2,
+  "total_dependencies": 66,
+  "by_rank": [
+    [
+      "matplotlib",
+      29,
+      41423
+    ],
+    [
+      "pandas",
+      32,
+      63439
+    ]
+  ],
+  "by_usage": [
+    [
+      "pandas",
+      16,
+      26.7
+    ],
+    [
+      "matplotlib",
+      15,
+      25.0
+    ]
+  ],
+  "by_complexity": [
+    [
+      "pandas",
+      33
+    ],
+    [
+      "matplotlib",
+      33
+    ]
+  ]
+}

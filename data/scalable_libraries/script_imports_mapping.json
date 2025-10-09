@@ -1,0 +1,551 @@
+{
+  "script_40.py": [
+    "sklearn",
+    "warnings",
+    "pandas",
+    "scipy",
+    "numpy"
+  ],
+  "script_57.py": [
+    "datetime",
+    "sqlite3",
+    "pandas",
+    "json",
+    "hashlib",
+    "flask",
+    "random"
+  ],
+  "script_41.py": [
+    "concurrent",
+    "threading",
+    "multiprocessing",
+    "functools",
+    "numpy",
+    "time",
+    "queue"
+  ],
+  "script_58.py": [
+    "collections",
+    "matplotlib",
+    "textblob",
+    "wordcloud",
+    "pandas",
+    "spacy",
+    "nltk"
+  ],
+  "script_42.py": [
+    "sklearn",
+    "ortools",
+    "pulp",
+    "scipy",
+    "cvxpy",
+    "numpy"
+  ],
+  "script_59.py": [
+    "pmdarima",
+    "sklearn",
+    "matplotlib",
+    "datetime",
+    "warnings",
+    "pandas",
+    "statsmodels",
+    "prophet",
+    "numpy"
+  ],
+  "script_43.py": [
+    "asyncio",
+    "inspect",
+    "pathlib",
+    "collections",
+    "abc",
+    "contextlib",
+    "itertools",
+    "typing",
+    "weakref",
+    "functools",
+    "time",
+    "dataclasses"
+  ],
+  "script_51.py": [
+    "numpy",
+    "matplotlib",
+    "pandas"
+  ],
+  "script_52.py": [
+    "collections",
+    "requests",
+    "json",
+    "bs4",
+    "nltk"
+  ],
+  "script_53.py": [
+    "json",
+    "sklearn",
+    "joblib",
+    "numpy"
+  ],
+  "script_55.py": [
+    "pandas",
+    "sklearn",
+    "tensorflow",
+    "numpy"
+  ],
+  "script_46.py": [
+    "matplotlib",
+    "aubio",
+    "wave",
+    "essentia",
+    "librosa",
+    "pyaudio",
+    "mir_eval",
+    "music21",
+    "scipy",
+    "soundfile",
+    "numpy",
+    "pydub"
+  ],
+  "script_60.py": [
+    "datetime",
+    "sqlite3",
+    "pandas",
+    "json",
+    "sqlalchemy",
+    "numpy"
+  ],
+  "script_45.py": [
+    "pymunk",
+    "typing",
+    "OpenGL",
+    "numpy",
+    "pygame",
+    "arcade",
+    "math",
+    "dataclasses",
+    "random"
+  ],
+  "script_48.py": [
+    "collections",
+    "requests",
+    "textblob",
+    "scrapy",
+    "selenium",
+    "pandas",
+    "wordcloud",
+    "bs4",
+    "re",
+    "json",
+    "random",
+    "numpy",
+    "hashlib",
+    "time",
+    "urllib",
+    "nltk",
+    "csv"
+  ],
+  "script_49.py": [
+    "numpy",
+    "datetime",
+    "collections",
+    "pymongo",
+    "sqlite3",
+    "pickle",
+    "pandas",
+    "json",
+    "sqlalchemy",
+    "redis",
+    "psycopg2",
+    "hashlib"
+  ],
+  "script_50.py": [
+    "ssl",
+    "base64",
+    "collections",
+    "secrets",
+    "ipaddress",
+    "cryptography",
+    "json",
+    "re",
+    "numpy",
+    "subprocess",
+    "hashlib",
+    "time",
+    "hmac",
+    "socket"
+  ],
+  "script_54.py": [
+    "PIL",
+    "numpy",
+    "matplotlib",
+    "cv2"
+  ],
+  "script_56.py": [
+    "matplotlib",
+    "plotly",
+    "seaborn",
+    "pandas",
+    "numpy"
+  ],
+  "script_01.py": [
+    "os",
+    "requests",
+    "datetime",
+    "sys",
+    "numpy",
+    "flask"
+  ],
+  "script_02.py": [
+    "sklearn",
+    "matplotlib",
+    "seaborn",
+    "pandas",
+    "numpy"
+  ],
+  "script_10.py": [
+    "sympy",
+    "scipy",
+    "numpy"
+  ],
+  "script_12.py": [
+    "os",
+    "tempfile",
+    "glob",
+    "tarfile",
+    "zipfile",
+    "json",
+    "configparser",
+    "pathlib",
+    "shutil",
+    "csv"
+  ],
+  "script_25.py": [
+    "geopy",
+    "requests",
+    "folium",
+    "json",
+    "random"
+  ],
+  "script_30.py": [
+    "sympy",
+    "numpy",
+    "matplotlib",
+    "numba",
+    "pandas",
+    "scipy",
+    "mpl_toolkits"
+  ],
+  "script_36.py": [
+    "sklearn",
+    "networkx",
+    "matplotlib",
+    "pandas",
+    "Bio",
+    "numpy"
+  ],
+  "script_38.py": [
+    "pennylane",
+    "cirq",
+    "qiskit",
+    "matplotlib",
+    "qiskit_aer",
+    "scipy",
+    "numpy"
+  ],
+  "script_03.py": [
+    "requests",
+    "json",
+    "bs4",
+    "logging",
+    "time",
+    "urllib"
+  ],
+  "script_04.py": [
+    "datetime",
+    "contextlib",
+    "sqlite3",
+    "sqlalchemy",
+    "psycopg2"
+  ],
+  "script_05.py": [
+    "asyncio",
+    "concurrent",
+    "uvloop",
+    "threading",
+    "aiohttp",
+    "time",
+    "queue"
+  ],
+  "script_06.py": [
+    "imageio",
+    "numpy",
+    "matplotlib",
+    "PIL",
+    "skimage",
+    "cv2"
+  ],
+  "script_07.py": [
+    "torch",
+    "textblob",
+    "collections",
+    "transformers",
+    "re",
+    "wordcloud",
+    "spacy",
+    "nltk"
+  ],
+  "script_08.py": [
+    "tkinter",
+    "PyQt5",
+    "datetime",
+    "sys"
+  ],
+  "script_09.py": [
+    "ssl",
+    "base64",
+    "secrets",
+    "cryptography",
+    "jwt",
+    "bcrypt",
+    "hashlib",
+    "hmac",
+    "socket"
+  ],
+  "script_11.py": [
+    "pygame",
+    "math",
+    "sys",
+    "random"
+  ],
+  "script_17.py": [
+    "xml",
+    "io",
+    "json",
+    "yaml",
+    "xmltodict",
+    "lxml"
+  ],
+  "script_19.py": [
+    "sklearn",
+    "torch",
+    "xgboost",
+    "tensorflow",
+    "numpy"
+  ],
+  "script_14.py": [
+    "os",
+    "requests",
+    "doctest",
+    "unittest",
+    "tempfile",
+    "pytest"
+  ],
+  "script_15.py": [
+    "difflib",
+    "collections",
+    "unicodedata",
+    "re",
+    "string",
+    "codecs"
+  ],
+  "script_16.py": [
+    "dateutil",
+    "datetime",
+    "pytz",
+    "calendar",
+    "time"
+  ],
+  "script_18.py": [
+    "matplotlib",
+    "plotly",
+    "seaborn",
+    "pandas",
+    "bokeh",
+    "numpy"
+  ],
+  "script_13.py": [
+    "smtplib",
+    "ftplib",
+    "http",
+    "json",
+    "email",
+    "socket",
+    "urllib"
+  ],
+  "script_20.py": [
+    "os",
+    "argparse",
+    "json",
+    "yaml",
+    "configparser",
+    "pathlib",
+    "logging",
+    "sys"
+  ],
+  "script_21.py": [
+    "ssl",
+    "smtplib",
+    "re",
+    "poplib",
+    "imaplib",
+    "email"
+  ],
+  "script_22.py": [
+    "psutil",
+    "platform",
+    "time",
+    "serial",
+    "random"
+  ],
+  "script_23.py": [
+    "reportlab",
+    "pypdf",
+    "fpdf"
+  ],
+  "script_24.py": [
+    "wave",
+    "moviepy",
+    "numpy",
+    "pydub",
+    "cv2"
+  ],
+  "script_26.py": [
+    "requests",
+    "instagram_basic_display",
+    "requests_oauthlib",
+    "json",
+    "tweepy",
+    "linkedin",
+    "facebook"
+  ],
+  "script_27.py": [
+    "datetime",
+    "requests",
+    "secp256k1",
+    "base58",
+    "json",
+    "binascii",
+    "hashlib",
+    "ecdsa"
+  ],
+  "script_28.py": [
+    "requests",
+    "docker",
+    "json",
+    "google",
+    "azure",
+    "boto3",
+    "kubernetes"
+  ],
+  "script_29.py": [
+    "glfw",
+    "stl",
+    "moderngl",
+    "OpenGL",
+    "numpy",
+    "pyrr",
+    "pygame",
+    "trimesh"
+  ],
+  "script_32.py": [
+    "sympy",
+    "matplotlib",
+    "scipy",
+    "numpy",
+    "control"
+  ],
+  "script_31.py": [
+    "datetime",
+    "requests",
+    "threading",
+    "json",
+    "paho",
+    "time",
+    "queue",
+    "socket",
+    "random"
+  ],
+  "script_33.py": [
+    "datetime",
+    "pymongo",
+    "sqlite3",
+    "json",
+    "sqlalchemy",
+    "redis",
+    "psycopg2"
+  ],
+  "script_34.py": [
+    "traceback",
+    "datetime",
+    "psutil",
+    "json",
+    "prometheus_client",
+    "logging",
+    "time",
+    "structlog",
+    "socket",
+    "random"
+  ],
+  "script_35.py": [
+    "os",
+    "datetime",
+    "requests",
+    "tarfile",
+    "zipfile",
+    "shutil",
+    "json",
+    "yaml",
+    "subprocess",
+    "hashlib",
+    "tempfile"
+  ],
+  "script_37.py": [
+    "sklearn",
+    "matplotlib",
+    "datetime",
+    "yfinance",
+    "requests",
+    "pandas",
+    "json",
+    "scipy",
+    "numpy"
+  ],
+  "script_47.py": [
+    "sklearn",
+    "torch",
+    "matplotlib",
+    "skimage",
+    "dlib",
+    "PIL",
+    "face_recognition",
+    "torchvision",
+    "tensorflow",
+    "mediapipe",
+    "numpy",
+    "cv2"
+  ],
+  "script_39.py": [
+    "sklearn",
+    "networkx",
+    "collections",
+    "community",
+    "pandas",
+    "scipy",
+    "numpy",
+    "random"
+  ],
+  "script_44.py": [
+    "pstats",
+    "gc",
+    "collections",
+    "psutil",
+    "line_profiler",
+    "pympler",
+    "memory_profiler",
+    "weakref",
+    "cProfile",
+    "tracemalloc",
+    "numpy",
+    "objgraph",
+    "time",
+    "sys"
+  ]
+}

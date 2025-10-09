@@ -1,0 +1,61 @@
+script,dependency_count,dependencies,analysis_time
+script_01,4,"['flask', 'numpy', 'requests', 'redis']",0.0068
+script_02,6,"['numpy', 'pandas', 'matplotlib', 'sklearn', 'seaborn', 'tensorflow']",0.0029
+script_03,3,"['requests', 'bs4', 'redis']",0.0043
+script_04,4,"['sqlalchemy', 'psycopg2', 'requests', 'multiprocessing']",0.0058
+script_05,11,"['uvloop', 'asyncio', 'aiohttp', 'queue', 'requests', 'flask', 'concurrent', 'multiprocessing', 'concurrent.futures', 'threading', 'redis']",0.008
+script_06,7,"['numpy', 'matplotlib', 'pillow', 'cv2', 'PIL', 'imageio', 'skimage']",0.0071
+script_07,7,"['torch', 'transformers', 'requests', 'textblob', 'wordcloud', 'nltk', 'spacy']",0.0114
+script_08,6,"['psycopg2', 'requests', 'flask', 'tkinter', 'PyQt5', 'redis']",0.0161
+script_09,9,"['base64', 'hashlib', 'bcrypt', 'secrets', 'cryptography', 'ssl', 'jwt', 'hmac', 'redis']",0.0422
+script_10,3,"['numpy', 'scipy', 'sympy']",0.0033
+script_11,6,"['pillow', 'flask', 'pygame', 'threading', 'redis', 'uwsgi']",0.0053
+script_12,4,"['pillow', 'configparser', 'json', 'uwsgi']",0.009
+script_13,6,"['flask', 'psycopg2', 'requests', 'ftplib', 'smtplib', 'json']",0.0099
+script_14,7,"['requests', 'unittest', 'pytest', 'flask', 'doctest', 'multiprocessing', 'redis']",0.0113
+script_15,4,"['string', 'codecs', 'unicodedata', 'difflib']",0.0146
+script_16,3,"['calendar', 'pytz', 'dateutil']",0.0101
+script_17,8,"['yaml', 'lxml', 'pymongo', 'requests', 'xmltodict', 'json', 'redis', 'bs4']",0.0147
+script_18,6,"['numpy', 'pandas', 'matplotlib', 'plotly', 'seaborn', 'bokeh']",0.0168
+script_19,5,"['numpy', 'tensorflow', 'torch', 'sklearn', 'xgboost']",0.0213
+script_20,5,"['yaml', 'configparser', 'json', 'redis', 'uwsgi']",0.0206
+script_21,5,"['requests', 'ssl', 'imaplib', 'poplib', 'smtplib']",0.019
+script_22,6,"['pymongo', 'platform', 'psutil', 'serial', 'redis', 'bs4']",0.0201
+script_23,4,"['pillow', 'pypdf', 'fpdf', 'reportlab']",0.0176
+script_24,8,"['numpy', 'pillow', 'requests', 'cv2', 'pydub', 'moviepy', 'wave', 'redis']",0.0206
+script_25,5,"['pillow', 'geopy', 'requests', 'folium', 'redis']",0.0218
+script_26,7,"['requests', 'requests_oauthlib', 'linkedin', 'instagram_basic_display', 'tweepy', 'facebook', 'redis']",0.0252
+script_27,9,"['requests', 'hashlib', 'secp256k1', 'ecdsa', 'binascii', 'base58', 'json', 'threading', 'redis']",0.0203
+script_28,8,"['docker', 'google', 'azure', 'kubernetes', 'boto3', 'requests', 'plotly', 'redis']",0.0262
+script_29,10,"['numpy', 'pillow', 'OpenGL', 'moderngl', 'pygame', 'trimesh', 'pyrr', 'glfw', 'stl', 'uwsgi']",0.0271
+script_30,7,"['pandas', 'numpy', 'matplotlib', 'scipy', 'mpl_toolkits', 'sympy', 'numba']",0.0272
+script_31,6,"['numpy', 'psycopg2', 'requests', 'queue', 'paho', 'json']",0.0409
+script_32,8,"['numpy', 'matplotlib', 'requests', 'sklearn', 'scipy', 'control', 'sympy', 'redis']",0.0487
+script_33,7,"['pymongo', 'sqlalchemy', 'psycopg2', 'redis', 'requests', 'plotly', 'json']",0.0495
+script_34,5,"['traceback', 'prometheus_client', 'psutil', 'structlog', 'redis']",0.0452
+script_35,6,"['yaml', 'pillow', 'transformers', 'hashlib', 'requests', 'json']",0.0556
+script_36,7,"['numpy', 'pandas', 'matplotlib', 'sklearn', 'Bio', 'networkx', 'redis']",0.0578
+script_37,8,"['numpy', 'pandas', 'matplotlib', 'sklearn', 'scipy', 'yfinance', 'requests', 'redis']",0.0509
+script_38,7,"['numpy', 'matplotlib', 'scipy', 'pennylane', 'cirq', 'qiskit', 'qiskit_aer']",0.0542
+script_39,8,"['pandas', 'numpy', 'sklearn', 'tensorflow', 'scipy', 'community', 'networkx', 'redis']",0.055
+script_40,4,"['sklearn', 'pandas', 'numpy', 'scipy']",0.0496
+script_41,5,"['numpy', 'queue', 'concurrent', 'concurrent.futures', 'redis']",0.0196
+script_42,6,"['numpy', 'sklearn', 'scipy', 'ortools', 'cvxpy', 'pulp']",0.0278
+script_43,5,"['asyncio', 'pydantic', 'dataclasses', 'inspect', 'weakref']",0.0091
+script_44,13,"['numpy', 'cProfile', 'line_profiler', 'memory_profiler', 'objgraph', 'psutil', 'pstats', 'pympler', 'gc', 'tracemalloc', 'weakref', 'multiprocessing', 'redis']",0.0261
+script_45,8,"['numpy', 'psycopg2', 'OpenGL', 'pygame', 'arcade', 'pymunk', 'dataclasses', 'redis']",0.0424
+script_46,13,"['numpy', 'matplotlib', 'tensorflow', 'soundfile', 'scipy', 'pydub', 'aubio', 'librosa', 'wave', 'pyaudio', 'mir_eval', 'music21', 'essentia']",0.0395
+script_47,13,"['numpy', 'tensorflow', 'matplotlib', 'torch', 'sklearn', 'pillow', 'cv2', 'face_recognition', 'dlib', 'torchvision', 'PIL', 'mediapipe', 'skimage']",0.0409
+script_48,12,"['numpy', 'pandas', 'requests', 'bs4', 'pymongo', 'textblob', 'wordcloud', 'nltk', 'hashlib', 'scrapy', 'selenium', 'redis']",0.0511
+script_49,8,"['sqlalchemy', 'pandas', 'numpy', 'pymongo', 'psycopg2', 'requests', 'redis', 'hashlib']",0.0525
+script_50,9,"['numpy', 'hashlib', 'secrets', 'cryptography', 'ssl', 'base64', 'ipaddress', 'hmac', 'redis']",0.0668
+script_51,3,"['matplotlib', 'numpy', 'pandas']",0.0035
+script_52,5,"['requests', 'bs4', 'nltk', 'json', 'redis']",0.0045
+script_53,5,"['sklearn', 'numpy', 'tensorflow', 'joblib', 'json']",0.0051
+script_54,5,"['numpy', 'matplotlib', 'pillow', 'cv2', 'PIL']",0.0041
+script_55,5,"['tensorflow', 'numpy', 'pandas', 'sklearn', 'pillow']",0.0048
+script_56,5,"['numpy', 'pandas', 'matplotlib', 'plotly', 'seaborn']",0.006
+script_57,8,"['flask', 'pandas', 'hashlib', 'psycopg2', 'requests', 'json', 'redis', 'uwsgi']",0.0084
+script_58,9,"['pandas', 'matplotlib', 'pymongo', 'requests', 'textblob', 'wordcloud', 'nltk', 'spacy', 'bs4']",0.0084
+script_59,7,"['pandas', 'numpy', 'matplotlib', 'sklearn', 'statsmodels', 'pmdarima', 'prophet']",0.0099
+script_60,5,"['sqlalchemy', 'pandas', 'numpy', 'requests', 'json']",0.0119

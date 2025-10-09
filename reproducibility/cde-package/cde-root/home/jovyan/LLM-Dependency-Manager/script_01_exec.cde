@@ -1,0 +1,2 @@
+#!/bin/sh
+../../../../cde-exec 'script_01_exec' "$@"
