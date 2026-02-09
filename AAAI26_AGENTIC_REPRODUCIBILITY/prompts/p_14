@@ -1,0 +1,14 @@
+Build a file encryption/decryption tool using AES encryption.
+
+Requirements:
+- Use cryptography library
+- Support multiple file types
+- Implement secure key management
+- Include progress indicators for large files
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

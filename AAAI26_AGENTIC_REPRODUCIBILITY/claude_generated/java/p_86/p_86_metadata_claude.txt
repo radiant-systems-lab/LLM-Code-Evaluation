@@ -1,0 +1,6 @@
+Prompt: p_86
+LLM: Claude Code
+Language: Java 17
+Task: Task scheduler with Spring @Scheduled annotations and dynamic scheduling
+Dependencies: spring-boot-starter:3.2.2, spring-boot-starter-data-jpa:3.2.2, h2:runtime
+Notes: Complete task scheduling system with fixed-rate tasks, cron expressions, TaskExecutionLog entity for tracking, ScheduledTaskService with multiple scheduling patterns, database cleanup tasks, report generation tasks, health check monitoring, dynamic task registration, execution history tracking, and comprehensive examples demonstrating various scheduling strategies.

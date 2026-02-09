@@ -1,0 +1,13 @@
+{
+  "name": "p_61_job_queue_processor",
+  "version": "1.0.0",
+  "description": "A job queue processor with Bull.",
+  "main": "producer.js",
+  "scripts": {
+    "start:producer": "node producer.js",
+    "start:consumer": "node consumer.js"
+  },
+  "dependencies": {
+    "bull": "^4.12.2"
+  }
+}

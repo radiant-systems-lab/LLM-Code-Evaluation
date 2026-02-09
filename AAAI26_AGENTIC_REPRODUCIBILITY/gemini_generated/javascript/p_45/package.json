@@ -1,0 +1,15 @@
+{
+  "name": "p_45_graphql_api",
+  "version": "1.0.0",
+  "description": "A GraphQL API with authentication.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "graphql": "^16.8.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3"
+  }
+}

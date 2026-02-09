@@ -1,0 +1,23 @@
+Prompt: p_32
+LLM: Claude Code
+Language: Python
+Task: GitHub repository analyzer with comprehensive metrics
+
+Dependencies Provided: YES
+- PyGithub==2.1.1
+- requests==2.31.0
+- python-dateutil==2.8.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete GitHub repository analyzer using PyGithub API. Features include commit history analysis (by date/weekday/hour, average commits per day), code churn metrics (additions/deletions, net change, files changed, churn per commit), contributor statistics (total contributors, top 10 ranked by commits, individual contribution metrics), and trend analysis (most active day, weekly averages, recent weeks trend). Supports optional GITHUB_TOKEN for higher API rate limits. Interactive and command-line modes. Saves detailed JSON metrics to file. Handles API exceptions gracefully with progress indicators.

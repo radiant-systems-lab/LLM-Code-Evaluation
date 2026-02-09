@@ -1,0 +1,14 @@
+Build a database migration tool for schema changes.
+
+Requirements:
+- Use alembic or custom migration solution
+- Track schema versions systematically
+- Apply migrations safely with validation
+- Include rollback support
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

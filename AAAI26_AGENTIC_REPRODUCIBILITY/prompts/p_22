@@ -1,0 +1,14 @@
+Build a password strength checker and generator.
+
+Requirements:
+- Use secrets library for secure generation
+- Check password entropy and strength
+- Generate strong passwords with custom rules
+- Include common password detection from wordlist
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

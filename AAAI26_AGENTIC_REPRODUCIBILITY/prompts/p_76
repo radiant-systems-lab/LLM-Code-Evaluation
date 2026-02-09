@@ -1,0 +1,14 @@
+Create a Spring Boot REST API with JPA and MySQL.
+
+Requirements:
+- Use Spring Boot, Spring Data JPA, MySQL Connector
+- Implement full CRUD operations for an entity
+- Include global exception handling
+- Add Bean Validation annotations
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions and database setup
+
+Make it 100% reproducible in a clean environment.

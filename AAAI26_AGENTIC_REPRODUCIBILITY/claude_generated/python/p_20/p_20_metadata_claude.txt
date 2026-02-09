@@ -1,0 +1,22 @@
+Prompt: p_20
+LLM: Claude Code
+Language: Python
+Task: File deduplication tool with hash comparison
+
+Dependencies Provided: YES
+- No external dependencies (Python standard library only)
+- Requires Python >= 3.8
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete file deduplication tool using SHA256/MD5 hashing. Features include recursive directory scanning, duplicate detection, multiple keep strategies (first/last/shortest/longest path), backup option, dry-run mode, detailed reporting with space savings calculation. CLI with comprehensive argument parsing. Uses only Python standard library.

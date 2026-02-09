@@ -1,0 +1,25 @@
+Prompt: p_8
+LLM: Claude Code
+Language: Python
+Task: Time series forecasting using ARIMA
+
+Dependencies Provided: YES
+- numpy==1.24.3
+- pandas==2.0.3
+- matplotlib==3.7.2
+- statsmodels==0.14.0
+- scipy==1.11.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete ARIMA time series forecasting with ADF stationarity tests, automatic parameter selection using AIC, confidence intervals, and comprehensive visualizations including ACF/PACF plots and residual diagnostics.

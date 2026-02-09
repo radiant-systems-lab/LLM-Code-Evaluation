@@ -1,0 +1,15 @@
+{
+  "name": "mongodb-aggregation-utility",
+  "version": "1.0.0",
+  "description": "MongoDB aggregation pipeline utility with common operations",
+  "main": "aggregation.js",
+  "scripts": {
+    "start": "node aggregation.js"
+  },
+  "keywords": ["mongodb", "aggregation", "database"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  }
+}

@@ -1,0 +1,26 @@
+Prompt: p_52
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Express API with Redis-based distributed rate limiting middleware
+
+Dependencies Provided: YES
+- express@^4.18.2
+- express-rate-limit@^7.1.5
+- rate-limit-redis@^4.2.0
+- redis@^4.6.12
+- dotenv@^16.3.1
+- (dev) nodemon@^3.0.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE (requires Redis)
+
+Notes: Production-ready distributed rate limiting system using Redis for Express APIs. Features include Redis client configuration (config/redis.js with connection event handlers, connectRedis async function), comprehensive rate limiter middleware factory (middleware/rateLimiter.js with createRateLimiter function accepting configurable options: windowMs, max requests, message, standardHeaders/legacyHeaders, skipSuccessfulRequests/skipFailedRequests, custom keyGenerator, custom handler). Includes 5 pre-configured limiters: globalLimiter (100 req/15min for all routes), strictLimiter (5 req/15min for auth endpoints), apiLimiter (60 req/1min for general API), heavyOperationLimiter (10 req/1hour for uploads/exports), searchLimiter (30 req/1min for search queries). Supports user-specific rate limiting via createUserRateLimiter (uses user ID if authenticated, falls back to IP). Server implementation includes trust proxy configuration for correct IP detection behind load balancers, graceful shutdown with Redis cleanup, comprehensive endpoint examples (health check, public API, search, auth login/register/reset-password, file upload, custom-limited, admin stats). Returns 429 Too Many Requests with response headers (RateLimit-Limit, RateLimit-Remaining, RateLimit-Reset, Retry-After). Includes optional test-rate-limiter.js script with axios for automated testing. Perfect for microservices architecture with multiple server instances sharing Redis store for coordinated rate limiting across distributed systems.

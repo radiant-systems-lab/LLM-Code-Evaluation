@@ -1,0 +1,24 @@
+Prompt: p_45
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: GraphQL API with JWT authentication using Apollo Server
+
+Dependencies Provided: YES
+- @apollo/server@^4.10.0
+- bcryptjs@^2.4.3
+- graphql@^16.8.1
+- jsonwebtoken@^9.0.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete GraphQL API with JWT authentication using Apollo Server 4. Features include register/login mutations with bcrypt password hashing (10 rounds), JWT token generation (24h expiry), context-based auth middleware extracting Bearer token from Authorization header, protected queries (me, myPosts require auth), CRUD operations for posts with ownership verification, field resolvers (User.posts, Post.author), in-memory data store (users/posts arrays), comprehensive input validation (username >=3 chars, email format, password >=6 chars), error handling for auth/authorization failures. Includes Apollo Studio GraphQL playground at http://localhost:4000. Demo queries/mutations provided in temp file.

@@ -1,0 +1,14 @@
+Create a weather data aggregator from multiple APIs.
+
+Requirements:
+- Use requests library
+- Fetch data from 2+ weather APIs
+- Aggregate and compare weather data
+- Generate forecast summary report
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

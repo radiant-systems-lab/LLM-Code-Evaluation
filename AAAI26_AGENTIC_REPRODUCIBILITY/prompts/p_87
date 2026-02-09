@@ -1,0 +1,14 @@
+Build a PDF generation service from templates.
+
+Requirements:
+- Use iText or Apache PDFBox
+- Generate PDFs from data and templates
+- Support custom layouts and styling
+- Include images, tables, and formatting
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

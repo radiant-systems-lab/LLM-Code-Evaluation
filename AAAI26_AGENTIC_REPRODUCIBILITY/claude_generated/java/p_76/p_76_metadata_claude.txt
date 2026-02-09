@@ -1,0 +1,23 @@
+Prompt: p_76
+LLM: Claude Code
+Language: Java 17
+Task: Spring Boot REST API with CRUD operations and validation
+
+Dependencies Provided: YES (Maven pom.xml)
+- spring-boot-starter-web:3.2.2
+- spring-boot-starter-validation:3.2.2
+- lombok (optional)
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has pom.xml: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete Spring Boot REST API application. UserController with REST endpoints: GET /api/users (list all), GET /api/users/{id} (get by ID), POST /api/users (create), PUT /api/users/{id} (update), DELETE /api/users/{id} (delete). User entity with validation (@NotBlank, @Email). In-memory repository with ConcurrentHashMap. ResponseEntity with proper HTTP status codes. Exception handling with @ControllerAdvice. Main application class with @SpringBootApplication. Runs on port 8080. Perfect for microservices, backend APIs, CRUD applications, Spring Boot learning.

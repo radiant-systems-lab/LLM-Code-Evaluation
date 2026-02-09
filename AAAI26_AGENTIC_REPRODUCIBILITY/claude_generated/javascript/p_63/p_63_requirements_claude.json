@@ -1,0 +1,21 @@
+{
+  "name": "password-hashing-service",
+  "version": "1.0.0",
+  "description": "Secure password hashing service using bcrypt",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "bcrypt",
+    "password",
+    "hashing",
+    "security"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  }
+}

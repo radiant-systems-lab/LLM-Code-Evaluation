@@ -1,0 +1,14 @@
+Build a geolocation service using IP addresses.
+
+Requirements:
+- Use geoip-lite or external geolocation API
+- Lookup location from IP address
+- Return city, country, and coordinates
+- Implement result caching
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

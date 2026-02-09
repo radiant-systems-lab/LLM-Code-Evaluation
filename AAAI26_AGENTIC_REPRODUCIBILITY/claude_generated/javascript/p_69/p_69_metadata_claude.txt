@@ -1,0 +1,21 @@
+Prompt: p_69
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Redis caching service with TTL, JSON serialization, and pattern-based operations
+
+Dependencies Provided: YES
+- redis@^4.6.13
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Production-ready Redis cache wrapper using redis v4 client. CacheService class with methods: get, set, delete, exists, increment, decrement, getMultiple, setMultiple, flush, getKeys. Automatic JSON serialization/deserialization. TTL support (default 3600s). Pattern-based key operations with SCAN. Cache namespacing with key prefixes. Statistics tracking (hits, misses, sets, deletes). Connection management with error handling. Async/await API. Perfect for API response caching, session storage, rate limiting, leaderboards, distributed locks, pub/sub messaging.

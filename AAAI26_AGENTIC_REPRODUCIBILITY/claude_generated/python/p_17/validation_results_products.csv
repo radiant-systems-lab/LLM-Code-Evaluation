@@ -1,0 +1,5 @@
+Row,Valid,Error_Count,Errors,Data_product_id,Data_name,Data_price,Data_quantity,Data_category
+2,True,0,,PRD-000001,Laptop,999.99,10,electronics
+3,True,0,,PRD-000002,Mouse,25.5,50,electronics
+4,False,3,category: unallowed value invalid_category | price: min value is 0.01 | product_id: value does not match regex '^PRD-[0-9]{6}$',INVALID,Keyboard,-10.0,100,invalid_category
+5,False,1,quantity: min value is 0,PRD-000004,M,45.0,-5,electronics

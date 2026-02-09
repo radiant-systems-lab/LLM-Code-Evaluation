@@ -1,0 +1,14 @@
+Create a markdown to HTML converter with syntax highlighting.
+
+Requirements:
+- Use markdown and pygments libraries
+- Support code blocks with language-specific highlighting
+- Generate styled HTML with CSS
+- Include table of contents generation
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

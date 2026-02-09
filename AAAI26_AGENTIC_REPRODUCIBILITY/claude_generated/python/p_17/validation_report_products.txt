@@ -1,0 +1,45 @@
+================================================================================
+CSV VALIDATION REPORT
+================================================================================
+Generated: 2025-10-30 22:12:42
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total Rows Processed: 4
+Valid Rows: 2 (50.00%)
+Invalid Rows: 2 (50.00%)
+
+INVALID ROWS DETAIL
+--------------------------------------------------------------------------------
+
+Row 4:
+  Data: {
+        "product_id": "INVALID",
+        "name": "Keyboard",
+        "price": -10.0,
+        "quantity": 100,
+        "category": "invalid_category"
+}
+  Errors:
+    - category: unallowed value invalid_category
+    - price: min value is 0.01
+    - product_id: value does not match regex '^PRD-[0-9]{6}$'
+
+Row 5:
+  Data: {
+        "product_id": "PRD-000004",
+        "name": "M",
+        "price": 45.0,
+        "quantity": -5,
+        "category": "electronics"
+}
+  Errors:
+    - quantity: min value is 0
+
+ERROR FREQUENCY ANALYSIS
+--------------------------------------------------------------------------------
+   1x  category: unallowed value invalid_category
+   1x  price: min value is 0.01
+   1x  product_id: value does not match regex '^PRD-[0-9]{6}$'
+   1x  quantity: min value is 0
+================================================================================

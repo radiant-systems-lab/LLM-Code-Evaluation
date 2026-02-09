@@ -1,0 +1,25 @@
+Prompt: p_28
+LLM: Claude Code
+Language: Python
+Task: Redis-based caching layer with TTL and invalidation
+
+Dependencies Provided: YES
+- redis==5.0.1
+- python-dotenv==1.0.0
+- flask==3.0.0
+- requests==2.31.0
+- System dependency: Redis server
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Production-ready Redis caching layer with decorator support for function result caching. Features include automatic key generation with MD5 hashing, TTL support (seconds or timedelta), cache invalidation (individual/pattern/all), JSON serialization for complex data structures, error handling with graceful degradation, manual cache operations (get/set/delete), global singleton cache instance. Includes Flask API example and unit tests. Requires Redis server running on localhost:6379.

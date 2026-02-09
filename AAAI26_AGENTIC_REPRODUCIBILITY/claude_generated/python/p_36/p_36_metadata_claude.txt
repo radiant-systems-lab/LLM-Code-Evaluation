@@ -1,0 +1,21 @@
+Prompt: p_36
+LLM: Claude Code
+Language: Python
+Task: Image resize and optimization tool
+
+Dependencies Provided: YES
+- Pillow==11.1.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete image batch resize and optimization tool using Pillow. Features include batch directory processing with glob patterns, quality optimization (configurable 1-100, default 85), aspect ratio preservation (optional), multi-format support (JPG, PNG, WebP, BMP, TIFF), EXIF-based auto-rotation, RGBA to RGB conversion for JPEG with white background, recursive subdirectory processing with structure preservation, format-specific optimization (PNG compress_level=9, WebP method=6), file size reduction reporting, LANCZOS resampling for high quality. CLI with argparse. Returns success/fail counts.

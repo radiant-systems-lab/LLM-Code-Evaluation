@@ -1,0 +1,14 @@
+Build a CSV to JSON converter API.
+
+Requirements:
+- Use csv-parser library
+- Handle large files with streams
+- Support custom delimiters and headers
+- Validate and transform data types
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

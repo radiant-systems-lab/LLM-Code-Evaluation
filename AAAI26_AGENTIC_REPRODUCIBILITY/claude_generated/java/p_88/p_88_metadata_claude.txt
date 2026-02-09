@@ -1,0 +1,6 @@
+Prompt: p_88
+LLM: Claude Code
+Language: Java 17
+Task: Advanced logging framework with SLF4J, Logback, and structured logging
+Dependencies: slf4j-api:2.0.12, logback-classic:1.4.14, logback-core:1.4.14, logstash-logback-encoder:7.4
+Notes: Complete logging solution with LoggingManager for programmatic configuration, custom log formats with colored console output, file rolling policies (size and time-based), JSON structured logging with Logstash encoder, MDC (Mapped Diagnostic Context) for contextual logging, log filtering by level and marker, performance metrics logging, audit logging, and comprehensive examples demonstrating various logging patterns and configurations.

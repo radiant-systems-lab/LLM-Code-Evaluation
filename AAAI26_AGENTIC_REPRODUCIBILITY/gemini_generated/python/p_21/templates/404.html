@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Not Found</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f0f2f5; color: #333; text-align: center; padding-top: 50px; }
+        h1 { font-size: 4em; color: #dc3545; }
+        p { font-size: 1.2em; }
+        a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h1>404 - Not Found</h1>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <p>{{ message | safe }}</p>
+            {% endfor %}
+        {% else %}
+            <p>The link you followed may be broken, expired, or the page may have been removed.</p>
+        {% endif %}
+    {% endwith %}
+    <p><a href="{{ url_for('index') }}">Return to Homepage</a></p>
+</body>
+</html>

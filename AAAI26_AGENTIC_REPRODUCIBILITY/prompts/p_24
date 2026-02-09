@@ -1,0 +1,14 @@
+Build a network port scanner with service detection.
+
+Requirements:
+- Use socket and python-nmap libraries
+- Scan IP address ranges
+- Detect open ports and running services
+- Generate security report with findings
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

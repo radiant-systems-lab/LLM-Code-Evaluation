@@ -1,0 +1,25 @@
+Prompt: p_25
+LLM: Claude Code
+Language: Python
+Task: Weather data aggregator with multi-API support
+
+Dependencies Provided: YES
+- requests==2.31.0
+- certifi==2024.2.2
+- charset-normalizer==3.3.2
+- idna==3.6
+- urllib3==2.2.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Weather data aggregator fetching from multiple free APIs (Open-Meteo, wttr.in). Features include current conditions and 7-day forecasts, statistical aggregation across sources (averages, ranges, variance), comparison reports showing data consistency, temperature trends, precipitation outlook, JSON and text outputs. No API keys required for basic functionality.

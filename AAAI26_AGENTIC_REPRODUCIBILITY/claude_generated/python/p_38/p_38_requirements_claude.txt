@@ -1,0 +1,8 @@
+# No external dependencies required for basic version
+# Python standard library only (Python 3.7+)
+# Uses: difflib, re, pathlib, typing, dataclasses, json
+
+# Optional: For enhanced NLP features (advanced version)
+# nltk==3.8.1
+# scikit-learn==1.3.2
+# numpy==1.24.3

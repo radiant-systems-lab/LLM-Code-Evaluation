@@ -1,0 +1,7 @@
+Prompt: p_81
+LLM: Claude Code
+Language: Java 17
+Task: Excel file generator with Apache POI for creating formatted spreadsheets
+
+Dependencies: poi-ooxml:5.2.5
+Notes: Complete Excel generator with ExcelGenerator class featuring workbook creation, sheet management, cell styling (bold, colors, borders), auto-sizing columns, formulas, number formatting, createSalesReport/createEmployeeReport methods, and example usage generating sales and employee reports. Perfect for data export, reporting, analytics, business intelligence.

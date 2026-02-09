@@ -1,0 +1,14 @@
+Create a job queue processor with Bull.
+
+Requirements:
+- Use Bull and Redis libraries
+- Process jobs asynchronously with workers
+- Include retry logic for failed jobs
+- Monitor job status and progress
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

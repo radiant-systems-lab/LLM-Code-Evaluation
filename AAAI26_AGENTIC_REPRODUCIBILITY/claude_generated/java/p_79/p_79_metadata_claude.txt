@@ -1,0 +1,7 @@
+Prompt: p_79
+LLM: Claude Code
+Language: Java 17
+Task: JSON schema validator with Jackson and validation engine for REST APIs
+
+Dependencies: jackson-databind:2.16.1, json-schema-validator:2.2.14, everit.json.schema:1.14.2
+Notes: Complete JSON validation service with schema definitions, validation results, error reporting, schema repository, and sample validators for user/product/order schemas. ValidationService with validate() method, SchemaRepository for schema management, ValidationResult with errors list, and example usage with test cases.

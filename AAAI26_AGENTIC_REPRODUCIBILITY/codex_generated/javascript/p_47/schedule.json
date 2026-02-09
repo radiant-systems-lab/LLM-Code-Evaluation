@@ -1,0 +1,18 @@
+{
+  "jobs": [
+    {
+      "cron": "*/30 * * * * *",
+      "to": ["recipient@example.com"],
+      "subject": "Welcome to Our Service",
+      "template": "welcome.html",
+      "context": {
+        "name": "Friend",
+        "company": "Acme Corp",
+        "plan": "Pro",
+        "startDate": "2023-10-29",
+        "ctaUrl": "https://example.com/get-started"
+      },
+      "attachments": ["attachments/sample.txt"]
+    }
+  ]
+}

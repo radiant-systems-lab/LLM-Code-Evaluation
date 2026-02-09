@@ -1,0 +1,14 @@
+{
+  "name": "p_74_jwt_token_manager",
+  "version": "1.0.0",
+  "description": "A JWT token manager with refresh tokens.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.4.5"
+  }
+}

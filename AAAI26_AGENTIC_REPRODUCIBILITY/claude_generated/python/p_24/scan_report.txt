@@ -1,0 +1,39 @@
+================================================================================
+NETWORK PORT SCANNER - SECURITY REPORT
+================================================================================
+Report Generated: 2025-10-30 22:25:42
+Total Hosts Scanned: 1
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Hosts with open ports: 1
+Total open ports found: 1
+
+DETAILED FINDINGS
+--------------------------------------------------------------------------------
+
+Host: 127.0.0.1
+Scan Time: 2025-10-30T22:25:42.202379
+Open Ports: 1
+
+  Port 22/tcp
+    State: open
+    Service: ssh
+    Product: OpenSSH
+    Version: 8.9p1 Ubuntu 3ubuntu0.13
+    Extra Info: Ubuntu Linux; protocol 2.0
+
+================================================================================
+SECURITY RECOMMENDATIONS
+--------------------------------------------------------------------------------
+
+1. Review all open ports and ensure they are necessary for business operations
+2. Close or firewall any unnecessary ports
+3. Update all services to the latest secure versions
+4. Implement strong authentication for all exposed services
+5. Monitor these ports regularly for unauthorized changes
+6. Consider implementing network segmentation
+7. Enable logging and monitoring for all exposed services
+
+================================================================================

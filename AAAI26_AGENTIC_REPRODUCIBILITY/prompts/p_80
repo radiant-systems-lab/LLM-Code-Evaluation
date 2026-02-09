@@ -1,0 +1,14 @@
+Create a WebSocket chat application with STOMP protocol.
+
+Requirements:
+- Use Spring WebSocket and STOMP
+- Implement chat room functionality
+- Handle user connection/disconnection
+- Broadcast messages to subscribed users
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

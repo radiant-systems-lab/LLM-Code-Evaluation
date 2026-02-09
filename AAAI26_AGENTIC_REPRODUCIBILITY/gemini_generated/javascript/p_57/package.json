@@ -1,0 +1,13 @@
+{
+  "name": "p_57_webhook_processor",
+  "version": "1.0.0",
+  "description": "A webhook receiver and processor.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "body-parser": "^1.20.2"
+  }
+}

@@ -1,0 +1,14 @@
+Create an email automation service with templates.
+
+Requirements:
+- Use Nodemailer library
+- Support HTML email templates
+- Handle file attachments
+- Include scheduling with node-cron
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

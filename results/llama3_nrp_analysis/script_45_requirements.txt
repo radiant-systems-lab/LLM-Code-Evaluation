@@ -1,0 +1,11 @@
+# LLaMA3 NRP Analysis for script_45.py
+# Model: llama3
+# Dependencies found: 7
+
+arcade
+numpy
+pygame
+pymunk
+pyopengl
+pyopengl_accelerate
+six

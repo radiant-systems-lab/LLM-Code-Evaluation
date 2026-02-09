@@ -1,0 +1,32 @@
+{
+  "page": {
+    "margin": 50,
+    "backgroundColor": "#F7FAFC"
+  },
+  "fonts": {
+    "titleSize": 24,
+    "subtitleSize": 14,
+    "bodySize": 11,
+    "tableHeaderSize": 12
+  },
+  "colors": {
+    "primary": "#2B6CB0",
+    "secondary": "#2D3748",
+    "tableHeaderBackground": "#E2E8F0",
+    "tableBorder": "#CBD5E0"
+  },
+  "logo": {
+    "text": "Acme Analytics",
+    "background": "#2B6CB0",
+    "foreground": "#FFFFFF"
+  },
+  "table": {
+    "columns": [
+      { "header": "Item", "width": 140 },
+      { "header": "Description", "width": 220 },
+      { "header": "Qty", "width": 60 },
+      { "header": "Unit Price", "width": 90 },
+      { "header": "Total", "width": 90 }
+    ]
+  }
+}

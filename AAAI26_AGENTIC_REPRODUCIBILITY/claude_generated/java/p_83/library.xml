@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library>
+    <book>
+        <isbn>978-0-123456-47-2</isbn>
+        <title>Effective Java</title>
+        <author>
+            <name>Joshua Bloch</name>
+            <country>USA</country>
+        </author>
+        <year>2018</year>
+        <price>45.99</price>
+    </book>
+    <book>
+        <isbn>978-0-987654-32-1</isbn>
+        <title>Clean Code</title>
+        <author>
+            <name>Robert Martin</name>
+            <country>USA</country>
+        </author>
+        <year>2008</year>
+        <price>39.99</price>
+    </book>
+    <book>
+        <isbn>978-1-234567-89-0</isbn>
+        <title>Design Patterns</title>
+        <author>
+            <name>Gang of Four</name>
+            <country>Various</country>
+        </author>
+        <year>1994</year>
+        <price>54.99</price>
+    </book>
+</library>

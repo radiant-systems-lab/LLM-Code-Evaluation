@@ -1,0 +1,55 @@
+======================================================================
+SENTIMENT ANALYSIS REPORT
+======================================================================
+Generated: 2025-10-30 20:26:44
+Total Reviews Analyzed: 4
+
+----------------------------------------------------------------------
+OVERALL SENTIMENT DISTRIBUTION
+----------------------------------------------------------------------
+Positive:      3 ( 75.0%)
+Neutral:       0 (  0.0%)
+Negative:      1 ( 25.0%)
+
+----------------------------------------------------------------------
+STATISTICAL SUMMARY
+----------------------------------------------------------------------
+Average Polarity Score: 0.2584
+  (Range: -1.0 to +1.0, where -1 is most negative, +1 is most positive)
+Average Confidence Score: 0.5584
+  (Range: 0.0 to 1.0, higher values indicate stronger sentiment)
+
+----------------------------------------------------------------------
+POLARITY SCORE DISTRIBUTION
+----------------------------------------------------------------------
+Minimum: -0.6000
+25th Percentile: 0.1714
+Median: 0.5043
+75th Percentile: 0.5912
+Maximum: 0.6250
+
+----------------------------------------------------------------------
+TOP 3 MOST POSITIVE REVIEWS
+----------------------------------------------------------------------
+Polarity: 0.6250 | Confidence: 0.6250
+Review: This product is amazing! I love it....
+
+Polarity: 0.5800 | Confidence: 0.5800
+Review: Best purchase ever! Highly recommend....
+
+Polarity: 0.4286 | Confidence: 0.4286
+Review: It is okay nothing special....
+
+----------------------------------------------------------------------
+TOP 3 MOST NEGATIVE REVIEWS
+----------------------------------------------------------------------
+Polarity: -0.6000 | Confidence: 0.6000
+Review: Terrible quality waste of money....
+
+Polarity: 0.4286 | Confidence: 0.4286
+Review: It is okay nothing special....
+
+Polarity: 0.5800 | Confidence: 0.5800
+Review: Best purchase ever! Highly recommend....
+
+======================================================================

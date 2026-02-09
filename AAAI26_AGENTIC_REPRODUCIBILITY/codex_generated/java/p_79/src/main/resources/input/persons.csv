@@ -1,0 +1,7 @@
+firstName,lastName,email,age
+john,doe,john.doe@example.com,32
+jane,smith,jane.smith@example.com,27
+mark,taylor,mark.taylor@example.com,41
+emily,clark,emily.clark@example.com,29
+invalid,age,invalid.age@example.com,-2
+michelle,brown,michelle.brown@example.com,36

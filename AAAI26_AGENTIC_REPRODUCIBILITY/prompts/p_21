@@ -1,0 +1,14 @@
+Create a URL shortener service with custom aliases.
+
+Requirements:
+- Use Flask and SQLite database
+- Generate short codes (random or custom)
+- Track click statistics and analytics
+- Include expiration feature for URLs
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

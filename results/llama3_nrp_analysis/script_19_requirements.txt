@@ -1,0 +1,35 @@
+# LLaMA3 NRP Analysis for script_19.py
+# Model: llama3
+# Dependencies found: 31
+
+bottleneck
+certifi
+charset-normalizer
+contourpy
+cycler
+fonttools
+idna
+joblib
+kiwisolver
+numexpr
+numpy
+numpy.libs
+packaging
+pil
+pillow
+pillow.libs
+pyparsing
+pytz
+scikit-learn
+scipy
+scipy.libs
+six
+tensorflow
+tensorflow.keras
+threadpoolctl
+torch
+torch.nn
+torch.optim
+tzdata
+urllib3
+xgboost

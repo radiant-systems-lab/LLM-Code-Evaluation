@@ -1,0 +1,6 @@
+Prompt: p_100
+LLM: Claude Code
+Language: Java 17
+Task: Batch processing and job scheduling system with parallel execution
+Dependencies: gson:2.10.1
+Notes: Comprehensive batch processing framework with Job interface for extensible tasks, BatchProcessor supporting parallel and sequential execution, JobQueue with priority-based scheduling, JobExecutor with thread pool management, job status tracking (PENDING/RUNNING/COMPLETED/FAILED), progress reporting with callbacks, job dependencies and chaining, retry failed jobs, job persistence and recovery, resource throttling, execution statistics, and comprehensive examples demonstrating ETL pipelines and data processing workflows. This is the final script (#100) completing the full collection of 100 reproducible code samples.

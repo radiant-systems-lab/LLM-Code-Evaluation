@@ -1,0 +1,23 @@
+Prompt: p_72
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: JWT authentication middleware with token generation, validation, and refresh
+
+Dependencies Provided: YES
+- jsonwebtoken@^9.0.2
+- express@^4.18.2
+- dotenv@^16.4.5
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete JWT authentication system for Express. JWTAuthService class with generateToken, verifyToken, refreshToken methods. Express middleware: authenticateToken for protected routes. Configurable secret and expiration from environment. Token payload with userId, email, role. Error handling for expired/invalid tokens. Bearer token extraction from Authorization header. Demo server with /login, /protected, /refresh endpoints. In-memory user database example. Perfect for API authentication, microservices, mobile apps, SPAs, stateless auth, role-based access control.

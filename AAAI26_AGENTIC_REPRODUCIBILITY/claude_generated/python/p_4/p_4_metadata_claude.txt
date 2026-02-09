@@ -1,0 +1,27 @@
+Prompt: p_4
+LLM: Claude Code
+Language: Python
+Task: REST API with JWT authentication
+
+Dependencies Provided: YES
+- fastapi==0.104.1
+- uvicorn[standard]==0.24.0
+- pydantic[email]==2.5.0
+- python-jose[cryptography]==3.3.0
+- passlib[bcrypt]==1.7.4
+- PyJWT==2.8.0
+- bcrypt==4.1.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete FastAPI implementation with user registration, login/logout, JWT tokens, bcrypt password hashing, and protected routes. Includes comprehensive usage instructions with curl examples.

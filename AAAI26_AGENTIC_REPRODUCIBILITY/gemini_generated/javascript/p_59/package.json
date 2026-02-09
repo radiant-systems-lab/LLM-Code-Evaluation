@@ -1,0 +1,13 @@
+{
+  "name": "p_59_log_aggregator",
+  "version": "1.0.0",
+  "description": "A log aggregator service.",
+  "main": "logger.js",
+  "scripts": {
+    "start": "node logger.js"
+  },
+  "dependencies": {
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}

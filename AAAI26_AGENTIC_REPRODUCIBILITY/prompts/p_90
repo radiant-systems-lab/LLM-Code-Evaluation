@@ -1,0 +1,14 @@
+Create a URL shortener with Spring Boot and MongoDB.
+
+Requirements:
+- Use Spring Data MongoDB
+- Generate unique short codes
+- Track click analytics (count, timestamps)
+- Include URL expiration logic
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

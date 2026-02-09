@@ -1,0 +1,14 @@
+Build a rate limiter using Bucket4j.
+
+Requirements:
+- Use Bucket4j library
+- Implement token bucket algorithm
+- Apply rate limiting to API endpoints
+- Return 429 status for exceeded limits
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

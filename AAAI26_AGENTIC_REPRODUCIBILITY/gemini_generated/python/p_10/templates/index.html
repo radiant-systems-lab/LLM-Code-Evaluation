@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Dashboard</title>
+    <!-- Plotly.js from CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Socket.IO client library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; }
+        h1 { color: #333; }
+        #chart { width: 90%; margin: auto; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); }
+        #status { margin-top: 20px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Live Data Feed</h1>
+    <div id="chart"></div>
+    <div id="status">Status: Connecting...</div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // 1. Initialize Plotly Chart
+            const chartDiv = document.getElementById('chart');
+            Plotly.plot(chartDiv, [{
+                x: [],
+                y: [],
+                mode: 'lines+markers',
+                line: {color: '#1f77b4'},
+                name: 'Live Data'
+            }], {
+                title: 'Real-Time Sensor Data',
+                xaxis: { title: 'Time' },
+                yaxis: { title: 'Value' }
+            });
+
+            // 2. Connect to WebSocket
+            // The namespace must match the one on the server
+            const socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + '/test');
+            const statusDiv = document.getElementById('status');
+
+            socket.on('connect', function() {
+                statusDiv.innerHTML = 'Status: Connected!';
+                console.log('Successfully connected to WebSocket');
+            });
+
+            socket.on('disconnect', function() {
+                statusDiv.innerHTML = 'Status: Disconnected';
+                console.log('Disconnected from WebSocket');
+            });
+
+            // 3. Listen for 'update_data' events from the server
+            socket.on('update_data', function(data) {
+                console.log('Received data:', data);
+                
+                // 4. Update the chart with new data
+                const newX = data.time;
+                const newY = data.value;
+
+                // Use Plotly.extendTraces to efficiently add new points
+                Plotly.extendTraces(chartDiv, { x: [[newX]], y: [[newY]] }, [0]);
+
+                // Optional: Implement a scrolling window effect
+                // This keeps the chart focused on the last N points
+                const MAX_POINTS = 50;
+                if (chartDiv.data[0].x.length > MAX_POINTS) {
+                    const newLayout = {
+                        xaxis: {
+                            range: [chartDiv.data[0].x[chartDiv.data[0].x.length - MAX_POINTS], newX]
+                        }
+                    };
+                    Plotly.relayout(chartDiv, newLayout);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

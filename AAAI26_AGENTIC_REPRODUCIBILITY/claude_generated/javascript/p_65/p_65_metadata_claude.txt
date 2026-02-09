@@ -1,0 +1,23 @@
+Prompt: p_65
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: Twitter bot with scheduled tweets, media uploads, and rate limit handling
+
+Dependencies Provided: YES
+- twitter-api-v2@^1.17.2
+- node-cron@^3.0.3
+- dotenv@^16.4.5
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete Twitter bot with scheduling and rate limit handling. RateLimitHandler class with exponential backoff (1min, 2min, 4min). Max 3 retry attempts respecting Twitter's rate limit reset times. postTweet for text-only, postTweetWithMedia for single image, postTweetWithMultipleMedia for up to 4 images. node-cron for flexible scheduling (cron syntax). Scheduled tweets array with type (text/media/multiple-media), schedule, enable/disable flags. Media upload supports JPEG, PNG, GIF, WebP. Automatic media ID management. Credential verification on startup using v2.me(). Environment variables via dotenv (.env file). Examples: daily tweets at 9am/12pm/6pm, weekly Monday recap. Enable/disable individual schedules. Comprehensive error logging with API response details. Graceful shutdown on SIGINT. PM2 or nohup for background service. Requires Twitter API v2 credentials (elevated access for read+write). Type: module for ES6 imports. Perfect for social media automation, scheduled content, promotional campaigns, community engagement.

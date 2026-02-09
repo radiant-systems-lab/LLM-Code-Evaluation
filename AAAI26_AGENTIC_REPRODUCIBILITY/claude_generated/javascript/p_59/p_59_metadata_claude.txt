@@ -1,0 +1,23 @@
+Prompt: p_59
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Log aggregator service using Winston with multiple sources and transports
+
+Dependencies Provided: YES
+- winston@^3.11.0
+- winston-daily-rotate-file@^4.7.1
+- express@^4.18.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Production-grade log aggregation system using Winston. LogAggregator class manages multiple log sources (application, database, API, custom). Three transports: Console (colorized output), File (DailyRotateFile with size/date rotation), HTTP (remote logging). Custom log format with timestamp, level, source, message, metadata JSON. Separate error log files automatically created. Configurable maxSize (10m default), maxFiles retention (14d default). HTTP server with Express for remote log collection (POST /logs, POST /sources, GET /sources, GET /health). Dynamic source registration. Structured logging with metadata. Graceful shutdown handling. Includes comprehensive test.js demonstrating high-volume logging, HTTP endpoint testing, stats tracking. Perfect for microservices, distributed systems, centralized logging, application monitoring.

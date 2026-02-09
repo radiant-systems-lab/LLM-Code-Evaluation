@@ -1,0 +1,6 @@
+Prompt: p_84
+LLM: Claude Code
+Language: Java 17
+Task: Regular expression validator with pre-built patterns for common validations
+Dependencies: None (uses java.util.regex)
+Notes: Complete regex validation utility with RegexValidator class, pre-built patterns for email, phone, URL, credit card, IP address, date formats, extract methods for finding matches, and comprehensive test examples.

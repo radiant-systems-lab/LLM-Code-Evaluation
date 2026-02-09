@@ -1,0 +1,7 @@
+Row,Valid,Error_Count,Errors,Data_user_id,Data_username,Data_email,Data_age,Data_balance,Data_status
+2,True,0,,1,john_doe,john@example.com,25,100.5,active
+3,False,2,balance: min value is 0.0 | username: min length is 3,2,ab,alice@test.com,30,-50.0,inactive
+4,False,2,"age: min value is 18 | email: value does not match regex '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'",3,jane_smith,invalid-email,17,200.0,active
+5,False,1,status: unallowed value invalid_status,4,bob123,jane@example.com,45,75.25,invalid_status
+6,False,1,age: max value is 120,5,alice_wonder,alice@example.com,150,300.0,suspended
+7,False,1,username: value does not match regex '^[a-zA-Z0-9_]+$',6,charlie@invalid,charlie@test.com,28,50.0,active

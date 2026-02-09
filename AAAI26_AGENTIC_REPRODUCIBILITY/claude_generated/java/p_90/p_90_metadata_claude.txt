@@ -1,0 +1,6 @@
+Prompt: p_90
+LLM: Claude Code
+Language: Java 17
+Task: REST API client with OAuth 2.0 authentication and token management
+Dependencies: httpclient5:5.3.1, gson:2.10.1
+Notes: Complete OAuth 2.0 REST client with OAuth2Config for client credentials, TokenManager for automatic token refresh and caching, OAuth2RestClient with authenticated requests, support for Client Credentials and Password Grant flows, automatic token expiration handling, request/response interceptors, JSON serialization with Gson, comprehensive error handling, and examples demonstrating authenticated API calls with various OAuth flows.

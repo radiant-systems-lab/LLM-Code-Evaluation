@@ -1,0 +1,6 @@
+Prompt: p_85
+LLM: Claude Code
+Language: Java 17
+Task: Email service with template support and attachment handling
+Dependencies: jakarta.mail:2.0.1, freemarker:2.3.32
+Notes: Complete email service with EmailService class for sending plain text, HTML, and templated emails, EmailConfig for SMTP configuration, EmailMessage builder pattern, attachment support with multiple files, FreeMarker template integration, connection pooling for SMTP sessions, example templates and comprehensive usage demonstrations including bulk email sending.

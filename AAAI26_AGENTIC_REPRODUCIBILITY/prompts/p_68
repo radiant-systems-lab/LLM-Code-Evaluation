@@ -1,0 +1,14 @@
+Build a content delivery optimizer.
+
+Requirements:
+- Use compression middleware
+- Minify CSS and JavaScript files
+- Optimize and compress images
+- Add proper caching headers
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

@@ -1,0 +1,12 @@
+{
+  "name": "p_72_distributed_cache",
+  "version": "1.0.0",
+  "description": "A distributed cache with Redis cluster.",
+  "main": "cache.js",
+  "scripts": {
+    "start": "node cache.js"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1"
+  }
+}

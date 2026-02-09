@@ -1,0 +1,23 @@
+Prompt: p_33
+LLM: Claude Code
+Language: Python
+Task: Spell checker with auto-correction suggestions
+
+Dependencies Provided: YES
+- pyspellchecker==0.8.1
+- textblob==0.18.0.post0
+- nltk==3.9.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete spell checker supporting multiple backends (pyspellchecker and textblob). Features include correction suggestions with configurable max count, custom dictionary support (JSON format), file and text checking modes, auto-correction mode, word-by-word analysis with position tracking, punctuation handling, both CLI and Python API. Custom dictionary accepts list or dict format. Library auto-detection with fallback. Includes comprehensive usage examples and library comparison. Handles NLTK data downloads for TextBlob. Pure Python implementation with detailed error messages.

@@ -1,0 +1,6 @@
+Prompt: p_82
+LLM: Claude Code
+Language: Java 17
+Task: Apache Kafka producer and consumer with message streaming
+Dependencies: kafka-clients:3.6.1, slf4j-simple:2.0.9
+Notes: Complete Kafka messaging system with KafkaProducerService and KafkaConsumerService classes, configurable brokers, serialization, consumer groups, auto-commit, message polling, error handling, and examples for event streaming and data pipelines.

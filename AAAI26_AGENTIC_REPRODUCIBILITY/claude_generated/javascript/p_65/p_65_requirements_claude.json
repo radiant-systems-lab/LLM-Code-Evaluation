@@ -1,0 +1,18 @@
+{
+  "name": "twitter-scheduled-bot",
+  "version": "1.0.0",
+  "description": "Twitter bot with scheduled tweets and media uploads",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "twitter-api-v2": "^1.17.2",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

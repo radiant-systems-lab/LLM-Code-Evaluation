@@ -1,0 +1,9 @@
+com/example/migration/MigrationManager.class
+com/example/migration/MigrationRecord.class
+com/example/migration/AddIndexToPostsMigration.class
+com/example/migration/AddPasswordColumnMigration.class
+com/example/migration/CreateUsersTableMigration.class
+com/example/migration/MigrationRunner.class
+com/example/migration/Migration.class
+com/example/migration/DatabaseMigrationTool.class
+com/example/migration/CreatePostsTableMigration.class

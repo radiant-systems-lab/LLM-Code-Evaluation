@@ -1,0 +1,21 @@
+Prompt: p_50
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Serverless image processing function for AWS Lambda using Sharp
+
+Dependencies Provided: YES
+- sharp@0.33.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Production-ready serverless image processing function designed for AWS Lambda using Sharp library. Features include AWS Lambda handler with API Gateway and direct invocation support, base64 image encoding/decoding, operation pipeline architecture allowing chained transformations. Supported operations: resize (with fit modes: cover/contain/fill/inside/outside, position control, withoutEnlargement option), crop (extract with boundary validation), rotate (90/180/270 degrees), flip (vertical mirror), flop (horizontal mirror), grayscale conversion, blur (Gaussian with configurable sigma 0.3-1000), sharpen (with custom params), normalize (contrast enhancement). Format conversion support for JPEG (MozJPEG optimization), PNG (compression level 9, adaptive filtering), WebP (effort 6), AVIF (effort 5), TIFF (LZW compression), GIF. Input validation with custom ValidationError and ProcessingError classes, comprehensive metadata logging (format/width/height/space/channels/depth). Returns API Gateway-compatible responses with CORS headers, success responses include base64 image + size, error responses with statusCode 400/500. Includes test.js with 4 test cases demonstrating resize, multiple operations, error handling, and grayscale+sharpen. Also includes serverless.yml for Serverless Framework deployment (ARM64 architecture, 1024MB memory, 30s timeout). Optimized for Lambda cold starts and memory efficiency. Perfect for production use with comprehensive documentation on AWS deployment, cost optimization (ARM64 = 20% cheaper), and troubleshooting common issues.

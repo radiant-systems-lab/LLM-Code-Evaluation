@@ -1,0 +1,22 @@
+Prompt: p_47
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: Email automation service with templates and scheduling
+
+Dependencies Provided: YES
+- nodemailer@^6.9.7
+- node-cron@^3.0.3
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE (requires SMTP credentials)
+
+Notes: Complete email automation service with Nodemailer and node-cron. Features include SMTP connection with verifyConnection() method, 4 pre-built HTML email templates (welcome with styled header/footer/button, notification with alert box, report with stats display and table, invoice with billing details and item list), template rendering with dynamic data injection, file and buffer attachments support, email scheduling with cron expressions (node-cron), job management (schedule/stop/list scheduled jobs with Map storage), CC/BCC support, error handling with success/failure responses. Supports all SMTP providers (Gmail/Outlook/Yahoo/SendGrid/Mailgun). Example cron patterns provided (daily, weekly, every 5 minutes). Includes comprehensive test.js with usage examples in temp file.

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+            font-size: 16px;
+            line-height: 24px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-box">
+        <h1>Invoice</h1>
+        <p>
+            Invoice #: 123<br>
+            Created: January 1, 2023<br>
+            Due: February 1, 2023
+        </p>
+        <table>
+            <tr class="heading">
+                <td>Item</td>
+                <td>Price</td>
+            </tr>
+            <tr class="item">
+                <td>Website design</td>
+                <td>$300.00</td>
+            </tr>
+            <tr class="total">
+                <td></td>
+                <td>Total: $300.00</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

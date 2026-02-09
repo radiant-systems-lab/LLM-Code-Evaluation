@@ -1,0 +1,15 @@
+{
+  "name": "twitter-scheduled-bot",
+  "version": "1.0.0",
+  "description": "Scheduled Twitter bot using Twitter API v2 and node-cron",
+  "type": "module",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "dotenv": "16.3.1",
+    "node-cron": "3.0.2",
+    "twitter-api-v2": "1.15.0"
+  }
+}

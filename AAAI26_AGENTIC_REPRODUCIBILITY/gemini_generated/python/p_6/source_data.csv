@@ -1,0 +1,8 @@
+employee_id,name,department,salary,start_date,manager_id
+101,John Doe,Engineering,90000,2020-01-15,100
+102,Jane Smith,Marketing,75000,2019-03-20,105
+103,Peter Jones,Engineering,,2021-09-01,101
+104,Mary Davis,Sales,82000,2018-07-11,
+105,Chris Lee,Marketing,78000,2022-05-30,105
+106,Anna Bell,Sales,,2021-11-22,104
+107,Mike Ross,Engineering,95000,2023-01-05,101

@@ -1,0 +1,6 @@
+{
+  "accuracy": 0.985,
+  "dataset_size": 1000,
+  "features": 20,
+  "test_samples": 200
+}

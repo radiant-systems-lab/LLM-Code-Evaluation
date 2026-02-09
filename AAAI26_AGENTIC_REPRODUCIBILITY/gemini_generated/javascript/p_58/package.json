@@ -1,0 +1,12 @@
+{
+  "name": "p_58_json_mock_server",
+  "version": "1.0.0",
+  "description": "A JSON API mock server with custom responses.",
+  "main": "server.js",
+  "scripts": {
+    "start": "json-server --watch db.json --delay 500"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}

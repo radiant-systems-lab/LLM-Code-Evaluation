@@ -1,0 +1,22 @@
+Prompt: p_30
+LLM: Claude Code
+Language: Python
+Task: Credit card validator using Luhn algorithm
+
+Dependencies Provided: YES
+- No external dependencies (Python standard library only)
+- Requires Python >= 3.7
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete credit card validator implementing industry-standard Luhn (mod-10) algorithm. Features include card type detection for 6 major brands (Visa, MasterCard, Amex, Discover, Diners Club, JCB) using regex patterns, expiration date validation with 2/4-digit year handling, flexible input with space/dash cleaning, card number formatting (type-specific for Amex), comprehensive error reporting. Includes test suite with 30+ test cases. Uses only Python stdlib - no external dependencies.

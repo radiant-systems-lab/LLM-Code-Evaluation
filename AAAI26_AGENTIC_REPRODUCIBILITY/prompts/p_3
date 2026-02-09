@@ -1,0 +1,14 @@
+Create a K-means clustering script that groups similar data points and visualizes clusters.
+
+Requirements:
+- Use scikit-learn for clustering
+- Include elbow method for optimal K selection
+- Create matplotlib visualization of clusters
+- Save cluster assignments to file
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

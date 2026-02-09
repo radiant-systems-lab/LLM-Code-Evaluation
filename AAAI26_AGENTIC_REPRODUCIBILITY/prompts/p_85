@@ -1,0 +1,14 @@
+Build a REST API client with RestTemplate.
+
+Requirements:
+- Use RestTemplate or WebClient
+- Make HTTP requests (GET, POST, PUT, DELETE)
+- Handle responses and errors properly
+- Include retry logic with exponential backoff
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

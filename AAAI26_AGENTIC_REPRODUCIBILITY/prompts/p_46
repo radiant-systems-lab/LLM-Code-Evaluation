@@ -1,0 +1,14 @@
+Build a real-time data visualization dashboard.
+
+Requirements:
+- Use D3.js or Chart.js for visualizations
+- Update charts in real-time with WebSocket
+- Support multiple chart types (line, bar, pie)
+- Include responsive design
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

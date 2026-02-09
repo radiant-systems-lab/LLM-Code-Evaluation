@@ -1,0 +1,25 @@
+Prompt: p_42
+LLM: Claude Code
+Language: JavaScript (React)
+Task: Reusable React component library with state management
+
+Dependencies Provided: YES
+- react@^18.2.0
+- react-dom@^18.2.0
+- react-scripts@5.0.1
+- prop-types@^15.8.1
+- styled-components@^6.1.8
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete React component library with Context API state management. Includes ThemeContext (light/dark mode toggle with color schemes, useTheme hook), ModalContext (multi-modal management with useModal hook), Button component (3 variants: primary/secondary/outline, 3 sizes: small/medium/large, disabled state, hover animations with transform/shadow, styled-components CSS-in-JS), Card component (optional title/footer, hoverable with elevation change, customizable width/height/padding, theme-aware styling), Modal component (keyboard support ESC to close, click outside to close, body scroll lock, fade-in/slide-in animations, configurable maxWidth, custom header/footer). All components use PropTypes validation and theme-aware colors. Demo app included showing full integration.

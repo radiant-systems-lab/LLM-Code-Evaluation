@@ -1,0 +1,14 @@
+Create a logging framework with Log4j2.
+
+Requirements:
+- Use Log4j2 library
+- Configure multiple appenders (console, file, rolling)
+- Support different log levels
+- Include log rotation based on size
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

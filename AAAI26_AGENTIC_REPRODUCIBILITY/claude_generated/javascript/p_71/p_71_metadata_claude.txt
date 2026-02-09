@@ -1,0 +1,23 @@
+Prompt: p_71
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: AWS S3 file upload service with SDK v3, presigned URLs, and multipart upload
+
+Dependencies Provided: YES
+- @aws-sdk/client-s3@^3.511.0
+- @aws-sdk/s3-request-presigner@^3.511.0
+- dotenv@^16.4.5
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete S3 service using AWS SDK v3. S3Service class with methods: uploadFile, downloadFile, deleteFile, listFiles, getPresignedUploadUrl, getPresignedDownloadUrl, copyFile, fileExists. AWS credentials from environment variables or IAM role. Support for public/private ACLs. Content-type detection. Presigned URLs with expiration (default 1 hour). Streaming support for large files. Error handling with AWS SDK errors. Perfect for file storage, image uploads, document management, backup systems, CDN integration, serverless applications.

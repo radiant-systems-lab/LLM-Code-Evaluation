@@ -1,0 +1,25 @@
+# LLaMA3 NRP Analysis for script_28.py
+# Model: llama3
+# Dependencies found: 21
+
+azure-core
+azure-identity
+azure-mgmt-resource
+azure-storage-blob
+boto3
+botocore
+certifi
+charset-normalizer
+docker
+docker-py
+google-auth
+google-auth-oauthlib
+google-cloud-storage
+googleapis-common-protos
+grpc
+idna
+jmespath
+kubernetes
+requests
+s3transfer
+urllib3

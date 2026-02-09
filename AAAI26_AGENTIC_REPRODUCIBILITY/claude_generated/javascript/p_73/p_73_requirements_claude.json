@@ -1,0 +1,17 @@
+{
+  "name": "stripe-payment-integration",
+  "version": "1.0.0",
+  "description": "Stripe payment integration with checkout, subscriptions, and webhooks",
+  "main": "stripeService.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["stripe", "payment", "subscription"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "stripe": "^14.13.0",
+    "express": "^4.18.2",
+    "dotenv": "^16.4.5"
+  }
+}

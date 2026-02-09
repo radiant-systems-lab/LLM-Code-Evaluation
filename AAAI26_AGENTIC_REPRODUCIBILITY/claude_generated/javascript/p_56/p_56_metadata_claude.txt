@@ -1,0 +1,23 @@
+Prompt: p_56
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: Markdown blog engine with syntax highlighting and RSS feed generation
+
+Dependencies Provided: YES
+- marked@^11.1.1
+- highlight.js@^11.9.0
+- rss@^1.2.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete static site generator for markdown blogs using marked parser and highlight.js. Features include BlogEngine class with configurable options (postsDir, outputDir, siteUrl, siteTitle, siteDescription), frontmatter parsing with YAML-like syntax (title, date, author, description fields), marked configuration with highlight.js integration supporting 190+ languages (getLanguage check, highlightAuto fallback, langPrefix for CSS classes, GFM enabled). HTML template generation with embedded GitHub dark theme CSS (responsive 800px max-width, dark mode #0d1117 background, syntax highlighting with github-dark CDN stylesheet, styled code blocks/blockquotes/links). Build process: reads all .md files from posts directory, parses frontmatter and markdown separately, converts markdown to HTML with syntax highlighting, generates individual post HTML pages with back navigation, creates index page listing all posts sorted by date descending, generates RSS feed with all posts. RSS feed includes title/description/url/date/author for each post. Includes example post demonstrating JavaScript and Python code blocks with proper syntax highlighting. Auto-creates posts and output directories if missing. Console logging for build progress. Perfect for developers wanting a simple, fast static blog without heavyweight SSGs.

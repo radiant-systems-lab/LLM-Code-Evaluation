@@ -1,0 +1,17 @@
+{
+  "name": "aws-s3-file-upload",
+  "version": "1.0.0",
+  "description": "AWS S3 file upload service with presigned URLs",
+  "main": "s3Service.js",
+  "scripts": {
+    "start": "node s3Service.js"
+  },
+  "keywords": ["aws", "s3", "upload", "storage"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.511.0",
+    "@aws-sdk/s3-request-presigner": "^3.511.0",
+    "dotenv": "^16.4.5"
+  }
+}

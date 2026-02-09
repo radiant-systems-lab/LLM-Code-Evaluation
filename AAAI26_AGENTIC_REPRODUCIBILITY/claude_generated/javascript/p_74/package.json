@@ -1,0 +1,15 @@
+{
+  "name": "pdf-report-generator",
+  "version": "1.0.0",
+  "description": "PDF report generator with PDFKit and charts",
+  "main": "pdfGenerator.js",
+  "scripts": {
+    "start": "node pdfGenerator.js"
+  },
+  "keywords": ["pdf", "report", "pdfkit"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pdfkit": "^0.14.0"
+  }
+}

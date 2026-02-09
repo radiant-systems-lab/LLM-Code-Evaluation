@@ -1,0 +1,9 @@
+[
+  {
+    "text": "Automated tweet #1 via @twitterapi",
+    "mediaPath": "media/sample-image.jpg"
+  },
+  {
+    "text": "Another scheduled update from my Node.js bot!"
+  }
+]

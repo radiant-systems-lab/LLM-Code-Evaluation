@@ -1,0 +1,24 @@
+Prompt: p_18
+LLM: Claude Code
+Language: Python
+Task: Stock price tracker with live prices and email alerts
+
+Dependencies Provided: YES
+- yfinance==0.2.48
+- pandas==2.2.3
+- python-dotenv==1.0.1
+- schedule==1.2.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete stock price tracker with real-time monitoring using yfinance. Includes customizable high/low thresholds, email alerts via SMTP, price change tracking, and smart alert system. Works with Gmail, Outlook, and Yahoo Mail. Console fallback if email not configured.

@@ -1,0 +1,21 @@
+Prompt: p_39
+LLM: Claude Code
+Language: Python
+Task: System resource monitor with threshold-based alerts
+
+Dependencies Provided: YES
+- psutil==5.9.8
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete system resource monitor using psutil. Features include real-time monitoring (CPU, memory, disk usage), configurable thresholds for each resource (default 80% for all), threshold-based alert system with visual indicators (🟢 normal, 🔴 alert), persistent timestamped logging to file, console display with formatted output, graceful shutdown with Ctrl+C, optional duration limit for finite runs, cross-platform support (Windows/macOS/Linux), customizable check interval (default 5 seconds). Displays usage percentages and absolute values (GB). Includes keyboard interrupt handling.

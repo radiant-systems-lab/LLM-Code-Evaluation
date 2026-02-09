@@ -1,0 +1,6 @@
+Prompt: p_95
+LLM: Claude Code
+Language: Java 17
+Task: Event bus and publish-subscribe messaging system with topic-based routing
+Dependencies: gson:2.10.1
+Notes: Complete event-driven architecture with EventBus for pub-sub messaging, Event class with metadata and payload, EventSubscriber interface for handlers, topic-based subscription and filtering, synchronous and asynchronous event dispatch, event priorities and ordering, subscriber lifecycle management, wildcard topic patterns, event replay capabilities, dead letter queue for failed events, and comprehensive examples demonstrating decoupled component communication patterns.

@@ -1,0 +1,14 @@
+{
+  "name": "p_70_geolocation_service",
+  "version": "1.0.0",
+  "description": "A geolocation service using IP addresses.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "geoip-lite": "^1.4.6",
+    "node-cache": "^5.1.2"
+  }
+}

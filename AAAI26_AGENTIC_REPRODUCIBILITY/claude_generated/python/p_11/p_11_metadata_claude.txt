@@ -1,0 +1,22 @@
+Prompt: p_11
+LLM: Claude Code
+Language: Python
+Task: Email automation with attachments and retry logic
+
+Dependencies Provided: YES
+- python-dotenv==1.0.0
+- Uses Python standard library (smtplib, email)
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete email automation script using smtplib. Includes HTML email templates with variable substitution, file attachments, retry logic with configurable delays, bulk email sending, and comprehensive error handling. Supports both TLS and SSL connections.

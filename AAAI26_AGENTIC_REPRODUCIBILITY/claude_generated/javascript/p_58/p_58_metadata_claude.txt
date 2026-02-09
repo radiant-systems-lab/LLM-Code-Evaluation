@@ -1,0 +1,23 @@
+Prompt: p_58
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: JSON API mock server with filtering, sorting, pagination, and response delays
+
+Dependencies Provided: YES
+- express@4.18.2
+- body-parser@1.20.2
+- cors@2.8.5
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete mock REST API server for testing frontends. In-memory database with users/posts/comments collections. Dynamic CRUD routes factory creating GET/POST/PUT/PATCH/DELETE for any collection. Advanced filtering with operators (>=, <=, >, <, * wildcard), sorting (_sort, _order), pagination (_page, _limit). Configurable response delays via query param or X-Delay header. Automatic ID generation. FilterItems utility with type coercion and nested property support. Error simulation endpoint /error/:code. Database reset endpoint POST /reset. CORS enabled. Root endpoint showing available collections and features. Perfect for frontend development without backend, API prototyping, integration testing, demos, and learning REST concepts.

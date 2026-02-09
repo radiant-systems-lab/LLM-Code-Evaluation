@@ -1,0 +1,35 @@
+Perfect! I've provided you with a complete, production-ready QR code generator and reader application. Here's what you get:
+
+## Files Created:
+
+1. **requirements.txt** - All dependencies with specific versions
+2. **qr_app.py** - Main application with CLI and Python API
+3. **example_usage.py** - Comprehensive examples demonstrating all features
+4. **README.md** - Complete installation and usage instructions
+
+## Key Features:
+
+✓ **Generate QR codes** - Single and bulk operations  
+✓ **Read QR codes** - From individual files or entire directories  
+✓ **Customizable** - Size, error correction, borders  
+✓ **Export results** - Save decoded data to JSON  
+✓ **Production-ready** - Error handling, logging, type hints  
+✓ **100% Reproducible** - Pinned dependency versions
+
+## Quick Start:
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Generate a QR code
+python qr_app.py generate "https://example.com" my_qr
+
+# Read a QR code
+python qr_app.py read qr_codes/my_qr.png
+
+# Run all examples
+python example_usage.py
+```
+
+The application includes both a command-line interface and a Python API, making it flexible for any use case. All dependencies are pinned to specific versions for reproducibility in clean environments.

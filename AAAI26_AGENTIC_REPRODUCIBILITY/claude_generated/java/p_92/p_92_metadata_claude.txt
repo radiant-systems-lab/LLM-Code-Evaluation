@@ -1,0 +1,6 @@
+Prompt: p_92
+LLM: Claude Code
+Language: Java 17
+Task: In-memory caching system with TTL, eviction policies, and statistics
+Dependencies: guava:33.0.0-jre, gson:2.10.1
+Notes: Complete caching solution with CacheManager supporting multiple eviction policies (LRU, LFU, FIFO), TTL-based expiration, CacheEntry with metadata tracking, configurable max size limits, cache statistics (hits, misses, evictions), write-through and write-behind caching patterns, cache warming, bulk operations, namespace support, and comprehensive examples demonstrating various caching strategies and performance optimization.

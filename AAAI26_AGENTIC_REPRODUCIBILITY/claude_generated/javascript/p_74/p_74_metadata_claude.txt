@@ -1,0 +1,21 @@
+Prompt: p_74
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: PDF report generator with PDFKit for creating formatted documents with tables and charts
+
+Dependencies Provided: YES
+- pdfkit@^0.14.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete PDF generation service using PDFKit. PDFReportGenerator class with methods: createInvoice, createSalesReport, createUserReport, addTable, addChart, addHeader, addFooter. Document formatting with fonts, colors, alignment. Table generation with headers and rows. Chart drawing (bar charts, pie charts). Page numbering and metadata. Stream-based output to file or buffer. Custom styling and branding. Perfect for invoices, receipts, reports, certificates, documentation, data export, analytics reports, business documents.

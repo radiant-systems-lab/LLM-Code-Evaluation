@@ -1,0 +1,14 @@
+Create a spell checker with auto-correction suggestions.
+
+Requirements:
+- Use textblob or pyspellchecker library
+- Check spelling in text documents
+- Provide correction suggestions
+- Support custom dictionaries
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

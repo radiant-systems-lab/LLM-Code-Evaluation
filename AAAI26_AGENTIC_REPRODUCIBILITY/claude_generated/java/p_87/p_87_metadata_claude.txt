@@ -1,0 +1,6 @@
+Prompt: p_87
+LLM: Claude Code
+Language: Java 17
+Task: JWT authentication and authorization service with Spring Security
+Dependencies: spring-boot-starter-security:3.2.2, spring-boot-starter-web:3.2.2, jjwt-api:0.12.5, jjwt-impl:0.12.5, jjwt-jackson:0.12.5
+Notes: Complete JWT security implementation with JwtTokenProvider for token generation and validation, UserDetailsService implementation, SecurityConfig with JWT filter, AuthenticationController with login/register endpoints, role-based authorization, token refresh functionality, password encryption with BCrypt, custom authentication exceptions, and comprehensive examples demonstrating authentication flow and protected endpoints.

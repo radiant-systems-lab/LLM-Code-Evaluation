@@ -1,0 +1,7 @@
+user_id,username,email,age,balance,status
+1,john_doe,john@example.com,25,100.5,active
+2,ab,alice@test.com,30,-50.0,inactive
+3,jane_smith,invalid-email,17,200.0,active
+4,bob123,jane@example.com,45,75.25,invalid_status
+5,alice_wonder,alice@example.com,150,300.0,suspended
+6,charlie@invalid,charlie@test.com,28,50.0,active

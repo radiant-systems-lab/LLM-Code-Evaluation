@@ -1,0 +1,25 @@
+Prompt: p_37
+LLM: Claude Code
+Language: Python
+Task: Cryptocurrency price tracker with historical data
+
+Dependencies Provided: YES
+- ccxt==4.2.25
+- pandas==2.2.0
+- matplotlib==3.8.2
+- numpy==1.26.3
+- python-dateutil==2.8.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete cryptocurrency price tracker using CCXT for Binance exchange (100+ exchanges supported). Features include real-time price fetching for multiple symbols, historical OHLCV data retrieval (Open/High/Low/Close/Volume), data persistence to JSON file, price trend charts with volume subplots (matplotlib), comparison charts with normalized percentage change, comprehensive statistics (current/start price, price change %, high/low, avg price, volatility std dev, volume), min/max price annotations on charts, flexible timeframes (1m/5m/1h/1d), high-resolution chart exports (300 DPI PNG). No API key required for Binance public data. Respects exchange rate limits.

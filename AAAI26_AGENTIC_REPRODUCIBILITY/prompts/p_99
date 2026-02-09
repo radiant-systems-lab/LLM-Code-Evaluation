@@ -1,0 +1,14 @@
+Build an API versioning system for REST endpoints.
+
+Requirements:
+- Implement URL-based versioning (/v1/, /v2/)
+- Support header-based versioning
+- Handle deprecated version warnings
+- Include API documentation with Swagger
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

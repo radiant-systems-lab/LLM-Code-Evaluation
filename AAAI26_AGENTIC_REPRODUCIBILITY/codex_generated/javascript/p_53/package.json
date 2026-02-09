@@ -1,0 +1,13 @@
+{
+  "name": "puppeteer-web-scraper",
+  "version": "1.0.0",
+  "description": "Headless browser scraper using Puppeteer",
+  "type": "module",
+  "main": "scrape.js",
+  "scripts": {
+    "start": "node scrape.js"
+  },
+  "dependencies": {
+    "puppeteer": "21.4.1"
+  }
+}

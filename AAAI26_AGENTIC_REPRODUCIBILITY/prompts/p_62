@@ -1,0 +1,14 @@
+Build a currency converter API with live rates.
+
+Requirements:
+- Use Axios for API calls
+- Fetch live exchange rates from external API
+- Support conversion between multiple currencies
+- Implement caching with TTL
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

@@ -1,0 +1,5 @@
+review,sentiment,polarity_score,confidence_score
+This product is amazing! I love it.,positive,0.625,0.625
+Terrible quality waste of money.,negative,-0.6,0.6
+It is okay nothing special.,positive,0.4286,0.4286
+Best purchase ever! Highly recommend.,positive,0.58,0.58

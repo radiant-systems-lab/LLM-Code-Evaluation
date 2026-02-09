@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STOMP Chat</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; }
+    #chat { border: 1px solid #ddd; padding: 1rem; height: 400px; overflow-y: auto; }
+    .system { color: #888; }
+    .self { font-weight: bold; }
+    form { margin-top: 1rem; display: flex; gap: 0.5rem; }
+    input[type=text] { flex: 1; padding: 0.5rem; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+</head>
+<body>
+  <h1>STOMP Chat Demo</h1>
+  <div>
+    <label>Username <input id="username" type="text" value="user" /></label>
+    <label>Room <input id="room" type="text" value="general" /></label>
+    <button id="connect">Connect</button>
+    <button id="disconnect" disabled>Disconnect</button>
+  </div>
+  <div id="chat"></div>
+  <form id="messageForm" style="display:none;">
+    <input type="text" id="message" placeholder="Type a message" />
+    <button type="submit">Send</button>
+  </form>
+
+  <script>
+    let stompClient = null;
+    let currentUser = null;
+    let currentRoom = null;
+    let currentRoomId = null;
+
+    function normalizeRoom(roomName) {
+      return roomName.trim().toLowerCase().replace(/\s+/g, '-') || 'general';
+    }
+
+    const chat = document.getElementById('chat');
+    function appendMessage(content, css) {
+      const p = document.createElement('p');
+      p.textContent = content;
+      if (css) p.className = css;
+      chat.appendChild(p);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function connect() {
+      currentUser = document.getElementById('username').value.trim();
+      const roomInput = document.getElementById('room').value.trim() || 'general';
+      currentRoom = roomInput;
+      currentRoomId = normalizeRoom(roomInput);
+      if (!currentUser) {
+        alert('Enter username');
+        return;
+      }
+      if (!currentRoomId) {
+        alert('Enter room name');
+        return;
+      }
+      const socket = new SockJS('/ws');
+      stompClient = Stomp.over(socket);
+      stompClient.connect({}, () => {
+        document.getElementById('connect').disabled = true;
+        document.getElementById('disconnect').disabled = false;
+        document.getElementById('messageForm').style.display = 'flex';
+        stompClient.subscribe(`/topic/rooms/${currentRoomId}`, ({ body }) => {
+          const message = JSON.parse(body);
+          if (message.type === 'JOIN') {
+            appendMessage(`${message.sender} joined`, 'system');
+          } else if (message.type === 'LEAVE') {
+            appendMessage(`${message.sender} left`, 'system');
+          } else if (message.type === 'CHAT') {
+            const css = message.sender === currentUser ? 'self' : '';
+            appendMessage(`${message.sender}: ${message.content}`, css);
+          }
+        });
+        stompClient.send(`/app/chat/${currentRoomId}/addUser`, {}, JSON.stringify({
+          sender: currentUser,
+          roomId: currentRoomId
+        }));
+        appendMessage(`Connected to room ${currentRoom} (${currentRoomId})`, 'system');
+      });
+    }
+
+    function disconnect() {
+      if (stompClient !== null) {
+        stompClient.disconnect();
+      }
+      document.getElementById('connect').disabled = false;
+      document.getElementById('disconnect').disabled = true;
+      document.getElementById('messageForm').style.display = 'none';
+      appendMessage('Disconnected', 'system');
+      currentRoom = null;
+      currentRoomId = null;
+    }
+
+    document.getElementById('connect').addEventListener('click', connect);
+    document.getElementById('disconnect').addEventListener('click', disconnect);
+
+    document.getElementById('messageForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const messageContent = document.getElementById('message').value.trim();
+      if (messageContent && stompClient && currentRoomId) {
+        const chatMessage = {
+          sender: currentUser,
+          content: messageContent,
+          type: 'CHAT',
+          roomId: currentRoomId
+        };
+        stompClient.send(`/app/chat/${currentRoomId}/send`, {}, JSON.stringify(chatMessage));
+        document.getElementById('message').value = '';
+      }
+    });
+  </script>
+</body>
+</html>

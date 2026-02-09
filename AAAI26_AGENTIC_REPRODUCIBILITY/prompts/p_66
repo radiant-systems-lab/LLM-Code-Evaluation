@@ -1,0 +1,14 @@
+Build a proxy server with request logging.
+
+Requirements:
+- Use http-proxy-middleware
+- Log all incoming requests and responses
+- Support header manipulation
+- Include CORS handling
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

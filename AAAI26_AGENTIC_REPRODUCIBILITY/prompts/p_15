@@ -1,0 +1,14 @@
+Create a QR code generator and reader application.
+
+Requirements:
+- Use qrcode and opencv-python libraries
+- Generate QR codes with custom data
+- Read QR codes from image files
+- Support bulk operations on multiple files
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

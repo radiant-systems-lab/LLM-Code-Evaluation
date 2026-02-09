@@ -1,0 +1,17 @@
+{
+  "name": "file-watcher",
+  "version": "1.0.0",
+  "description": "File watcher with Chokidar and debouncing",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "example": "node example.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

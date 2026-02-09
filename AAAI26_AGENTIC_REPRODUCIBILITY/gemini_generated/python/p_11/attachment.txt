@@ -1,0 +1,2 @@
+This is a sample attachment file.
+It contains some plain text content for demonstration purposes.

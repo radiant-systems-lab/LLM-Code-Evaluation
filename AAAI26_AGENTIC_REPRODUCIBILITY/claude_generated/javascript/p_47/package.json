@@ -1,0 +1,18 @@
+{
+  "name": "email-automation-service",
+  "version": "1.0.0",
+  "description": "Email automation service with templates and scheduling",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": ["email", "automation", "nodemailer", "templates", "scheduling"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.9.7",
+    "node-cron": "^3.0.3"
+  }
+}

@@ -1,0 +1,26 @@
+Prompt: p_34
+LLM: Claude Code
+Language: Python
+Task: Database migration tool with Alembic integration
+
+Dependencies Provided: YES
+- alembic==1.13.1
+- SQLAlchemy==2.0.25
+- psycopg2-binary==2.9.9
+- click==8.1.7
+- python-dotenv==1.0.0
+- colorama==0.4.6
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete database migration tool with full Alembic integration and custom migration support. Features include Alembic auto-generation from SQLAlchemy models, custom SQL migration templates with upgrade/downgrade/validate functions, migration history tracking in database with checksums, migration validation before application (syntax check, structure verification), dry-run mode for safe previewing, rollback support with step count, comprehensive status reporting (current version, pending/applied counts), colored CLI output via click and colorama, checksum validation to detect file modifications. Supports PostgreSQL, MySQL, SQLite via SQLAlchemy. Includes example models, demo usage script, and test suite in original temp file.

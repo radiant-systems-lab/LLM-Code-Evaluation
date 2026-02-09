@@ -1,0 +1,14 @@
+Create a markdown preview server with live reload.
+
+Requirements:
+- Use marked library for rendering
+- Watch markdown files for changes
+- Auto-refresh browser on file changes
+- Include custom CSS styling
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

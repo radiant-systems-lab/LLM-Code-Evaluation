@@ -1,0 +1,23 @@
+Prompt: p_7
+LLM: Claude Code
+Language: Python
+Task: Async web crawler with robots.txt and rate limiting
+
+Dependencies Provided: YES
+- aiohttp==3.9.1
+- asyncio==3.4.3
+- charset-normalizer==3.3.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete async web crawler with concurrent crawling using aiohttp and asyncio. Includes robots.txt compliance, per-domain rate limiting, content saving, and comprehensive error handling.

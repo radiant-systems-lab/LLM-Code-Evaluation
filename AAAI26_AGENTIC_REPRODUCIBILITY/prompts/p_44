@@ -1,0 +1,14 @@
+Build a file upload service with AWS S3 integration.
+
+Requirements:
+- Use Multer and AWS SDK libraries
+- Handle multipart file uploads
+- Upload files to S3 bucket
+- Generate presigned URLs for downloads
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

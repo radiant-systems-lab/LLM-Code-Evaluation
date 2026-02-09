@@ -1,0 +1,12 @@
+# LLaMA3 NRP Analysis for script_53.py
+# Model: llama3
+# Dependencies found: 8
+
+joblib
+numpy
+numpy.libs
+scikit-learn
+scipy
+scipy.libs
+sklearn
+threadpoolctl

@@ -1,0 +1,14 @@
+Build a sentiment analysis tool that analyzes customer reviews and classifies them as positive/negative/neutral.
+
+Requirements:
+- Use transformers or textblob library
+- Process batch of reviews from CSV
+- Generate sentiment report with statistics
+- Include confidence scores for predictions
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

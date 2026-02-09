@@ -1,0 +1,17 @@
+{
+  "name": "p_55_task_runner",
+  "version": "1.0.0",
+  "description": "A command-line task runner application.",
+  "main": "task-runner.js",
+  "bin": {
+    "task-runner": "./task-runner.js"
+  },
+  "scripts": {
+    "start": "node task-runner.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ora": "^5.4.1"
+  },
+  "type": "module"
+}

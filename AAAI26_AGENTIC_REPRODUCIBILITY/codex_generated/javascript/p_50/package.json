@@ -1,0 +1,13 @@
+{
+  "name": "serverless-image-processor",
+  "version": "1.0.0",
+  "description": "Sharp-powered image processing Lambda handler",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node sample-invoke.js"
+  },
+  "dependencies": {
+    "sharp": "0.32.6"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "graphql-apollo-server",
+  "version": "1.0.0",
+  "description": "GraphQL API server with Apollo Server and type definitions",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["graphql", "apollo", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6"
+  }
+}

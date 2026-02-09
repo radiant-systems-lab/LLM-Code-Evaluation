@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Plagiarism Detection Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .comparison {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .high-risk { color: #e74c3c; }
+        .medium-risk { color: #f39c12; }
+        .low-risk { color: #f1c40f; }
+        .minimal-risk { color: #2ecc71; }
+        .match {
+            background-color: #fff9c4;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #fbc02d;
+            font-family: monospace;
+        }
+        .summary {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .summary-item {
+            text-align: center;
+        }
+        .summary-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Plagiarism Detection Report</h1>
+        <div class="summary">
+            <div class="summary-item">
+                <div class="summary-number">4</div>
+                <div>Documents</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-number">6</div>
+                <div>Comparisons</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="comparison">
+        <h2>1. Document_1.txt vs Document_2.txt</h2>
+        <div class="score medium-risk">63.22%</div>
+        <p><strong>Risk Level:</strong> MEDIUM RISK - Significant Similarity</p>
+        <p><strong>Matching Segments:</strong> 2</p>
+        <h3>Matching Text Samples:</h3>        <div class="match">Machine learning is a subset of artificial intelligence that focuses on the development of algorithms and statistical models</div>        <div class="match"> enable computer systems to improve their performance on </div>    </div>
+    <div class="comparison">
+        <h2>2. Document_2.txt vs Document_3.txt</h2>
+        <div class="score minimal-risk">10.08%</div>
+        <p><strong>Risk Level:</strong> MINIMAL - Little to No Similarity</p>
+        <p><strong>Matching Segments:</strong> 1</p>
+        <h3>Matching Text Samples:</h3>        <div class="match"> learning is a subset of </div>    </div>
+    <div class="comparison">
+        <h2>3. Document_1.txt vs Document_3.txt</h2>
+        <div class="score minimal-risk">7.75%</div>
+        <p><strong>Risk Level:</strong> MINIMAL - Little to No Similarity</p>
+        <p><strong>Matching Segments:</strong> 1</p>
+        <h3>Matching Text Samples:</h3>        <div class="match"> learning is a subset of </div>    </div>
+    <div class="comparison">
+        <h2>4. Document_3.txt vs Document_4.txt</h2>
+        <div class="score minimal-risk">3.73%</div>
+        <p><strong>Risk Level:</strong> MINIMAL - Little to No Similarity</p>
+        <p><strong>Matching Segments:</strong> 0</p>
+    </div>
+    <div class="comparison">
+        <h2>5. Document_2.txt vs Document_4.txt</h2>
+        <div class="score minimal-risk">2.69%</div>
+        <p><strong>Risk Level:</strong> MINIMAL - Little to No Similarity</p>
+        <p><strong>Matching Segments:</strong> 0</p>
+    </div>
+    <div class="comparison">
+        <h2>6. Document_1.txt vs Document_4.txt</h2>
+        <div class="score minimal-risk">2.04%</div>
+        <p><strong>Risk Level:</strong> MINIMAL - Little to No Similarity</p>
+        <p><strong>Matching Segments:</strong> 0</p>
+    </div>
+</body>
+</html>

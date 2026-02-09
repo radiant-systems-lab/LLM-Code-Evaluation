@@ -1,0 +1,14 @@
+Create a Twitter bot that monitors hashtags and responds to tweets.
+
+Requirements:
+- Use tweepy library
+- Monitor specific hashtags in real-time
+- Filter tweets by criteria (language, user, etc)
+- Auto-respond with relevant content
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

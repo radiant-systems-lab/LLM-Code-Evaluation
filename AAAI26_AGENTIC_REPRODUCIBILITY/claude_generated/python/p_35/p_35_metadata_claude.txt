@@ -1,0 +1,26 @@
+Prompt: p_35
+LLM: Claude Code
+Language: Python
+Task: Text summarization tool with extractive and abstractive methods
+
+Dependencies Provided: YES
+- transformers==4.36.2
+- torch==2.1.2
+- sumy==0.11.0
+- nltk==3.8.1
+- sentencepiece==0.1.99
+- protobuf==3.20.3
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Comprehensive text summarization tool supporting 5 methods. Extractive methods (fast, offline): TextRank (graph-based ranking), LSA (Latent Semantic Analysis), Luhn (frequency-based). Abstractive methods (slower, ~500MB models): T5 transformer, BART transformer. Features include batch processing with progress tracking, configurable summary length (sentences for extractive, tokens for abstractive), compression ratio and statistics calculation, automatic NLTK data download, token truncation for long texts (1024 max). Includes demo, example usage script, and unit tests. Type-hinted with comprehensive error handling.

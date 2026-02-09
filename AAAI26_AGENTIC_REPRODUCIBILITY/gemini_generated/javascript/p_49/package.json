@@ -1,0 +1,17 @@
+{
+  "name": "p_49_oauth2_server",
+  "version": "1.0.0",
+  "description": "An OAuth2 authentication server.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-github2": "^0.1.12",
+    "dotenv": "^16.4.5"
+  }
+}

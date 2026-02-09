@@ -1,0 +1,25 @@
+Prompt: p_23
+LLM: Claude Code
+Language: Python
+Task: Audio transcription tool with speech recognition and noise filtering
+
+Dependencies Provided: YES
+- SpeechRecognition==3.10.4
+- pydub==0.25.1
+- noisereduce==3.0.2
+- numpy==1.24.3
+- System dependency: ffmpeg (for MP3/other formats)
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete audio transcription tool using Google Speech Recognition API. Features include multi-format support (WAV, MP3, OGG, FLAC, M4A via ffmpeg), noise reduction using noisereduce library, audio normalization, ambient noise adjustment, long audio chunking, multiple language support (en-US, es-ES, etc.), CLI with argparse, automatic transcript export with metadata.

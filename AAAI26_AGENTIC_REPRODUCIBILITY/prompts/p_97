@@ -1,0 +1,14 @@
+Build a health check endpoint for Spring Boot.
+
+Requirements:
+- Use Spring Boot Actuator
+- Check database connectivity
+- Verify external service availability
+- Return health status with metrics
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

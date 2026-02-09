@@ -1,0 +1,14 @@
+Create a face detection application using OpenCV.
+
+Requirements:
+- Use opencv-python library
+- Detect faces in images using Haar cascades
+- Draw bounding boxes around detected faces
+- Support batch processing of multiple images
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

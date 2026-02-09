@@ -1,0 +1,126 @@
+### 8. **.gitignore** (Git Ignore File)
+
+```gitignore
+# Environment variables and credentials
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test files
+test_*.py
+```
+
+---
+
+## Quick Start Guide
+
+### Step 1: Create the Files
+
+Copy each code block above into separate files with the names indicated:
+
+1. `email_automation.py` - Main script
+2. `requirements.txt` - Dependencies
+3. `email_template.html` - HTML template
+4. `config.py` - Configuration
+5. `.env.example` - Environment template
+6. `example_usage.py` - Examples
+7. `README.md` - Documentation
+8. `.gitignore` - Git ignore
+
+### Step 2: Install Dependencies (Optional)
+
+```bash
+pip install -r requirements.txt
+```
+
+Note: The script uses only Python standard library. `python-dotenv` is optional for easier configuration management.
+
+### Step 3: Configure Gmail App Password
+
+1. Enable 2-Step Verification in your Google Account
+2. Go to Security → App passwords
+3. Create a new app password for "Mail"
+4. Copy the 16-character password
+
+### Step 4: Set Up Environment
+
+```bash
+cp .env.example .env
+# Edit .env with your credentials
+```
+
+### Step 5: Run Examples
+
+```bash
+# Run the example script
+python example_usage.py
+
+# Or use directly in your code
+python email_automation.py
+```
+
+---
+
+## Summary
+
+This email automation system is **100% reproducible** and includes:
+
+**Features:**
+- ✅ SMTP library implementation
+- ✅ HTML email templates with variable substitution
+- ✅ File attachment support (any file type)
+- ✅ Automatic retry logic (3 attempts with 5-second delays)
+- ✅ Support for CC and BCC
+- ✅ Multiple SMTP providers (Gmail, Outlook, Yahoo, Office365)
+- ✅ Comprehensive error handling
+- ✅ Logging for debugging
+- ✅ Rate limiting to avoid spam filters
+
+**Files Provided:**
+1. `email_automation.py` - Complete working script (430+ lines)
+2. `requirements.txt` - All dependencies with versions
+3. `email_template.html` - Professional HTML template
+4. `config.py` - Configuration management
+5. `.env.example` - Environment variable template
+6. `example_usage.py` - 4 complete usage examples
+7. `README.md` - Full documentation with setup instructions
+8. `.gitignore` - Security best practices
+
+All code is ready to use in a clean Python 3.7+ environment. Just add your email credentials and you're good to go!

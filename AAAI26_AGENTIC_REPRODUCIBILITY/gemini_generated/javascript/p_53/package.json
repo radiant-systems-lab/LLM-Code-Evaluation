@@ -1,0 +1,12 @@
+{
+  "name": "p_53_web_scraper",
+  "version": "1.0.0",
+  "description": "A web scraper using a headless browser.",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.10.0"
+  }
+}

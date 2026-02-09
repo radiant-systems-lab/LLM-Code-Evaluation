@@ -1,0 +1,22 @@
+Prompt: p_40
+LLM: Claude Code
+Language: Python
+Task: SQL query builder with parameterization and SQL injection prevention
+
+Dependencies Provided: YES
+- sqlalchemy==2.0.23
+- typing-extensions==4.9.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Enterprise-grade SQL query builder using SQLAlchemy Core API. Features include parameterized queries with `:param_name` placeholders, SQL injection prevention via regex identifier validation (table/column names), support for SELECT/INSERT/UPDATE/DELETE operations, required WHERE clauses for UPDATE and DELETE to prevent mass operations, context manager support for automatic connection handling, transaction management with commit/rollback, both low-level (build + execute) and high-level (execute_*) APIs, comprehensive error handling with custom QueryValidationError exception, full type hints for IDE support. Demonstrates SQL injection prevention against malicious inputs like "DROP TABLE" attempts.

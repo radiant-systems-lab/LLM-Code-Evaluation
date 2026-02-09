@@ -1,0 +1,1 @@
+I need your permission to create the files. Please approve the write permissions in the dialog, and I'll create all the necessary files for the JWT authentication API.

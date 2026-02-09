@@ -1,0 +1,11 @@
+# LLaMA3 NRP Analysis for script_03.py
+# Model: llama3
+# Dependencies found: 7
+
+beautifulsoup4
+bs4
+certifi
+charset-normalizer
+idna
+requests
+urllib3

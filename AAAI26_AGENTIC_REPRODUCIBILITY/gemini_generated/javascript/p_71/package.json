@@ -1,0 +1,13 @@
+{
+  "name": "p_71_data_validation_middleware",
+  "version": "1.0.0",
+  "description": "A data validation middleware with Joi.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "joi": "^17.13.1"
+  }
+}

@@ -1,3 +1,9 @@
+# Claude Code local settings
+.claude/
+
+# Node.js
+node_modules/
+
 # Python
 __pycache__/
 *.py[cod]

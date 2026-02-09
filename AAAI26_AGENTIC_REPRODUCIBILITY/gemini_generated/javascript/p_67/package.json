@@ -1,0 +1,15 @@
+{
+  "name": "p_67_session_management",
+  "version": "1.0.0",
+  "description": "A session management system with Redis.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "connect-redis": "^7.1.1",
+    "redis": "^4.6.14"
+  }
+}

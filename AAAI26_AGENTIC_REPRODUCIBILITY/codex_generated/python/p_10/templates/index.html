@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real-time Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f5f7;
+        color: #1f2933;
+      }
+      header {
+        background: #1f77b4;
+        color: #fff;
+        padding: 1rem 2rem;
+      }
+      main {
+        padding: 2rem;
+      }
+      #chart {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        height: 500px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+      #status {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Real-time Data Dashboard</h1>
+      <p>Streaming synthetic values to all connected clients.</p>
+    </header>
+    <main>
+      <div id="chart"></div>
+      <div id="status">Connecting...</div>
+    </main>
+
+    <script>
+      const chartDiv = document.getElementById('chart');
+      const statusDiv = document.getElementById('status');
+      const maxPoints = 60;
+
+      const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+      const wsUrl = `${protocol}://${window.location.host}/ws`;
+      const socket = new WebSocket(wsUrl);
+
+      Plotly.newPlot(
+        chartDiv,
+        [
+          {
+            x: [],
+            y: [],
+            mode: 'lines+markers',
+            line: { color: '#1f77b4' },
+            marker: { size: 6 },
+            name: 'Value'
+          }
+        ],
+        {
+          title: 'Live Signal',
+          xaxis: { title: 'Time' },
+          yaxis: { title: 'Value', rangemode: 'tozero' },
+          margin: { t: 50, r: 30, l: 60, b: 60 }
+        }
+      );
+
+      socket.addEventListener('open', () => {
+        statusDiv.textContent = 'Connected to server';
+      });
+
+      socket.addEventListener('close', () => {
+        statusDiv.textContent = 'Connection closed';
+      });
+
+      socket.addEventListener('error', () => {
+        statusDiv.textContent = 'WebSocket error encountered';
+      });
+
+      socket.addEventListener('message', (event) => {
+        try {
+          const data = JSON.parse(event.data);
+          if (data.timestamp && typeof data.value === 'number') {
+            const timestamp = new Date(data.timestamp * 1000);
+            Plotly.extendTraces(
+              chartDiv,
+              {
+                x: [[timestamp]],
+                y: [[data.value]]
+              },
+              [0],
+              maxPoints
+            );
+            statusDiv.textContent = `Last update: ${timestamp.toLocaleTimeString()} | Value: ${data.value}`;
+          }
+        } catch (error) {
+          console.error('Malformed message', error);
+        }
+      });
+
+      // Periodically ping the server to keep the connection live and demonstrate echo handling.
+      setInterval(() => {
+        if (socket.readyState === WebSocket.OPEN) {
+          socket.send(JSON.stringify({ type: 'ping', at: Date.now() }));
+        }
+      }, 15000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "ip-geolocation-service",
+  "version": "1.0.0",
+  "description": "Geolocation lookup by IP with caching",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "geoip-lite": "1.4.1"
+  }
+}

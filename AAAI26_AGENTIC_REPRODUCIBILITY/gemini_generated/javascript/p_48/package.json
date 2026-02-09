@@ -1,0 +1,13 @@
+{
+  "name": "p_48_pdf_generation_service",
+  "version": "1.0.0",
+  "description": "A PDF generation service from HTML.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "puppeteer": "^22.10.0"
+  }
+}

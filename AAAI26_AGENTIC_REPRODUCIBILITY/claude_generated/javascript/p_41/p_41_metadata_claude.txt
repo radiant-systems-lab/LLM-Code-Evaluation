@@ -1,0 +1,25 @@
+Prompt: p_41
+LLM: Claude Code
+Language: JavaScript (Node.js)
+Task: Express REST API with MongoDB user management
+
+Dependencies Provided: YES
+- express@^4.18.2
+- mongoose@^8.0.3
+- express-validator@^7.0.1
+- dotenv@^16.3.1
+- (dev) nodemon@^3.0.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete Express.js REST API with MongoDB integration. Multi-file architecture includes server.js (main entry), User model with Mongoose schema (name, email, age, active fields, timestamps, validation), routes with full CRUD operations (GET all with pagination/filtering, GET by ID, POST create, PUT update, DELETE), centralized error handler for Mongoose errors (ValidationError, duplicate key 11000, CastError), express-validator input validation middleware, database configuration with error handling, .env for environment config. Features pagination (page/limit), active status filtering, proper HTTP status codes (200/201/400/404/500), automatic createdAt/updatedAt timestamps. Requires MongoDB running locally or via Docker.

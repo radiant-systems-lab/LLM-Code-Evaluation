@@ -1,0 +1,23 @@
+Prompt: p_38
+LLM: Claude Code
+Language: Python
+Task: Plagiarism detector comparing multiple text documents
+
+Dependencies Provided: YES
+- No external dependencies (Python standard library only)
+- Uses: difflib, re, pathlib, typing, dataclasses, json
+- Requires Python >= 3.7
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete plagiarism detector using Python stdlib only. Features include pairwise document comparison using difflib.SequenceMatcher, similarity ratio calculation (0-1 scale with percentage), matching text block extraction with configurable min length (default 20 chars), case-sensitive/insensitive comparison modes, batch comparison (all documents vs all), risk level categorization (HIGH >=80%, MEDIUM >=50%, LOW >=25%, MINIMAL <25%), three report formats (text, HTML with styled highlighting, JSON), document loading from files or strings. Advanced NLP version also available in temp file with NLTK and scikit-learn for TF-IDF and cosine similarity.

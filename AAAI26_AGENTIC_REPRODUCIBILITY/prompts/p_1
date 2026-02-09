@@ -1,0 +1,15 @@
+Create a Python web scraper that extracts product information (name, price, rating) from an e-commerce website.
+
+Requirements:
+- Use requests and beautifulsoup4 libraries
+- Handle pagination (scrape at least 3 pages)
+- Save results to CSV file
+- Include error handling for network failures
+- Add user-agent headers to avoid blocking
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

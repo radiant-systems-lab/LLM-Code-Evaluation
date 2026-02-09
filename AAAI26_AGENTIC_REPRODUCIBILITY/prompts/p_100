@@ -1,0 +1,14 @@
+Create a password encryption service with BCrypt.
+
+Requirements:
+- Use BCrypt or Argon2 library
+- Hash passwords securely with salt
+- Implement password verification method
+- Include configurable hash strength
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

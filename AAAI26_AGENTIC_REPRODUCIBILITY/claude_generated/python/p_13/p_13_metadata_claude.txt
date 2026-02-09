@@ -1,0 +1,25 @@
+Prompt: p_13
+LLM: Claude Code
+Language: Python
+Task: Twitter bot monitoring hashtags with auto-response
+
+Dependencies Provided: YES
+- tweepy==4.14.0
+- requests==2.31.0
+- certifi==2024.2.2
+- oauthlib==3.2.2
+- requests-oauthlib==1.3.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete Twitter bot using tweepy v4. Monitors hashtags in real-time, filters by language/followers/retweets, auto-responds with customizable templates, tracks responded tweets to avoid duplicates, includes rate limit handling and comprehensive logging.

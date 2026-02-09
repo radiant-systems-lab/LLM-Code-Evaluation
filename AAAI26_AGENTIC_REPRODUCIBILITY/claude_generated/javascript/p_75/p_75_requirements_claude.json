@@ -1,0 +1,16 @@
+{
+  "name": "task-scheduler-agenda",
+  "version": "1.0.0",
+  "description": "Task scheduler using Agenda with MongoDB for job persistence",
+  "main": "scheduler.js",
+  "scripts": {
+    "start": "node scheduler.js"
+  },
+  "keywords": ["scheduler", "agenda", "jobs", "cron"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "agenda": "^5.0.0",
+    "mongodb": "^6.3.0"
+  }
+}

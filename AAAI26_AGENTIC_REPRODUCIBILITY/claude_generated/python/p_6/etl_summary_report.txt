@@ -1,0 +1,86 @@
+================================================================================
+ETL PIPELINE SUMMARY REPORT
+================================================================================
+Report Generated: 2025-10-30 21:49:44
+Total Records Processed: 100
+
+--------------------------------------------------------------------------------
+DATA OVERVIEW
+--------------------------------------------------------------------------------
+
+Dataset Shape: 100 rows × 8 columns
+
+Columns: date, product, category, quantity, unit_price, region, customer_segment, total_amount
+
+--------------------------------------------------------------------------------
+NUMERIC STATISTICS
+--------------------------------------------------------------------------------
+
+         quantity  unit_price  total_amount
+count  100.000000  100.000000    100.000000
+mean     8.240000  450.101400   3665.777500
+std      5.756191  288.238925   3864.737706
+min      1.000000   15.130000     45.390000
+25%      3.000000  202.412500   1004.952500
+50%      7.000000  411.035000   2381.030000
+75%     12.250000  679.385000   4601.742500
+max     19.000000  994.610000  17770.130000
+
+--------------------------------------------------------------------------------
+CATEGORICAL STATISTICS
+--------------------------------------------------------------------------------
+
+product:
+  Unique values: 5
+  Value distribution:
+    Monitor: 26
+    Mouse: 21
+    Headphones: 19
+    Laptop: 18
+    Keyboard: 16
+
+category:
+  Unique values: 3
+  Value distribution:
+    Peripherals: 38
+    Electronics: 35
+    Accessories: 27
+
+region:
+  Unique values: 4
+  Value distribution:
+    South: 32
+    West: 27
+    North: 24
+    East: 17
+
+customer_segment:
+  Unique values: 3
+  Value distribution:
+    Enterprise: 44
+    Consumer: 32
+    SMB: 24
+
+--------------------------------------------------------------------------------
+BUSINESS METRICS
+--------------------------------------------------------------------------------
+
+Total Revenue: $366,577.75
+Average Transaction: $3,665.78
+Median Transaction: $2,381.03
+
+Revenue by Category:
+  Peripherals: $133,411.82
+  Electronics: $123,222.11
+  Accessories: $109,943.82
+
+Revenue by Region:
+  North: $124,471.54
+  South: $96,458.75
+  West: $92,720.48
+  East: $52,926.98
+
+--------------------------------------------------------------------------------
+No missing values in the dataset!
+
+================================================================================

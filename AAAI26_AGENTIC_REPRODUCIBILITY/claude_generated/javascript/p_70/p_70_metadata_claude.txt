@@ -1,0 +1,21 @@
+Prompt: p_70
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: MongoDB aggregation pipeline utility with pre-built queries and helpers
+
+Dependencies Provided: YES
+- mongodb@^6.3.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete MongoDB aggregation utility with MongoClient. AggregationHelper class with pipeline builders: groupByField, filterByDate, sortByField, limitResults, projectFields, lookupJoin, unwindArray, addComputedField. Common aggregations: getTotalsByField, getAverageByField, getTopN, getRecentDocuments, getDateRangeStats. Pipeline composition with chainable methods. Sample data initialization. Connection management. Error handling. Perfect for analytics, reporting, data transformation, business intelligence, complex queries, ETL operations.

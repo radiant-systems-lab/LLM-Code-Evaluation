@@ -1,0 +1,14 @@
+Create a data validation middleware with Joi.
+
+Requirements:
+- Use Joi library for schema validation
+- Validate request body, params, and query strings
+- Return detailed error messages
+- Support custom validation rules
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

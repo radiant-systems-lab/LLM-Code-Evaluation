@@ -1,0 +1,22 @@
+Prompt: p_67
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: WebSocket real-time chat server with rooms, user management, and message broadcasting
+
+Dependencies Provided: YES
+- ws@^8.16.0
+- uuid@^9.0.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete WebSocket chat server using ws library. User management with UUID-based IDs and usernames. Room-based chat with join/leave functionality. Message types: join, leave, message, userList, roomList, error. Broadcasting messages to all users in same room. Connected users tracking with Map. Active rooms tracking. JSON message protocol with type/payload structure. Heartbeat/ping-pong for connection health. User presence notifications. Graceful disconnection handling. Runs on port 8080. Perfect for real-time chat, live updates, notifications, collaborative tools, gaming, IoT dashboards.

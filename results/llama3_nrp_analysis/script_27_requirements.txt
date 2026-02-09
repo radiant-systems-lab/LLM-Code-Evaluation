@@ -1,0 +1,12 @@
+# LLaMA3 NRP Analysis for script_27.py
+# Model: llama3
+# Dependencies found: 8
+
+base58
+certifi
+charset-normalizer
+ecdsa
+idna
+requests
+secp256k1
+urllib3

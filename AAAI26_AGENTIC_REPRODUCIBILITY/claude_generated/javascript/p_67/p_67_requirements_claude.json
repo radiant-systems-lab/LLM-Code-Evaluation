@@ -1,0 +1,16 @@
+{
+  "name": "websocket-chat-server",
+  "version": "1.0.0",
+  "description": "Real-time chat server using WebSocket (ws library)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["websocket", "chat", "real-time"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.16.0",
+    "uuid": "^9.0.1"
+  }
+}

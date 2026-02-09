@@ -1,0 +1,19 @@
+{
+  "name": "markdown-blog-engine",
+  "version": "1.0.0",
+  "description": "A markdown blog engine with syntax highlighting and RSS feed",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node index.js",
+    "start": "node index.js"
+  },
+  "keywords": ["markdown", "blog", "rss"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^11.1.1",
+    "highlight.js": "^11.9.0",
+    "rss": "^1.2.2"
+  }
+}

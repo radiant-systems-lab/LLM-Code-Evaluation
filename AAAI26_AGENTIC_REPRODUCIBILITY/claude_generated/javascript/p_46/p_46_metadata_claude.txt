@@ -1,0 +1,24 @@
+Prompt: p_46
+LLM: Claude Code
+Language: JavaScript (Node.js)
+Task: Real-time data visualization dashboard with WebSocket
+
+Dependencies Provided: YES
+- express@4.18.2
+- ws@8.14.2
+- (dev) nodemon@3.0.1
+- Chart.js v4.4.0 (CDN)
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete real-time data visualization dashboard using WebSocket and Chart.js. Server features include Express static file serving, WebSocket server with ws library, client Set tracking with auto-cleanup on disconnect/error, three data generators (line for system metrics CPU/memory/disk updating 1s, bar for product sales updating 3s, pie for device distribution updating 5s), broadcast function to all connected clients. Client includes HTML/CSS/JS with Chart.js integration (line/bar/pie charts), connection status indicator with auto-reconnect (3s interval), update indicators that flash on data receive, responsive grid layout, smooth chart animations (750ms), max 20 data points for line chart with automatic shifting. Fully responsive design.

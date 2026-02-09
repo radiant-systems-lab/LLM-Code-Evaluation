@@ -1,0 +1,16 @@
+{
+  "company": "Acme Corp",
+  "invoiceNumber": "INV-2023-0042",
+  "date": "2023-10-29",
+  "customer": {
+    "name": "Jane Doe",
+    "email": "jane@example.com"
+  },
+  "items": [
+    { "name": "Consulting", "quantity": 10, "price": 120 },
+    { "name": "Software License", "quantity": 5, "price": 89.99 }
+  ],
+  "subtotal": 1649.95,
+  "tax": 139.99,
+  "total": 1789.94
+}

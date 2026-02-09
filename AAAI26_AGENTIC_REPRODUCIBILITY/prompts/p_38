@@ -1,0 +1,14 @@
+Build a plagiarism detector for text documents.
+
+Requirements:
+- Use difflib or advanced NLP libraries
+- Compare multiple documents for similarity
+- Calculate similarity scores and percentages
+- Highlight matching sections in reports
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

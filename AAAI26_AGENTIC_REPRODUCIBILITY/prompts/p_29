@@ -1,0 +1,14 @@
+Create a command-line task manager with SQLite storage.
+
+Requirements:
+- Use click or argparse for CLI
+- CRUD operations for tasks (create, read, update, delete)
+- Support priority levels and due dates
+- Include search and filter capabilities
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

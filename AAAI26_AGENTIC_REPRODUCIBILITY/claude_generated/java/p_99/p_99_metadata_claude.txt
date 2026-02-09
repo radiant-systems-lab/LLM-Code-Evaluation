@@ -1,0 +1,6 @@
+Prompt: p_99
+LLM: Claude Code
+Language: Java 17
+Task: Resilience patterns with retry logic, circuit breaker, and fallback mechanisms
+Dependencies: resilience4j-circuitbreaker:2.2.0, resilience4j-retry:2.2.0
+Notes: Complete resilience implementation with RetryPolicy for configurable retry attempts, exponential backoff strategies, CircuitBreaker with CLOSED/OPEN/HALF_OPEN states, failure threshold configuration, automatic recovery, fallback handlers, timeout management, bulkhead pattern for resource isolation, metrics and monitoring integration, and comprehensive examples demonstrating fault-tolerant distributed system patterns.

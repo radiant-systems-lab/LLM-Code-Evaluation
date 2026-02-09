@@ -1,0 +1,14 @@
+Build a data ETL pipeline that extracts data from CSV, transforms it, and loads to SQLite database.
+
+Requirements:
+- Use pandas for data transformation
+- Use sqlalchemy for database operations
+- Handle missing values appropriately
+- Create summary statistics report
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

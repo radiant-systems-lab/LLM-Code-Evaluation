@@ -1,0 +1,14 @@
+Build a log analyzer that parses server logs and generates insights.
+
+Requirements:
+- Use regex for log parsing
+- Identify error patterns and anomalies
+- Generate statistics (response times, error rates)
+- Create visualization with matplotlib
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

@@ -1,0 +1,23 @@
+Prompt: p_61
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Job queue processor with Bull, Redis, retry logic, and monitoring
+
+Dependencies Provided: YES
+- bull@^4.12.0
+- redis@^4.6.13
+- ioredis@^5.3.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Production-ready job queue system using Bull and Redis. Multiple job processors: email (single worker), data-processing (3 concurrent workers). Automatic retry with exponential backoff (2s base, max 3 attempts). Job progress tracking (0-100%). Job priorities and delayed jobs. Recurring jobs with cron-like scheduling. Complete event monitoring (completed, failed, active, stalled, progress). Multiple files: index.js (queue setup with processors), producer.js (add jobs), worker.js (standalone worker), monitor.js (queue statistics and status), cleanup.js (maintenance). Queue stats: active/waiting/completed/failed/delayed/paused counts. removeOnComplete/removeOnFail options for queue hygiene. Perfect for background tasks, async processing, scheduled jobs, distributed systems. Requires Redis server running on localhost:6379. Scripts for start/worker/producer/monitor.

@@ -1,0 +1,73 @@
+{
+  "total_documents": 4,
+  "total_comparisons": 6,
+  "documents": [
+    "Document_1.txt",
+    "Document_2.txt",
+    "Document_3.txt",
+    "Document_4.txt"
+  ],
+  "comparisons": [
+    {
+      "document1": "Document_1.txt",
+      "document2": "Document_2.txt",
+      "similarity_score": 0.6322008862629247,
+      "similarity_percentage": 63.22,
+      "risk_level": "MEDIUM_RISK",
+      "matching_segments_count": 2,
+      "matching_text_samples": [
+        "Machine learning is a subset of artificial intelligence that focuses on the development of algorithms and statistical models",
+        " enable computer systems to improve their performance on "
+      ]
+    },
+    {
+      "document1": "Document_1.txt",
+      "document2": "Document_3.txt",
+      "similarity_score": 0.0775,
+      "similarity_percentage": 7.75,
+      "risk_level": "MINIMAL",
+      "matching_segments_count": 1,
+      "matching_text_samples": [
+        " learning is a subset of "
+      ]
+    },
+    {
+      "document1": "Document_1.txt",
+      "document2": "Document_4.txt",
+      "similarity_score": 0.02040816326530612,
+      "similarity_percentage": 2.04,
+      "risk_level": "MINIMAL",
+      "matching_segments_count": 0,
+      "matching_text_samples": []
+    },
+    {
+      "document1": "Document_2.txt",
+      "document2": "Document_3.txt",
+      "similarity_score": 0.10078740157480315,
+      "similarity_percentage": 10.08,
+      "risk_level": "MINIMAL",
+      "matching_segments_count": 1,
+      "matching_text_samples": [
+        " learning is a subset of "
+      ]
+    },
+    {
+      "document1": "Document_2.txt",
+      "document2": "Document_4.txt",
+      "similarity_score": 0.026871401151631478,
+      "similarity_percentage": 2.69,
+      "risk_level": "MINIMAL",
+      "matching_segments_count": 0,
+      "matching_text_samples": []
+    },
+    {
+      "document1": "Document_3.txt",
+      "document2": "Document_4.txt",
+      "similarity_score": 0.037267080745341616,
+      "similarity_percentage": 3.73,
+      "risk_level": "MINIMAL",
+      "matching_segments_count": 0,
+      "matching_text_samples": []
+    }
+  ]
+}

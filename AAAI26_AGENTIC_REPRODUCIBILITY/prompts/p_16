@@ -1,0 +1,14 @@
+Build a recommendation system using collaborative filtering.
+
+Requirements:
+- Use scikit-learn or surprise library
+- Implement user-based and item-based filtering
+- Calculate similarity scores (cosine, pearson)
+- Generate top-N recommendations
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

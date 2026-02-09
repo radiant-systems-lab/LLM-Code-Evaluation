@@ -1,0 +1,27 @@
+Prompt: p_10
+LLM: Claude Code
+Language: Python
+Task: Real-time dashboard with WebSocket support
+
+Dependencies Provided: YES
+- Flask==3.0.0
+- Flask-SocketIO==5.3.5
+- python-socketio==5.10.0
+- python-engineio==4.8.0
+- eventlet==0.33.3
+- dnspython==2.4.2
+- greenlet==3.0.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete real-time dashboard using Flask-SocketIO with WebSocket support. Includes live data broadcasting to multiple clients, Plotly charts, metric cards, and responsive design. Also includes FastAPI alternative version. HTML template included in the response.

@@ -1,0 +1,6 @@
+python-nmap==0.7.1
+
+# Note: Requires nmap to be installed on the system
+# Windows: Download from https://nmap.org/download.html
+# Linux: sudo apt-get install nmap (Debian/Ubuntu) or sudo yum install nmap (CentOS/RHEL)
+# macOS: brew install nmap

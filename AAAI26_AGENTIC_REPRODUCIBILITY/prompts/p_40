@@ -1,0 +1,14 @@
+Build a SQL query builder with parameterization.
+
+Requirements:
+- Use sqlalchemy or custom query builder
+- Support SELECT, INSERT, UPDATE, DELETE queries
+- Implement SQL injection prevention
+- Include query validation and error handling
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

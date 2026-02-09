@@ -1,0 +1,14 @@
+Create an OAuth2 authentication server.
+
+Requirements:
+- Use Passport.js library
+- Implement OAuth2 authorization flow
+- Support multiple providers (Google, GitHub)
+- Include session management with express-session
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

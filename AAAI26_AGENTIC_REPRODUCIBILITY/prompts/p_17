@@ -1,0 +1,14 @@
+Create a data validation script that checks CSV files against defined schemas.
+
+Requirements:
+- Use pandas and cerberus/jsonschema libraries
+- Validate data types, ranges, and formats
+- Generate detailed validation report
+- Flag invalid rows with reasons
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

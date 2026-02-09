@@ -1,0 +1,19 @@
+{
+  "127.0.0.1": {
+    "open_ports": [
+      22
+    ],
+    "services": {
+      "22": {
+        "port": 22,
+        "state": "open",
+        "service": "ssh",
+        "product": "OpenSSH",
+        "version": "8.9p1 Ubuntu 3ubuntu0.13",
+        "extrainfo": "Ubuntu Linux; protocol 2.0",
+        "cpe": "cpe:/o:linux:linux_kernel"
+      }
+    },
+    "scan_time": "2025-10-30T22:25:42.202379"
+  }
+}

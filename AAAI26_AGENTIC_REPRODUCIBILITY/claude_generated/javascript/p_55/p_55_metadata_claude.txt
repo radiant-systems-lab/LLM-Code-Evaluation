@@ -1,0 +1,24 @@
+Prompt: p_55
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: Command-line task runner with Commander.js and progress indicators
+
+Dependencies Provided: YES
+- commander@^11.1.0
+- ora@^7.0.1
+- cli-progress@^3.12.0
+- chalk@^5.3.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete CLI task runner application using Commander.js for command parsing. Features include 5 commands: build (with --env development/production option, spinner progress for cleaning/building/optimizing/generating, validation for environment), deploy (with --target option, spinner for connecting/uploading/health-checks, requires target validation), test (progress bar showing 5 test types: unit/integration/e2e/performance/security, with --verbose option for random failure simulation, displays test summary), install (progress bar showing 8 package installations with names, --fast option for speed control, simulates npm install), migrate (spinner showing 3 database migrations: create_users/add_indexes/add_roles, --dry-run option for simulation without changes). Custom TaskError class with error codes for typed error handling. Global error handler with DEBUG mode for stack traces. Ora spinners for async operations with updating text and succeed/fail states. cli-progress bars with custom formats including Unicode block characters (█ ░ ▱ ▱). Chalk for colorful output (green for success, red for errors, cyan for info, gray for metadata, yellow for warnings, blue for headers). Commander.js Command class for CLI structure with .command(), .description(), .option(), .action() pattern. Shebang line for direct execution. Auto help display when no command provided. Global --debug flag. Includes npm link instructions for global installation as 'taskrun' command. Perfect foundation for build tools, deployment scripts, and task automation.

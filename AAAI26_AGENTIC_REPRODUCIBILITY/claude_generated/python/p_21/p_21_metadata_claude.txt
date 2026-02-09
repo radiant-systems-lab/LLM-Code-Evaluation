@@ -1,0 +1,25 @@
+Prompt: p_21
+LLM: Claude Code
+Language: Python
+Task: URL shortener service with Flask and SQLite
+
+Dependencies Provided: YES
+- Flask==3.0.0
+- Flask-SQLAlchemy==3.1.1
+- SQLAlchemy==2.0.23
+- Werkzeug==3.0.1
+- python-dateutil==2.8.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete URL shortener service with Flask and SQLite database. Features include random short code generation, custom aliases, URL expiration, click analytics (IP, timestamp, user agent, referer tracking), statistics dashboard, REST API endpoints, responsive web interface, URL validation, and list management. Includes beautiful gradient UI and error pages.

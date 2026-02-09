@@ -1,0 +1,23 @@
+Prompt: p_43
+LLM: Claude Code
+Language: JavaScript (Node.js)
+Task: WebSocket chat server with room support using Socket.io
+
+Dependencies Provided: YES
+- express@^4.18.2
+- socket.io@^4.6.1
+- (dev) nodemon@^3.0.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete WebSocket chat server with Socket.io and Express. Features include multi-room support with dynamic creation, user join/leave event notifications, real-time messaging (room-based broadcast), typing indicators, user list per room with Map storage, automatic room cleanup when empty, manual leave room functionality, REST API endpoint (/api/stats) for server statistics, static file serving for HTML client. Includes complete HTML/CSS/JS client in temp file with styled UI, user badges, message timestamps, Enter key support. Server maintains room state (users Map, message count), supports concurrent rooms, and provides real-time user count updates.

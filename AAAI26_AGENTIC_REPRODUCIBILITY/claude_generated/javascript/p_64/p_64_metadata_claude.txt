@@ -1,0 +1,24 @@
+Prompt: p_64
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: CSV to JSON converter API with streaming, Joi validation, and type mapping
+
+Dependencies Provided: YES
+- express@^4.18.2
+- csv-parser@^3.0.0
+- multer@^1.4.5-lts.1
+- joi@^17.11.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete CSV to JSON API with advanced features. Streaming support for large files (memory efficient). POST /convert/file for multipart file upload, POST /convert/data for raw CSV text. Custom delimiters (comma, semicolon, tab, pipe). Custom headers: true (auto-detect), false (no headers), or array of names. Data type transformation with typeTransformers: string, number, boolean, date, integer, float. Joi validation schema for conversion options. Type mapping per field: {age: 'integer', active: 'boolean', joinDate: 'date'}. Strict and non-strict validation modes. Trim whitespace, skip empty lines, skip N lines at start. Line number tracking for validation errors. Boolean conversion: true/false/yes/no/1/0. Date parsing to ISO format. Automatic file cleanup after processing. GET /types for available transformers, GET /example for usage examples. Multer for file uploads to ./uploads directory. Perfect for data import, ETL pipelines, API integrations, data migration, report parsing.

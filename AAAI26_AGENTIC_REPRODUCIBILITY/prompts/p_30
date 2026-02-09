@@ -1,0 +1,14 @@
+Build a credit card validator using Luhn algorithm.
+
+Requirements:
+- Implement Luhn algorithm for validation
+- Detect card type (Visa, MasterCard, Amex)
+- Validate expiration dates
+- Include comprehensive test cases
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

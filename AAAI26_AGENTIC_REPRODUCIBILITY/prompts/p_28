@@ -1,0 +1,14 @@
+Build a Redis-based caching layer for API responses.
+
+Requirements:
+- Use redis-py library
+- Implement cache decorators for functions
+- Set TTL (time-to-live) for cached data
+- Include cache invalidation mechanism
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

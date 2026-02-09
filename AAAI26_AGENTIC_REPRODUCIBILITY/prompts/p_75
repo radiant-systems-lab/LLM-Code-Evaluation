@@ -1,0 +1,14 @@
+Create an API gateway with routing and load balancing.
+
+Requirements:
+- Use Express framework
+- Route requests to multiple microservices
+- Implement round-robin load balancing
+- Add authentication layer
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

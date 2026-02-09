@@ -1,0 +1,15 @@
+{
+  "name": "p_73_markdown_preview_server",
+  "version": "1.0.0",
+  "description": "A markdown preview server with live reload.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "marked": "^12.0.2",
+    "chokidar": "^3.6.0",
+    "ws": "^8.17.0"
+  }
+}

@@ -1,0 +1,26 @@
+Prompt: p_60
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Real-time notification system with Socket.io, Express, and SQLite
+
+Dependencies Provided: YES
+- express@^4.18.2
+- socket.io@^4.6.1
+- better-sqlite3@^9.2.2
+- cors@^2.8.5
+- uuid@^9.0.1
+- (dev) nodemon@^3.0.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete real-time notification system using Socket.io for WebSocket and better-sqlite3 for persistence. NotificationService class with SQLite schema (id, user_id, type, title, message, metadata JSON, read status, timestamps). Socket.io events: register user, mark_as_read, mark_all_as_read, new_notification broadcast, unread_count updates. REST API: GET notifications with pagination, GET unread, POST create (triggers real-time broadcast), DELETE, GET stats. Connected users Map tracking socket IDs. 4 notification types (info/success/warning/error) with color coding. Complete HTML/CSS/JS frontend with gradient UI, real-time updates, notification sound (Web Audio API), time-ago formatting, statistics dashboard (total/unread/read cards), mark all read functionality. Includes test-client.js for programmatic testing. Perfect for chat apps, dashboards, admin panels, social platforms, IoT alerts.

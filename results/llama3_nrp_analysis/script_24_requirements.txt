@@ -1,0 +1,11 @@
+# LLaMA3 NRP Analysis for script_24.py
+# Model: llama3
+# Dependencies found: 7
+
+cv2
+ffmpeg
+moviepy
+numpy
+numpy.libs
+pydub
+soundfile

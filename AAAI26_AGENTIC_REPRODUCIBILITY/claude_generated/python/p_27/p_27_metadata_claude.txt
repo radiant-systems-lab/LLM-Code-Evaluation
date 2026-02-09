@@ -1,0 +1,22 @@
+Prompt: p_27
+LLM: Claude Code
+Language: Python
+Task: Face detection using OpenCV Haar Cascades
+
+Dependencies Provided: YES
+- opencv-python==4.10.0.84
+- numpy==1.26.4
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Face detection application using OpenCV's pre-trained Haar Cascade classifier. Features include single image and batch directory processing, configurable detection parameters (scale factor, min neighbors, min size), visual feedback with green bounding boxes, error handling for invalid images, progress reporting, summary statistics. CLI with argparse. Works best with frontal faces. Supports JPG, JPEG, PNG, BMP, TIFF formats.

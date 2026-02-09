@@ -1,0 +1,13 @@
+# Core speech recognition
+SpeechRecognition==3.10.4
+
+# Audio processing
+pydub==0.25.1
+
+# Noise reduction
+noisereduce==3.0.2
+
+# Numerical processing
+numpy==1.24.3
+
+# Note: Requires ffmpeg to be installed on system for MP3/other audio format support

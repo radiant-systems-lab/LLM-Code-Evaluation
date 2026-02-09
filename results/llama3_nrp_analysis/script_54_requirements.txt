@@ -1,0 +1,18 @@
+# LLaMA3 NRP Analysis for script_54.py
+# Model: llama3
+# Dependencies found: 14
+
+contourpy
+cycler
+fonttools
+kiwisolver
+matplotlib
+numpy
+numpy.libs
+packaging
+pil
+pillow
+pillow.libs
+pyparsing
+six
+tzdata

@@ -1,0 +1,22 @@
+Prompt: p_29
+LLM: Claude Code
+Language: Python
+Task: Command-line task manager with SQLite storage
+
+Dependencies Provided: YES
+- click==8.1.7
+- SQLite (built-in with Python)
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Full-featured CLI task manager using Click and SQLite. Features include complete CRUD operations (add/show/list/update/delete), priority levels (low/medium/high) with color coding, status tracking (pending/in_progress/completed), due date support (YYYY-MM-DD), search and filtering (status/priority/text), color-coded output with symbols, input validation, confirmation prompts, automatic timestamps. Database schema with constraints. All operations persist in tasks.db file.

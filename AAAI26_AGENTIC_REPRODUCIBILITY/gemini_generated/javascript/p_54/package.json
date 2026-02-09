@@ -1,0 +1,12 @@
+{
+  "name": "p_54_file_watcher",
+  "version": "1.0.0",
+  "description": "A file watcher that triggers actions on changes.",
+  "main": "watcher.js",
+  "scripts": {
+    "start": "node watcher.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0"
+  }
+}

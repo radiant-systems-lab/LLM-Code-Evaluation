@@ -1,0 +1,15 @@
+{
+  "name": "markdown-blog-engine",
+  "version": "1.0.0",
+  "description": "Convert markdown posts to static HTML with syntax highlighting and RSS feed",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "highlight.js": "11.9.0",
+    "marked": "9.1.5",
+    "rss": "1.2.2",
+    "yaml-front-matter": "4.1.1"
+  }
+}

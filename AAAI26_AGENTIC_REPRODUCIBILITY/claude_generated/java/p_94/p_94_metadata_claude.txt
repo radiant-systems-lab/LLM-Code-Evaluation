@@ -1,0 +1,6 @@
+Prompt: p_94
+LLM: Claude Code
+Language: Java 17
+Task: Rate limiting implementation with multiple algorithms and strategies
+Dependencies: guava:33.0.0-jre
+Notes: Complete rate limiting system with multiple algorithms including Token Bucket (smooth bursty), Fixed Window, Sliding Window, and Leaky Bucket implementations, RateLimiter interface for pluggable strategies, per-user and per-IP rate limiting, distributed rate limiting support, rate limit statistics and monitoring, configurable burst allowances, graceful degradation, backoff strategies, and comprehensive examples demonstrating API throttling and request queuing patterns.

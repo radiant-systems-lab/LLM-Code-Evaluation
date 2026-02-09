@@ -1,0 +1,14 @@
+Create a command-line task runner application.
+
+Requirements:
+- Use Commander.js for CLI interface
+- Support multiple custom commands
+- Include progress indicators with ora or cli-progress
+- Handle errors gracefully with detailed messages
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

@@ -1,0 +1,14 @@
+Create a scheduled task runner with Quartz Scheduler.
+
+Requirements:
+- Use Spring Boot and Quartz Scheduler
+- Define cron-based scheduled jobs
+- Execute tasks at specified intervals
+- Persist job state in database
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

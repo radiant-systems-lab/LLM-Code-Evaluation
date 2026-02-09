@@ -1,0 +1,14 @@
+Build a stock price tracker that fetches live prices and sends alerts.
+
+Requirements:
+- Use yfinance or alpha_vantage library
+- Track multiple stocks simultaneously
+- Set price alert thresholds
+- Send notifications via email when alerts trigger
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

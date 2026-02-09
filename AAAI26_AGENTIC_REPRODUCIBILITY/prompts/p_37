@@ -1,0 +1,14 @@
+Create a cryptocurrency price tracker with historical data.
+
+Requirements:
+- Use ccxt or coinbase API library
+- Track prices for multiple cryptocurrencies
+- Fetch and store historical price data
+- Generate price trend charts
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

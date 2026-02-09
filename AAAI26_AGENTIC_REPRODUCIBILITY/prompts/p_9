@@ -1,0 +1,14 @@
+Create a PDF text extraction tool that extracts and analyzes text from PDF documents.
+
+Requirements:
+- Use PyPDF2 or pdfplumber library
+- Extract text from multiple pages
+- Perform basic NLP analysis (word count, frequency)
+- Export results to structured format (JSON or CSV)
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

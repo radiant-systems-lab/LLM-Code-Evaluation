@@ -1,0 +1,6 @@
+Prompt: p_91
+LLM: Claude Code
+Language: Java 17
+Task: Data transformation utility with JSON, CSV, and XML conversion
+Dependencies: gson:2.10.1, opencsv:5.9
+Notes: Complete data transformation framework with DataTransformer class supporting multiple formats, JSON to CSV conversion with dynamic column detection, CSV to JSON with header mapping, data filtering and mapping operations, field transformations (rename, type conversion), aggregation functions (sum, average, count), pipeline-based transformations with chaining, validation rules, and comprehensive examples demonstrating complex data manipulation scenarios.

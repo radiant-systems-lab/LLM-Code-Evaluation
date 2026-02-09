@@ -1,0 +1,5 @@
+product_id,name,price,quantity,category
+PRD-000001,Laptop,999.99,10,electronics
+PRD-000002,Mouse,25.5,50,electronics
+INVALID,Keyboard,-10.0,100,invalid_category
+PRD-000004,M,45.0,-5,electronics

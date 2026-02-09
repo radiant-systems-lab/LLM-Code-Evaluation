@@ -1,0 +1,21 @@
+Prompt: p_63
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Password hashing service with bcrypt for secure authentication
+
+Dependencies Provided: YES
+- bcrypt@^5.1.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Production-ready password hashing using bcrypt. PasswordHashingService class with configurable salt rounds (4-31, default 10). Both async and sync methods: hashPassword/hashPasswordSync, comparePassword/comparePasswordSync. Automatic salt generation (unique per password). getSaltRounds/setSaltRounds for configuration updates. Complete validation: non-empty strings, valid salt rounds. Comprehensive error handling with descriptive messages. Includes test.js demonstrating all features: async/sync hashing, correct/incorrect password comparison, different salt rounds, salt randomness verification. Includes example-usage.js showing user registration/login flows. Higher salt rounds (12-14) recommended for production. One-way hashing (cannot decrypt). Timing-safe comparison prevents timing attacks. Perfect for user authentication, API keys, password reset tokens, secure credentials storage.

@@ -1,0 +1,22 @@
+{
+  "name": "log-aggregator-service",
+  "version": "1.0.0",
+  "description": "A log aggregator service using Winston with multiple sources and transports",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "logging",
+    "winston",
+    "log-aggregator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1",
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "url-shortener-api",
+  "version": "1.0.0",
+  "description": "Express + MongoDB URL shortener with analytics",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "1.20.2",
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "mongoose": "7.5.0",
+    "nanoid": "4.0.2"
+  }
+}

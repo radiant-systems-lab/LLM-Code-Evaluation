@@ -1,0 +1,10 @@
+Agent,Language,Total Projects,Projects with Missing Deps,% Incomplete,Avg Missing Deps,Max Missing
+Claude,Python,40,4,10.0%,0.10,1
+Claude,Java,25,1,4.0%,0.04,1
+Claude,Javascript,35,0,0.0%,0.00,0
+Codex,Python,40,3,7.5%,0.07,1
+Codex,Java,25,0,0.0%,0.00,0
+Codex,Javascript,35,0,0.0%,0.00,0
+Gemini,Python,40,4,10.0%,0.10,1
+Gemini,Java,25,0,0.0%,0.00,0
+Gemini,Javascript,35,1,2.9%,0.03,1

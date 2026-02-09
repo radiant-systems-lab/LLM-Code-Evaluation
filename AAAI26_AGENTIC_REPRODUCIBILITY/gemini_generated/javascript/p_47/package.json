@@ -1,0 +1,14 @@
+{
+  "name": "p_47_email_automation_service",
+  "version": "1.0.0",
+  "description": "An email automation service with templates.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.13",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5"
+  }
+}

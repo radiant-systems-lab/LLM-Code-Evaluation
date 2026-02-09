@@ -1,0 +1,17 @@
+{
+  "name": "email-service-nodemailer",
+  "version": "1.0.0",
+  "description": "Email service with Nodemailer and HTML templates",
+  "main": "emailService.js",
+  "scripts": {
+    "start": "node emailService.js",
+    "test": "node test.js"
+  },
+  "keywords": ["email", "nodemailer", "smtp"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.8",
+    "dotenv": "^16.4.5"
+  }
+}

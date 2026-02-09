@@ -1,0 +1,24 @@
+Prompt: p_16
+LLM: Claude Code
+Language: Python
+Task: Recommendation system using collaborative filtering
+
+Dependencies Provided: YES
+- numpy==1.24.3
+- pandas==2.0.3
+- scikit-learn==1.3.0
+- scipy==1.11.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete recommendation system with user-based and item-based collaborative filtering. Includes cosine and Pearson similarity, top-N recommendations, prediction evaluation with RMSE/MAE, and sample data generator.

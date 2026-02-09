@@ -1,0 +1,15 @@
+{
+  "name": "json-api-mock-server",
+  "version": "1.0.0",
+  "description": "JSON API mock server with custom responses and delays",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "body-parser": "1.20.2",
+    "cors": "2.8.5"
+  }
+}

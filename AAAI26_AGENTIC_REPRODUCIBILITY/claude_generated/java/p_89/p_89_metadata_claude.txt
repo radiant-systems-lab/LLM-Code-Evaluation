@@ -1,0 +1,6 @@
+Prompt: p_89
+LLM: Claude Code
+Language: Java 17
+Task: Database migration tool with versioning and rollback support
+Dependencies: h2:2.2.224, HikariCP:5.1.0
+Notes: Complete database migration framework with Migration interface, MigrationManager for tracking applied migrations, schema_version table for migration history, MigrationRunner for executing migrations, support for SQL and Java-based migrations, rollback capabilities, migration validation and checksums, sequential version enforcement, dry-run mode, and comprehensive examples demonstrating database schema evolution with multiple migrations.

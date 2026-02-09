@@ -1,0 +1,16 @@
+{
+  "name": "p_68_content_delivery_optimizer",
+  "version": "1.0.0",
+  "description": "A content delivery optimizer.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "compression": "^1.7.4",
+    "minify": "^11.0.1",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+Create a CSV to database importer.
+
+Requirements:
+- Use Apache Commons CSV and JDBC
+- Read CSV files with headers
+- Batch insert records to database
+- Include comprehensive error handling
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

@@ -1,0 +1,17 @@
+{
+  "name": "session-redis-server",
+  "version": "1.0.0",
+  "description": "Express session management with Redis storage",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "connect-redis": "7.1.0",
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "express-session": "1.17.3",
+    "redis": "4.6.7"
+  }
+}

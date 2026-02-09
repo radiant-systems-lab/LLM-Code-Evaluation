@@ -1,0 +1,14 @@
+# LLaMA3 NRP Analysis for script_25.py
+# Model: llama3
+# Dependencies found: 10
+
+branca
+certifi
+charset-normalizer
+folium
+geopy
+idna
+jinja2
+markupsafe
+requests
+urllib3

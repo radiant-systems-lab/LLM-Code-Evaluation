@@ -1,0 +1,21 @@
+Prompt: p_54
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: File system watcher with Chokidar and debouncing support
+
+Dependencies Provided: YES
+- chokidar@^3.5.3
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete file system watcher using Chokidar library with debouncing capabilities. Features include FileWatcher class with configurable options (paths array, debounceDelay, ignored patterns, ignoreInitial, chokidarOptions passthrough), event callback registration system with on() method supporting 7 event types (add for file added, change for file changed, unlink for file deleted, addDir for directory added, unlinkDir for directory deleted, error for errors, ready for initial scan complete). Debouncing implementation using Map to store timers keyed by event:path, prevents multiple triggers for rapid file changes (common with text editors that save multiple times). Chokidar options include awaitWriteFinish with stabilityThreshold 100ms and pollInterval 100ms to detect when files are completely written. Chainable API allowing multiple .on() calls. Graceful shutdown with stop() method clearing all pending debounce timers and closing watcher. Includes example.js demonstrating full usage with watched-folder directory, event handlers for all event types with console logging, SIGINT handler for graceful shutdown. Simple-example.js shows minimal implementation with 30-second timeout. Recursive watching of subdirectories automatic. Perfect for build tools, hot-reload systems, and file synchronization applications.

@@ -1,0 +1,14 @@
+Build a database connection pool manager.
+
+Requirements:
+- Use HikariCP library
+- Configure connection pool with optimal settings
+- Monitor pool statistics and metrics
+- Handle connection timeouts
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

@@ -1,0 +1,14 @@
+Create an Express REST API with MongoDB integration for user management.
+
+Requirements:
+- Use Express and Mongoose libraries
+- Implement CRUD operations for users
+- Include input validation with express-validator
+- Add error handling middleware
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

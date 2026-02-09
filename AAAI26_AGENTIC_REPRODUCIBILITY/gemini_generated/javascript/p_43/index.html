@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket.IO Chat</title>
+</head>
+<body>
+    <h1>Socket.IO Chat</h1>
+    <div>
+        <input id="room" type="text" placeholder="Enter room name" />
+        <button onclick="joinRoom()">Join Room</button>
+        <button onclick="leaveRoom()">Leave Room</button>
+    </div>
+    <ul id="messages"></ul>
+    <input id="m" autocomplete="off" /><button onclick="sendMessage()">Send</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        let currentRoom = '';
+
+        function joinRoom() {
+            const room = document.getElementById('room').value;
+            if (room) {
+                currentRoom = room;
+                socket.emit('joinRoom', room);
+                document.getElementById('room').disabled = true;
+            }
+        }
+
+        function leaveRoom() {
+            if (currentRoom) {
+                socket.emit('leaveRoom', currentRoom);
+                currentRoom = '';
+                document.getElementById('room').disabled = false;
+                document.getElementById('messages').innerHTML = '';
+            }
+        }
+
+        function sendMessage() {
+            const message = document.getElementById('m').value;
+            if (message && currentRoom) {
+                socket.emit('chatMessage', { room: currentRoom, message: message });
+                document.getElementById('m').value = '';
+            }
+        }
+
+        socket.on('message', (msg) => {
+            const item = document.createElement('li');
+            item.textContent = msg;
+            document.getElementById('messages').appendChild(item);
+        });
+    </script>
+</body>
+</html>

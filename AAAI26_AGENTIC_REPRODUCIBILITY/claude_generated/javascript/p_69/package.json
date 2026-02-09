@@ -1,0 +1,16 @@
+{
+  "name": "redis-cache-service",
+  "version": "1.0.0",
+  "description": "Redis caching service wrapper with TTL and pattern matching",
+  "main": "cacheService.js",
+  "scripts": {
+    "start": "node cacheService.js",
+    "test": "node test.js"
+  },
+  "keywords": ["redis", "cache", "performance"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "^4.6.13"
+  }
+}

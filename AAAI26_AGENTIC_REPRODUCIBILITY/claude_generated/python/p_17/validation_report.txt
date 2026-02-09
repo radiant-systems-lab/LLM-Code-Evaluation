@@ -1,0 +1,86 @@
+================================================================================
+CSV VALIDATION REPORT
+================================================================================
+Generated: 2025-10-30 22:12:42
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total Rows Processed: 6
+Valid Rows: 1 (16.67%)
+Invalid Rows: 5 (83.33%)
+
+INVALID ROWS DETAIL
+--------------------------------------------------------------------------------
+
+Row 3:
+  Data: {
+        "user_id": 2,
+        "username": "ab",
+        "email": "alice@test.com",
+        "age": 30,
+        "balance": -50.0,
+        "status": "inactive"
+}
+  Errors:
+    - balance: min value is 0.0
+    - username: min length is 3
+
+Row 4:
+  Data: {
+        "user_id": 3,
+        "username": "jane_smith",
+        "email": "invalid-email",
+        "age": 17,
+        "balance": 200.0,
+        "status": "active"
+}
+  Errors:
+    - age: min value is 18
+    - email: value does not match regex '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+
+Row 5:
+  Data: {
+        "user_id": 4,
+        "username": "bob123",
+        "email": "jane@example.com",
+        "age": 45,
+        "balance": 75.25,
+        "status": "invalid_status"
+}
+  Errors:
+    - status: unallowed value invalid_status
+
+Row 6:
+  Data: {
+        "user_id": 5,
+        "username": "alice_wonder",
+        "email": "alice@example.com",
+        "age": 150,
+        "balance": 300.0,
+        "status": "suspended"
+}
+  Errors:
+    - age: max value is 120
+
+Row 7:
+  Data: {
+        "user_id": 6,
+        "username": "charlie@invalid",
+        "email": "charlie@test.com",
+        "age": 28,
+        "balance": 50.0,
+        "status": "active"
+}
+  Errors:
+    - username: value does not match regex '^[a-zA-Z0-9_]+$'
+
+ERROR FREQUENCY ANALYSIS
+--------------------------------------------------------------------------------
+   1x  balance: min value is 0.0
+   1x  username: min length is 3
+   1x  age: min value is 18
+   1x  email: value does not match regex '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+   1x  status: unallowed value invalid_status
+   1x  age: max value is 120
+   1x  username: value does not match regex '^[a-zA-Z0-9_]+$'
+================================================================================

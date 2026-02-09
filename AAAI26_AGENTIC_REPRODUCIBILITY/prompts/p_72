@@ -1,0 +1,14 @@
+Build a distributed cache with Redis cluster.
+
+Requirements:
+- Use ioredis library
+- Connect to Redis cluster
+- Implement get/set operations with TTL
+- Handle cluster failover scenarios
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

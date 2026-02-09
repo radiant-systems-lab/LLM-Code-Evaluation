@@ -1,0 +1,14 @@
+{
+  "name": "p_69_health_check_endpoint",
+  "version": "1.0.0",
+  "description": "A health check endpoint for microservices.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "axios": "^1.7.2"
+  }
+}

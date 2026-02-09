@@ -1,0 +1,22 @@
+Prompt: p_31
+LLM: Claude Code
+Language: Python
+Task: File compression tool with multiple format support
+
+Dependencies Provided: YES
+- tqdm==4.66.1
+- Python stdlib: zipfile, tarfile, gzip
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete file compression tool supporting ZIP, TAR.GZ, TAR.BZ2, and GZ formats. Features include real-time progress bars with tqdm, configurable compression levels (1-9), batch processing of multiple files/directories, compression statistics (size and ratio), comprehensive error handling and validation, CLI with argparse. GZ supports single files only, other formats support both files and directories. Cross-platform (Windows/Linux/macOS).

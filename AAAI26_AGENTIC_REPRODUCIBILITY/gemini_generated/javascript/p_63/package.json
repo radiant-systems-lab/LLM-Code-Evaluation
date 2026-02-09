@@ -1,0 +1,12 @@
+{
+  "name": "p_63_password_hashing_service",
+  "version": "1.0.0",
+  "description": "A password hashing service with bcrypt.",
+  "main": "hasher.js",
+  "scripts": {
+    "start": "node hasher.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  }
+}

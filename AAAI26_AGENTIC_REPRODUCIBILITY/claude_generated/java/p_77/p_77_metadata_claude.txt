@@ -1,0 +1,22 @@
+Prompt: p_77
+LLM: Claude Code
+Language: Java 17
+Task: JDBC database connection utility with HikariCP connection pooling
+
+Dependencies Provided: YES (Maven pom.xml)
+- h2:2.2.224 (embedded database for testing)
+- HikariCP:5.1.0 (connection pool)
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has pom.xml: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete JDBC utility with connection pooling. DatabaseUtil class with HikariCP datasource. Methods: executeQuery, executeUpdate, executeBatch, transaction support. PreparedStatement with parameter binding. ResultSet handling. Connection pool configuration (max pool size, timeout). Try-with-resources for auto-close. Transaction rollback on error. H2 in-memory database for demo. Perfect for data access layer, ORM alternatives, legacy database integration, batch operations, microservices data access.

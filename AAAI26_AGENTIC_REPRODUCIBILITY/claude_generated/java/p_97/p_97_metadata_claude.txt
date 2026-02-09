@@ -1,0 +1,6 @@
+Prompt: p_97
+LLM: Claude Code
+Language: Java 17
+Task: Command-line interface framework with argument parsing and subcommands
+Dependencies: picocli:4.7.5
+Notes: Complete CLI framework with PicoCLI integration, Command interface for extensible commands, argument parsing with options and flags, subcommand support with hierarchical structure, interactive prompts for user input, progress bars and spinners, colored output for better UX, input validation and error handling, command history, help text generation, autocomplete support, and comprehensive examples demonstrating CLI application development with multiple commands.

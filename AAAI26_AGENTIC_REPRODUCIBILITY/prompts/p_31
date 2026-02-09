@@ -1,0 +1,14 @@
+Create a file compression tool supporting multiple formats.
+
+Requirements:
+- Use zipfile, tarfile, and gzip libraries
+- Support zip, tar.gz, and tar.bz2 formats
+- Include compression level options
+- Display progress indicators for large files
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

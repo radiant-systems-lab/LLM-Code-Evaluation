@@ -1,0 +1,21 @@
+# LLaMA3 NRP Analysis for script_50.py
+# Model: llama3
+# Dependencies found: 17
+
+cffi
+cryptography
+cryptography.hazmat
+cryptography.hazmat.backends
+cryptography.hazmat.backends.commoncrypto
+cryptography.hazmat.backends.default
+cryptography.hazmat.backends.openssl
+cryptography.hazmat.primitives
+cryptography.hazmat.primitives.asymmetric
+cryptography.hazmat.primitives.ciphers
+cryptography.hazmat.primitives.hashes
+cryptography.hazmat.primitives.kdf
+cryptography.hazmat.primitives.padding
+cryptography.hazmat.primitives.serialization
+ipaddress
+numpy
+numpy.libs

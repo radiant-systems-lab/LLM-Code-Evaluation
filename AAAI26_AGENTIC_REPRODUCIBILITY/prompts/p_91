@@ -1,0 +1,14 @@
+Build a search service with Elasticsearch.
+
+Requirements:
+- Use Spring Data Elasticsearch
+- Index documents with mapping
+- Implement full-text search functionality
+- Support filtering and pagination
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

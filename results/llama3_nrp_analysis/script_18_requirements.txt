@@ -1,0 +1,35 @@
+# LLaMA3 NRP Analysis for script_18.py
+# Model: llama3
+# Dependencies found: 31
+
+bokeh
+bottleneck
+certifi
+charset-normalizer
+contourpy
+cycler
+fonttools
+idna
+joblib
+kiwisolver
+matplotlib
+mpl_toolkits
+numexpr
+numpy
+numpy.libs
+packaging
+pandas
+pil
+pillow
+pillow.libs
+plotly
+pyparsing
+pytz
+requests
+scipy
+scipy.libs
+seaborn
+six
+threadpoolctl
+tzdata
+urllib3

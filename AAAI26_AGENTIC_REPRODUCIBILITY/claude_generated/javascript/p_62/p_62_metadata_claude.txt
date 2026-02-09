@@ -1,0 +1,23 @@
+Prompt: p_62
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: Currency converter API with live exchange rates, Axios, and caching
+
+Dependencies Provided: YES
+- axios@^1.6.7
+- express@^4.18.2
+- node-cache@^5.1.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete REST API for currency conversion with live exchange rates. Uses free exchangerate-api.com API (no key required). NodeCache with 1-hour TTL to reduce API calls. Supports 160+ currencies. GET /rates/:currency for all exchange rates. GET /convert?amount=100&from=USD&to=EUR for currency conversion. GET /currencies for supported currency list. GET /cache/stats for cache hit rate and statistics. DELETE /cache to clear cache. Cross-rate calculation for non-base currency pairs. Axios with 5s timeout and error handling. Cache hit/miss tracking. Type: module in package.json for ES6 imports. Error responses with proper HTTP status codes. Returns converted amount with 4 decimal precision. Perfect for fintech apps, e-commerce, international pricing, travel planning.

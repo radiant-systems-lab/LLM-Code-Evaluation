@@ -1,0 +1,14 @@
+Create an async web crawler that crawls multiple websites concurrently.
+
+Requirements:
+- Use aiohttp and asyncio libraries
+- Respect robots.txt rules
+- Handle rate limiting properly
+- Save crawled content to files
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

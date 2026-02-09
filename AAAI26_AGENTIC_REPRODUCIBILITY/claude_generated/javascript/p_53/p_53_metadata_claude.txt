@@ -1,0 +1,21 @@
+Prompt: p_53
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: Web scraper using Playwright for dynamic content with pagination
+
+Dependencies Provided: YES
+- playwright@^1.41.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete web scraper using Playwright headless browser for JavaScript-rendered sites. Features include WebScraper class with configuration object (baseUrl, maxPages, outputFile, pageDelay, headless mode, timeout), Chromium browser initialization with configurable headless mode, page.evaluate() for DOM extraction in browser context, multi-page scraping with automatic pagination navigation, selector waiting for dynamic content (waitForSelector with timeout), next page detection and navigation (waitForNavigation with networkidle strategy), rate limiting with configurable pageDelay between page loads. Data extraction example targets quotes.toscrape.com extracting quote text, author, tags array, scrapedAt timestamp. Output includes structured JSON with metadata (scrapedAt, totalItems, source URL, pagesScraped count) and data array. Proper resource cleanup with browser.close() in finally block. Handles missing elements gracefully with optional chaining and fallbacks. Includes comprehensive instructions for customization (change CONFIG object, modify extractPageData selectors for different sites). Troubleshooting guide covers browser installation (npx playwright install --force chromium), timeout errors, no data extracted (set headless: false for visual debugging). Perfect for scraping modern SPAs and JavaScript-heavy sites that traditional HTTP-based scrapers cannot handle.

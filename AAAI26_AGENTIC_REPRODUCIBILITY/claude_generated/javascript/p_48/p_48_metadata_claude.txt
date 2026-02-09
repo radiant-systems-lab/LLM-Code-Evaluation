@@ -1,0 +1,21 @@
+Prompt: p_48
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: PDF generation service from HTML using Puppeteer
+
+Dependencies Provided: YES
+- puppeteer@^22.0.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete PDF generation service using Puppeteer (headless Chrome automation). Features include browser lifecycle management (initialize/close), HTML to PDF conversion with two input methods (raw HTML string or template file path), URL to PDF conversion with full page rendering, comprehensive page configuration (standard formats A4/Letter/Legal/A3/A5/Tabloid or custom width/height dimensions), configurable margins (top/right/bottom/left), header/footer support with HTML templates (special classes: .pageNumber, .totalPages, .date, .title, .url), landscape/portrait orientation, background graphics printing, page scaling, networkidle0 wait strategy for complete rendering. Returns PDF as Buffer for flexibility (can save to file or stream). Includes example.js with 5 comprehensive examples: basic PDF, custom margins with Letter format, landscape with custom dimensions and gradients, header/footer with page numbers and dates, complex styled document with tables/cards/colors. Also includes invoice template HTML demonstrating professional styling. Production-ready with error handling via try-finally blocks ensuring page cleanup.

@@ -1,0 +1,17 @@
+{
+  "name": "pdf-generation-service",
+  "version": "1.0.0",
+  "description": "PDF generation service from HTML using Puppeteer",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node example.js"
+  },
+  "keywords": ["pdf", "puppeteer", "html-to-pdf"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}

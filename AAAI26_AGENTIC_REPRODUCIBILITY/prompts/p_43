@@ -1,0 +1,14 @@
+Create a WebSocket chat server with room support.
+
+Requirements:
+- Use Socket.io and Express
+- Support multiple chat rooms
+- Handle user join/leave events
+- Broadcast messages to room members only
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

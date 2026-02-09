@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_DIR">logs</Property>
+        <Property name="APP_NAME">log4j2-framework</Property>
+        <Property name="PatternLayout">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${PatternLayout}"/>
+        </Console>
+
+        <File name="FileAppender" fileName="${LOG_DIR}/${APP_NAME}.log" append="true">
+            <PatternLayout pattern="${PatternLayout}"/>
+        </File>
+
+        <RollingFile name="RollingFileAppender"
+                     fileName="${LOG_DIR}/${APP_NAME}-rolling.log"
+                     filePattern="${LOG_DIR}/archive/${APP_NAME}-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${PatternLayout}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.example.logging.audit" level="info" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="RollingFileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

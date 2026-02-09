@@ -1,0 +1,14 @@
+Build a REST API with user authentication using JWT tokens.
+
+Requirements:
+- Use FastAPI or Flask framework
+- Include login/logout endpoints
+- Hash passwords securely with bcrypt
+- Protect routes with JWT authentication
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

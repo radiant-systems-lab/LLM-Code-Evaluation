@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Notifications</title>
+    <style>
+        .notification {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px;
+        }
+        .notification.unread {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Notifications</h1>
+    <div id="notifications"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        socket.on('notifications', (notifications) => {
+            const notificationsDiv = document.getElementById('notifications');
+            notificationsDiv.innerHTML = '';
+            notifications.forEach(notification => {
+                const notificationDiv = document.createElement('div');
+                notificationDiv.className = `notification ${notification.isRead ? '' : 'unread'}`;
+                notificationDiv.innerHTML = `
+                    <p><strong>${notification.type}</strong>: ${notification.message}</p>
+                    ${!notification.isRead ? `<button onclick="markAsRead('${notification._id}')">Mark as Read</button>` : ''}
+                `;
+                notificationsDiv.appendChild(notificationDiv);
+            });
+        });
+
+        function markAsRead(notificationId) {
+            socket.emit('markAsRead', notificationId);
+        }
+    </script>
+</body>
+</html>

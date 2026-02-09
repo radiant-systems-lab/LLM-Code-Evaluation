@@ -1,0 +1,6 @@
+Prompt: p_96
+LLM: Claude Code
+Language: Java 17
+Task: Configuration management system with multiple sources and dynamic reloading
+Dependencies: typesafe-config:1.4.3, gson:2.10.1
+Notes: Complete configuration management with ConfigManager supporting multiple config sources (properties, JSON, environment variables), hierarchical configuration with fallbacks, type-safe config access, dynamic configuration reloading without restart, configuration validation and schema checking, environment-specific overrides, configuration encryption for sensitive values, change listeners for reactive updates, configuration versioning, and comprehensive examples demonstrating application configuration patterns.

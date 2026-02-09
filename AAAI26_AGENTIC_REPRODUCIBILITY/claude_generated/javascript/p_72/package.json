@@ -1,0 +1,17 @@
+{
+  "name": "jwt-auth-middleware",
+  "version": "1.0.0",
+  "description": "JWT authentication middleware for Express with token generation and validation",
+  "main": "jwtAuth.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["jwt", "authentication", "express", "middleware"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "express": "^4.18.2",
+    "dotenv": "^16.4.5"
+  }
+}

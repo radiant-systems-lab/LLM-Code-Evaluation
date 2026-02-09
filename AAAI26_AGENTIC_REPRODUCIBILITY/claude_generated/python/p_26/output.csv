@@ -1,0 +1,3 @@
+id,name,contact_email,contact_phone_mobile,contact_phone_home,orders_0_product,orders_0_price,orders_1_product,orders_1_price,tags
+1,John Doe,john@example.com,555-1234,555-5678,Laptop,999.99,Mouse,29.99,"[""premium"", ""tech""]"
+2,Jane Smith,jane@example.com,555-9012,555-3456,Keyboard,79.99,,,"[""standard""]"

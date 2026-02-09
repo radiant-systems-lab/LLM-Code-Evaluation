@@ -1,0 +1,16 @@
+{
+  "name": "email-automation-service",
+  "version": "1.0.0",
+  "description": "Node.js email automation with templates, attachments, and scheduling",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "16.3.1",
+    "handlebars": "4.7.8",
+    "node-cron": "3.0.2",
+    "nodemailer": "6.9.5"
+  }
+}

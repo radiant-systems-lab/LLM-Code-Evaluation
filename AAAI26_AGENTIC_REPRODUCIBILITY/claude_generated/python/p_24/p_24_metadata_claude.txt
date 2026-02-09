@@ -1,0 +1,22 @@
+Prompt: p_24
+LLM: Claude Code
+Language: Python
+Task: Network port scanner with service detection
+
+Dependencies Provided: YES
+- python-nmap==0.7.1
+- System dependency: nmap (for service detection)
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Network port scanner for authorized security testing and network administration. Features include multi-threaded socket scanning, nmap-based service version detection, CIDR network range support, host up detection, detailed security reports (text and JSON), common ports presets, configurable timeout/workers. CLI with argparse. Includes legal warnings and security recommendations in reports. For authorized use only.

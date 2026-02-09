@@ -1,0 +1,14 @@
+Build a microservice with Kafka integration.
+
+Requirements:
+- Use Spring Kafka library
+- Implement both producer and consumer
+- Handle message serialization/deserialization
+- Include comprehensive error handling
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Java code
+- Complete pom.xml with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

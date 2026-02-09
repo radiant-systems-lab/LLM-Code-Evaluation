@@ -1,0 +1,14 @@
+Create a password hashing service with bcrypt.
+
+Requirements:
+- Use bcrypt library
+- Hash passwords securely with salt
+- Implement password comparison function
+- Include configurable salt rounds
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

@@ -1,0 +1,23 @@
+Prompt: p_73
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Stripe payment integration with checkout sessions, subscriptions, and webhook handling
+
+Dependencies Provided: YES
+- stripe@^14.13.0
+- express@^4.18.2
+- dotenv@^16.4.5
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete Stripe integration service. StripeService class with methods: createCheckoutSession, createCustomer, createSubscription, cancelSubscription, createPaymentIntent, refundPayment, listPayments. Webhook handling with signature verification for events: payment_intent.succeeded, customer.subscription.created, customer.subscription.deleted. Express server with endpoints: POST /create-checkout, POST /create-subscription, POST /webhook. Environment configuration for API keys. Success/cancel URLs for checkout. Perfect for e-commerce, SaaS billing, marketplaces, donations, memberships, one-time payments, recurring subscriptions.

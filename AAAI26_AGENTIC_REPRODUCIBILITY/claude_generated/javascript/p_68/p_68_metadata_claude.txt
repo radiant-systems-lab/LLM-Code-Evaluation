@@ -1,0 +1,22 @@
+Prompt: p_68
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Email service with Nodemailer, HTML templates, and SMTP configuration
+
+Dependencies Provided: YES
+- nodemailer@^6.9.8
+- dotenv@^16.4.5
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Production-ready email service using Nodemailer. EmailService class with SMTP configuration from environment variables. Methods: sendEmail (basic), sendWelcomeEmail, sendPasswordResetEmail, sendNotificationEmail. HTML email templates with inline styles. Template variable substitution. Attachment support. Email validation. SMTP transport with auth. Error handling with descriptive messages. Dotenv for configuration. Supports Gmail, SendGrid, custom SMTP. Includes test.js demonstrating all email types. Perfect for user onboarding, password reset, notifications, newsletters, transactional emails, alerts.

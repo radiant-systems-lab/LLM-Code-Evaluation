@@ -1,0 +1,6 @@
+Prompt: p_98
+LLM: Claude Code
+Language: Java 17
+Task: Text processing and analysis utility with NLP features
+Dependencies: commons-lang3:3.14.0, commons-text:1.11.0
+Notes: Complete text processing toolkit with TextAnalyzer for statistical analysis, word frequency counting, sentiment analysis heuristics, text similarity calculations (Levenshtein, Jaccard), TextTransformer for case conversions and formatting, stopword removal, stemming approximation, n-gram generation, keyword extraction, text summarization algorithms, readability scoring, and comprehensive examples demonstrating document analysis and text manipulation operations.

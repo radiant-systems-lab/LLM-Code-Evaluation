@@ -1,0 +1,28 @@
+Prompt: p_49
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: OAuth2 authentication server with Passport.js (Google & GitHub)
+
+Dependencies Provided: YES
+- express@^4.18.2
+- express-session@^1.17.3
+- passport@^0.7.0
+- passport-google-oauth20@^2.0.0
+- passport-github2@^0.1.12
+- dotenv@^16.3.1
+- ejs@^3.1.9
+- (dev) nodemon@^3.0.2
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE (requires OAuth app credentials from Google/GitHub)
+
+Notes: Complete OAuth2 authentication server using Passport.js with multiple providers. Features include Google OAuth2 strategy (passport-google-oauth20) with profile and email scopes, GitHub OAuth2 strategy (passport-github2) with user:email scope, Express session management (24-hour cookie lifetime, secure cookies in production), user serialization/deserialization for sessions, ensureAuthenticated middleware for protected routes, dotenv configuration for credentials. Routes include login pages (/) with provider selection, OAuth callback handlers (/auth/google/callback, /auth/github/callback), protected dashboard (/dashboard), logout (/logout), API endpoint (/api/user) for testing authentication. Includes two EJS view templates: index.ejs (landing page with gradient background, OAuth provider buttons with SVG logos for Google and GitHub, conditional rendering for logged-in users), dashboard.ejs (profile display with photo/name/email/username/provider, session status, API testing info, modern card-based layout). User object structure includes id, provider, displayName, email, photo, username (GitHub), accessToken. Comprehensive setup instructions provided for creating OAuth apps on Google Cloud Console and GitHub Developer Settings. Production-ready foundation requiring database integration for persistent user storage, CSRF protection, rate limiting, and token refresh logic.

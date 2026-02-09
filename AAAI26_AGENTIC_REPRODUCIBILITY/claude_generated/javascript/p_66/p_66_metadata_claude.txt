@@ -1,0 +1,23 @@
+Prompt: p_66
+LLM: Claude Code
+Language: JavaScript (Node.js ES6 Modules)
+Task: GraphQL API server with Apollo Server, type definitions, and resolvers
+
+Dependencies Provided: YES
+- @apollo/server@^4.10.0
+- graphql@^16.8.1
+- graphql-tag@^2.12.6
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Complete GraphQL API server using Apollo Server 4. Type definitions (typeDefs) with User, Post, and Query types. Resolvers with queries: users, user(id), posts, post(id). Mutations: createUser, createPost. In-memory data store with sample users and posts. Standalone server setup with startStandaloneServer. Runs on port 4000. GraphQL Playground accessible at http://localhost:4000. Includes field resolvers for relationships (user.posts, post.author). Error handling for not found cases. Type: module for ES6 imports. Perfect for building GraphQL APIs, replacing REST, API gateway, microservices orchestration, mobile backends.

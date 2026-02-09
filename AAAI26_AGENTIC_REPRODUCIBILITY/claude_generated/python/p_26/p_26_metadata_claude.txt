@@ -1,0 +1,26 @@
+Prompt: p_26
+LLM: Claude Code
+Language: Python
+Task: JSON to CSV converter with nested object flattening
+
+Dependencies Provided: YES
+- pandas==2.2.0
+- numpy==1.26.3
+- python-dateutil==2.8.2
+- pytz==2024.1
+- tzdata==2024.1
+- six==1.16.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has requirements.txt: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: JSON to CSV converter with deep nesting support using pandas. Features include recursive flattening of unlimited nesting levels, array handling (objects→indexed columns, primitives→JSON strings), configurable key separators, file and string input support, UTF-8 encoding. Clean normalization for analyzable CSV output.

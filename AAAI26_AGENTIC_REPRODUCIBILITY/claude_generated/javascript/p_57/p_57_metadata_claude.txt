@@ -1,0 +1,25 @@
+Prompt: p_57
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Webhook receiver with HMAC signature validation and async event processing
+
+Dependencies Provided: YES
+- express@4.18.2
+- body-parser@1.20.2
+- crypto@1.0.1
+- bull@4.11.5
+- dotenv@16.3.1
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE (requires Redis)
+
+Notes: Production-ready webhook receiver using Express with HMAC SHA256 signature validation and Bull queue for async processing. Features include verifySignature function using crypto.createHmac with timingSafeEqual for timing-attack-safe comparison, validateWebhookSignature middleware checking x-webhook-signature or x-hub-signature-256 headers (GitHub compatible), bodyParser with verify callback to preserve rawBody for signature validation. Bull queue configuration with Redis backend, job options (3 retry attempts, exponential backoff 2s delay, removeOnComplete 100 jobs, removeOnFail false for debugging). Webhook endpoint POST /webhook returns immediate 200 response after queueing (async processing pattern), includes job ID in response. Event processing switch statement for 4 event types: user.created (welcome email simulation), order.completed (inventory update simulation), payment.succeeded (fulfillment trigger simulation), subscription.cancelled (status update simulation), plus generic handler fallback. Queue monitoring with GET /health (checks queue.isReady()), GET /queue/status (returns waiting/active/completed/failed counts). Queue event listeners for completed/failed/error events with logging. Graceful shutdown on SIGTERM/SIGINT with queue.close(). Includes test-webhook.js script demonstrating signature generation with crypto and HTTP requests with proper headers. Perfect for integrating with external services like Stripe, GitHub, Shopify webhooks.

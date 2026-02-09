@@ -1,0 +1,14 @@
+Create a GraphQL API with authentication.
+
+Requirements:
+- Use Apollo Server library
+- Implement queries and mutations
+- Add JWT authentication middleware
+- Include resolver logic with error handling
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

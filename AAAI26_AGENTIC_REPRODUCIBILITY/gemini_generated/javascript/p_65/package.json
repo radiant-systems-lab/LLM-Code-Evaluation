@@ -1,0 +1,14 @@
+{
+  "name": "p_65_twitter_bot",
+  "version": "1.0.0",
+  "description": "A Twitter bot that posts scheduled tweets.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "twitter-api-v2": "^1.16.2",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5"
+  }
+}

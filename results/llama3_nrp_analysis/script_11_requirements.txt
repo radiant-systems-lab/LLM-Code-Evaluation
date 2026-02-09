@@ -1,0 +1,33 @@
+# LLaMA3 NRP Analysis for script_11.py
+# Model: llama3
+# Dependencies found: 29
+
+pygame
+pygame.display
+pygame.event
+pygame.font
+pygame.ftfont
+pygame.image
+pygame.key
+pygame.locals
+pygame.mixer
+pygame.mouse
+pygame.rect
+pygame.sdl
+pygame.sdl_font
+pygame.sdl_gfx
+pygame.sdl_image
+pygame.sdl_mixer
+pygame.sdl_ttf
+pygame.sdl_video
+pygame.sdlfont
+pygame.sdlgfx
+pygame.sdlimage
+pygame.sdlmixer
+pygame.sdlvideo
+pygame.sprite
+pygame.surface
+pygame.sysfont
+pygame.time
+pygame.transform
+pygame.version

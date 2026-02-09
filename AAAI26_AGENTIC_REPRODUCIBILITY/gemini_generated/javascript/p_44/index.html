@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>S3 File Upload</title>
+</head>
+<body>
+    <h1>S3 File Upload</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Download File</h2>
+    <input id="fileKey" type="text" placeholder="Enter file key" />
+    <button onclick="downloadFile()">Get Download Link</button>
+    <div id="downloadLink"></div>
+
+    <script>
+        function downloadFile() {
+            const fileKey = document.getElementById('fileKey').value;
+            if (fileKey) {
+                fetch(`/download/${fileKey}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const link = document.createElement('a');
+                        link.href = data.url;
+                        link.textContent = 'Download File';
+                        document.getElementById('downloadLink').innerHTML = '';
+                        document.getElementById('downloadLink').appendChild(link);
+                    });
+            }
+        }
+    </script>
+</body>
+</html>

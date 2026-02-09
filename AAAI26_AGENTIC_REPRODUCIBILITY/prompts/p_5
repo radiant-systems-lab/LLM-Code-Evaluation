@@ -1,0 +1,14 @@
+Create an image classifier that uses a pre-trained model to classify images into categories.
+
+Requirements:
+- Use TensorFlow or PyTorch
+- Load pre-trained model (ResNet or VGG)
+- Process images from a folder
+- Output predictions with confidence scores
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

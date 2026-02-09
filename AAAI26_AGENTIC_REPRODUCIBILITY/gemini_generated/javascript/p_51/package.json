@@ -1,0 +1,14 @@
+{
+  "name": "p_51_url_shortener_api",
+  "version": "1.0.0",
+  "description": "A URL shortener API with analytics.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "shortid": "^2.2.16"
+  }
+}

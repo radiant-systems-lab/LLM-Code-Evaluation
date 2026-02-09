@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Preview Server</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h1>Markdown Preview</h1>
+      <p>Select a markdown file to render:</p>
+      <ul id="file-list"></ul>
+      <div class="status">
+        <span><span class="dot" id="sse-dot"></span><span id="sse-status">Connected</span></span>
+      </div>
+    </aside>
+    <main class="content">
+      <article id="preview">
+        <h2>Loading markdown…</h2>
+      </article>
+    </main>
+    <script src="/preview.js" type="module"></script>
+  </body>
+</html>

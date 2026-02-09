@@ -1,0 +1,13 @@
+{
+  "name": "p_75_api_gateway",
+  "version": "1.0.0",
+  "description": "An API gateway with routing and load balancing.",
+  "main": "gateway.js",
+  "scripts": {
+    "start": "node gateway.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+Prompt: p_83
+LLM: Claude Code
+Language: Java 17
+Task: XML parser and generator with JAXB for marshalling and unmarshalling
+Dependencies: jaxb-api:2.3.1, jaxb-runtime:4.0.4
+Notes: Complete XML processing with JAXB annotations, XMLParser class with marshal/unmarshal methods, sample entities (Book, Author, Library), bidirectional conversion between Java objects and XML, and example usage demonstrating serialization and deserialization.

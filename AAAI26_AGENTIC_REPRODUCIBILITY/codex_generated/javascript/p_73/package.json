@@ -1,0 +1,22 @@
+{
+  "name": "markdown-preview-server",
+  "version": "1.0.0",
+  "description": "Live-reloading Markdown preview server powered by marked and chokidar.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "markdown",
+    "live-reload",
+    "preview",
+    "marked"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "3.5.3",
+    "express": "4.18.2",
+    "marked": "7.0.4"
+  }
+}

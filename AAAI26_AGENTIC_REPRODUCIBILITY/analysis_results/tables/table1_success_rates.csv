@@ -1,0 +1,10 @@
+Agent,Language,Total,Success,Partial,Failed,Success Rate (%)
+Claude,Python,40,32,0,8,80.0
+Claude,Java,25,20,0,5,80.0
+Claude,Javascript,35,21,4,10,60.0
+Codex,Python,40,35,0,5,87.5
+Codex,Java,25,6,3,16,24.0
+Codex,Javascript,35,19,0,16,54.3
+Gemini,Python,40,40,0,0,100.0
+Gemini,Java,25,7,7,11,28.0
+Gemini,Javascript,35,25,0,10,71.4

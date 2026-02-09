@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Statistics</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f0f2f5; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 700px; }
+        h1 { text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f8f9fa; }
+        a { color: #007bff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Statistics for /{{ url.short_code }}</h1>
+        <table>
+            <tr>
+                <th>Original URL</th>
+                <td><a href="{{ url.original_url }}" target="_blank">{{ url.original_url }}</a></td>
+            </tr>
+            <tr>
+                <th>Short URL</th>
+                <td><a href="{{ url_for('redirect_to_url', short_code=url.short_code, _external=True) }}">{{ url_for('redirect_to_url', short_code=url.short_code, _external=True) }}</a></td>
+            </tr>
+            <tr>
+                <th>Clicks</th>
+                <td>{{ url.clicks }}</td>
+            </tr>
+            <tr>
+                <th>Created On</th>
+                <td>{{ url.created_at }}</td>
+            </tr>
+            <tr>
+                <th>Expires On</th>
+                <td>{{ url.expires_at or 'Never' }}</td>
+            </tr>
+        </table>
+        <p style="text-align: center; margin-top: 20px;"><a href="{{ url_for('index') }}">Shorten another URL</a></p>
+    </div>
+</body>
+</html>

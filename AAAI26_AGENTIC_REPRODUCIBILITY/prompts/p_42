@@ -1,0 +1,14 @@
+Build a React component library with state management.
+
+Requirements:
+- Use React and Redux or Context API
+- Create reusable UI components (Button, Card, Modal)
+- Include PropTypes for validation
+- Add styling with CSS modules or styled-components
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

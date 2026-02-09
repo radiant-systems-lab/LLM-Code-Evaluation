@@ -1,0 +1,14 @@
+Create a URL shortener API with analytics.
+
+Requirements:
+- Use Express and MongoDB
+- Generate short codes for URLs
+- Track click statistics and referrers
+- Include expiration feature for links
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

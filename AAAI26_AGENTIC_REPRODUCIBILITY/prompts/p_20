@@ -1,0 +1,14 @@
+Build a file deduplication tool that finds and removes duplicate files.
+
+Requirements:
+- Use hashlib for file hashing (MD5 or SHA256)
+- Scan directories recursively
+- Identify duplicates by content comparison
+- Safe deletion with backup/move option
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working Python code
+- Complete requirements.txt with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

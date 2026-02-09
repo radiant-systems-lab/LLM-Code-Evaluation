@@ -1,0 +1,14 @@
+Create a Twitter bot that posts scheduled tweets.
+
+Requirements:
+- Use Twitter API v2 client library
+- Schedule tweets with node-cron
+- Support media uploads (images)
+- Handle API rate limits properly
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

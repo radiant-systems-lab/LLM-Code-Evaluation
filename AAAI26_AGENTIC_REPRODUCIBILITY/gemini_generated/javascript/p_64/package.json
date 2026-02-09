@@ -1,0 +1,14 @@
+{
+  "name": "p_64_csv_to_json_converter",
+  "version": "1.0.0",
+  "description": "A CSV to JSON converter API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "csv-parser": "^3.0.0"
+  }
+}

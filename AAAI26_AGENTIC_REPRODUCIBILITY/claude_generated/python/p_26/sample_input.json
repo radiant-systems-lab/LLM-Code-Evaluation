@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "contact": {
+      "email": "john@example.com",
+      "phone": {
+        "mobile": "555-1234",
+        "home": "555-5678"
+      }
+    },
+    "orders": [
+      {
+        "product": "Laptop",
+        "price": 999.99
+      },
+      {
+        "product": "Mouse",
+        "price": 29.99
+      }
+    ],
+    "tags": [
+      "premium",
+      "tech"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "contact": {
+      "email": "jane@example.com",
+      "phone": {
+        "mobile": "555-9012",
+        "home": "555-3456"
+      }
+    },
+    "orders": [
+      {
+        "product": "Keyboard",
+        "price": 79.99
+      }
+    ],
+    "tags": [
+      "standard"
+    ]
+  }
+]

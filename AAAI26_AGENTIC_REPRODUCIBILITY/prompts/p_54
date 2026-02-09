@@ -1,0 +1,14 @@
+Build a file watcher that triggers actions on changes.
+
+Requirements:
+- Use Chokidar library
+- Watch directories recursively
+- Trigger callbacks on file add/change/delete events
+- Include debouncing for rapid changes
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.

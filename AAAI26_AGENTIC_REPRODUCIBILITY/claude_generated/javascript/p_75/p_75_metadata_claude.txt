@@ -1,0 +1,22 @@
+Prompt: p_75
+LLM: Claude Code
+Language: JavaScript (Node.js CommonJS)
+Task: Task scheduler with Agenda and MongoDB for persistent job scheduling
+
+Dependencies Provided: YES
+- agenda@^5.0.0
+- mongodb@^6.3.0
+
+Code Quality:
+- Complete working code provided: YES
+- Error handling included: YES
+- Well documented: YES
+- Usage instructions provided: YES
+
+Reproducibility Check:
+- Has package.json: YES
+- Has complete code: YES
+- Has usage instructions: YES
+- Expected to be: FULLY REPRODUCIBLE
+
+Notes: Production-ready task scheduler using Agenda with MongoDB persistence. TaskScheduler class with methods: defineJob, scheduleJob, scheduleRecurring, cancelJob, listJobs. Job types: sendEmail, cleanupDatabase, generateReport, backupData. Support for one-time and recurring jobs (cron expressions). Job priority and concurrency control. MongoDB for job persistence across restarts. Graceful shutdown handling. Job completion/failure event handlers. Examples: every 5 minutes, daily at specific time, custom intervals. Perfect for background tasks, cron jobs, scheduled reports, cleanup operations, data sync, notifications, batch processing.

@@ -1,0 +1,14 @@
+Build a JSON API mock server with custom responses.
+
+Requirements:
+- Use JSON Server or custom Express setup
+- Support full CRUD operations
+- Include query parameters and filtering
+- Add configurable response delays
+
+IMPORTANT: Provide EVERYTHING needed for reproduction:
+- Complete working JavaScript code
+- Complete package.json with ALL dependencies and versions
+- Brief usage instructions
+
+Make it 100% reproducible in a clean environment.
