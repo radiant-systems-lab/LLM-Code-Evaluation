@@ -119,7 +119,7 @@ For each of the 300 scripts:
 
 5. **Classify Reproducibility**
    - ✅ **FULLY REPRODUCIBLE**: Has deps + correct deps + runs
-   - ⚠️ **PARTIALLY REPRODUCIBLE**: Has deps + missing 1-2 + would run with fixes
+   - ⚠️ **PARTIALLY REPRODUCIBLE**: Has deps + missing 1-2 + would run with fixes (Iterative Resolution)
    - ❌ **NOT REPRODUCIBLE**: No deps OR major errors
 
 ---
@@ -166,17 +166,6 @@ For each of the 300 scripts:
 
 ---
 
-## Next Steps
-
-1. ✅ **DONE**: Created 100 standardized prompts
-2. **TODO**: Run prompts through Claude CLI (100 tasks)
-3. **TODO**: Run prompts through Gemini CLI (100 tasks)
-4. **TODO**: Run prompts through ChatGPT CLI (100 tasks)
-5. **TODO**: Create reproducibility testing script
-6. **TODO**: Run automated tests on all 300 scripts
-7. **TODO**: Analyze results and generate paper figures
-
----
 
 ## Paper Contribution
 
@@ -185,7 +174,6 @@ This will be the **first systematic study** of AI-generated code reproducibility
 - Multiple languages (Python, JavaScript, Java)
 - Real-world coding tasks (100 diverse prompts)
 
-**Expected Publication**: AAAI 2026
 
 ---
 
