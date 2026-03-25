@@ -1,8 +1,0 @@
-# LLaMA3 NRP Analysis for script_40.py
-# Model: llama3
-# Dependencies found: 4
-
-numpy
-pandas
-scikit-learn
-scipy

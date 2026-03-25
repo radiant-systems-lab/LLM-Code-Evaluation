@@ -1,3 +1,0 @@
-import_name,pypi_name,usage_frequency,usage_percentage,rank,dependents_count,dependency_count,latest_version,description
-pandas,pandas,16,26.7,32,63439,33,2.3.2,"Powerful data structures for data analysis, time series, and statistics"
-matplotlib,matplotlib,15,25.0,29,41423,33,3.10.6,Python plotting package

@@ -1,7 +1,0 @@
-# LLaMA3 NRP Analysis for script_22.py
-# Model: llama3
-# Dependencies found: 3
-
-platform
-psutil
-serial

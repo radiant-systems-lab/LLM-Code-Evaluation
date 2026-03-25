@@ -1,60 +1,12 @@
-# Claude Code local settings
-.claude/
-
-# Node.js
-node_modules/
-
-# Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Model files and directory (too large for git)
-models/
-*.bin
-*.safetensors
-*.gguf
-
-# Requirements files (generated)
-requirements*.txt
-combined_requirements.txt
-
-# Jupyter
+*.pyc
+*.pyo
 .ipynb_checkpoints/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Logs
+.vscode/
+.idea/
 *.log
-
-# PowerPoint files
-*.pptx
-*.ppt
-
-# Cache directories that contain large model files
-*/.cache/
-cde-package/cde-root/home/jovyan/.cache/
-code_scripts/cde-package/cde-root/home/jovyan/.cache/
-reproducibility/cde-package/cde-package/cde-root/home/jovyan/.cache/
-reproducibility/cde-package/cde-root/home/jovyan/.cache/
-cde-package/cde-root/opt/conda/
-code_scripts/cde-package/cde-root/opt/conda/
-
-# Large library files
-*.so.*
-reproducibility/cde-package/cde-root/usr/lib/
+node_modules/
+target/
+.claude/
