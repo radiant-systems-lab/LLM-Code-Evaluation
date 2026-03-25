@@ -16,8 +16,8 @@ Reproducibility is a cornerstone of software engineering. A project is reproduci
 ### 1.2 The Core Problem
 
 When agentic AI systems generate code, they typically produce:
-- **Source code** (e.g., Python scripts)
-- **Dependency specifications** (e.g., `requirements.txt` files)
+- **Source code** (e.g., Python scripts, JavaScript modules, Java classes)
+- **Dependency specifications** (e.g., `requirements.txt`, `package.json`, `pom.xml`)
 - **Documentation** (e.g., README files with usage instructions)
 
 The fundamental problem we investigate is: **Do LLMs accurately specify all dependencies needed for their generated code to run, or do they suffer from "dependency amnesia"—failing to list critical packages while sometimes including unnecessary ones?**
@@ -49,20 +49,21 @@ We employ a **comparative case study** methodology analyzing three leading agent
 
 ### 2.2 Prompt-Based Generation
 
-For each LLM, we use **40 standardized prompts** designed to generate realistic software projects across various domains:
-- Web scraping
-- Data analysis and visualization
-- Machine learning applications
-- API development
-- Text processing
-- Image processing
-- System utilities
+For each LLM, we use **100 standardized prompts** across three programming languages:
+
+| Language | Prompt Range | Count | Focus Areas |
+|----------|-------------|-------|-------------|
+| **Python** | p_1 - p_40 | 40 | Web scraping, ML/AI, data ETL, APIs, NLP, encryption, monitoring |
+| **JavaScript** | p_41 - p_75 | 35 | Express REST APIs, WebSocket, React, OAuth, file processing, job queues |
+| **Java** | p_76 - p_100 | 25 | Spring Boot, Kafka, JPA, batch processing, caching, rate limiting |
+
+This yields **300 total projects** (100 prompts x 3 LLMs).
 
 Each prompt explicitly requests:
 ```
 IMPORTANT: Provide EVERYTHING needed for reproduction:
 - Complete working [Language] code
-- Complete requirements.txt with ALL dependencies and versions
+- Complete dependency file (requirements.txt / package.json / pom.xml) with ALL dependencies
 - Brief usage instructions
 
 Make it 100% reproducible in a clean environment.
@@ -74,7 +75,7 @@ This ensures all three LLMs receive identical instructions, enabling fair compar
 We analyze dependencies at three distinct levels:
 
 **Tier 1: Claimed Dependencies**
-- What the LLM explicitly specifies in `requirements.txt`
+- What the LLM explicitly specifies in its dependency file (`requirements.txt` / `package.json` / `pom.xml`)
 - Represents the LLM's understanding of required packages
 
 **Tier 2: Working Dependencies**
@@ -83,9 +84,11 @@ We analyze dependencies at three distinct levels:
 - Represents ground truth for execution
 
 **Tier 3: Runtime Dependencies**
-- What SciUnit captures during actual execution
-- Includes all transitively imported packages
-- Represents comprehensive dependency footprint
+- Total transitive packages installed during execution in a clean Docker container
+- Python: captured via `pip list --format=freeze` after install
+- JavaScript: captured via `npm list --all --parseable` after install
+- Java: captured via `mvn dependency:tree` after resolution
+- Represents comprehensive dependency footprint including all transitive dependencies
 
 By comparing these three tiers, we identify:
 - **Completeness gaps**: Working deps - Claimed deps (what the LLM forgot)
@@ -98,48 +101,39 @@ By comparing these three tiers, we identify:
 
 #### 3.1.1 Cloud Environment
 - **Platform**: Amazon Web Services (AWS) EC2
-- **Instance Type**: t2.medium (2 vCPUs, 4 GB RAM, 30 GB storage)
+- **Instance Type**: c5.2xlarge (8 vCPUs, 16 GB RAM, 50 GB gp3 storage)
 - **Operating System**: Ubuntu 22.04 LTS (64-bit)
-- **Python Version**: Python 3.10.x (system default)
+- **Docker**: Installed for isolated per-project evaluation
 - **Access**: SSH with key-based authentication
 
-#### 3.1.2 Baseline Environment Establishment
+#### 3.1.2 Docker-Based Isolation
 
-Before any processing begins, we establish a **baseline environment**:
-
-```bash
-# Initial package count
-pip3 list | wc -l
-# Result: 91 packages (71 system + 20 user packages)
-```
-
-This baseline includes:
-- **System packages**: Pre-installed Ubuntu Python packages (e.g., `apt`, `certifi`, `urllib3`)
-- **User packages**: Essential tools for research infrastructure
-  - `sciunit2==0.4.post135.dev260594795` - Reproducibility capture tool
-  - `tqdm==4.67.1` - Progress bars
-  - `requests-oauthlib==2.0.0` - OAuth support
-  - And 17 other utility packages
-
-**Critical Principle**: After processing each project, we **MUST restore** the environment to exactly 91 packages. This ensures:
+Each project is evaluated in a **fresh Docker container** with zero cached dependencies. This ensures:
 - No cross-contamination between projects
-- Accurate dependency tracking
-- Reproducible results
+- Accurate transitive dependency counting
+- Reproducible results regardless of host environment
 
-#### 3.1.3 SciUnit Installation
+**Docker Images Used**:
 
-SciUnit is a reproducibility capture tool developed by the Radiant Systems Lab that instruments Python execution to capture runtime dependencies.
+| Language | Docker Image | Purpose |
+|----------|-------------|---------|
+| Python | `python:3.10-slim` | pip install + pip list |
+| JavaScript | `node:18-slim` | npm install + npm list --all |
+| Java | `maven:3.9-eclipse-temurin-17` | mvn dependency:resolve + dependency:tree |
+
+Each container starts completely clean — no cached packages, no pre-installed libraries beyond the language runtime itself.
+
+#### 3.1.3 SciUnit Installation (Python Only)
+
+For Python projects, SciUnit was additionally used as a reproducibility capture tool that instruments Python execution to capture runtime-loaded dependencies at the system call level.
 
 ```bash
-cd /home/ubuntu/agentic_reproducibility
 git clone https://github.com/radiant-systems-lab/sciunit.git
 cd sciunit
 pip3 install --user -e .
 ```
 
-SciUnit provides two key capabilities:
-1. **Workspace creation**: Isolated environments for each execution
-2. **Dependency capture**: Records all packages imported during runtime
+SciUnit captures packages that are actually **loaded at runtime** (via syscall interception), which may differ from what `pip list` reports (all installed packages). Both measurements are recorded.
 
 ### 3.2 Manual Iterative Processing Methodology
 
@@ -153,7 +147,7 @@ SciUnit provides two key capabilities:
 
 #### 3.2.1 The Seven-Step Processing Workflow
 
-For each of the 40 projects per LLM (120 total), we follow this workflow:
+For each of the 100 projects per LLM (300 total), we follow this workflow. The steps below describe the Python workflow; language-specific variations for JavaScript and Java follow in Sections 3.3 and 3.4.
 
 ---
 
@@ -367,9 +361,115 @@ pip3 list | wc -l
    - This mirrors how developers actually debug LLM code
    - Shows the true "hidden cost" of incomplete dependencies
 
-### 3.3 Data Collection and Metrics
+### 3.3 JavaScript Evaluation Methodology
 
-#### 3.3.1 Primary Metrics
+For the 35 JavaScript projects per LLM (105 total), we adapt the seven-step workflow:
+
+#### 3.3.1 Dependency File
+
+JavaScript projects use `package.json` instead of `requirements.txt`. The LLM declares dependencies in the `"dependencies"` field:
+
+```json
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
+```
+
+#### 3.3.2 Installation and Execution
+
+Each project is evaluated in a fresh `node:18-slim` Docker container:
+
+```bash
+docker run --rm -v "$proj_dir/package.json:/work/package.json:ro" \
+  node:18-slim sh -c '
+    cd /work
+    npm install --ignore-scripts --no-audit --no-fund
+    node script.js
+  '
+```
+
+**Key differences from Python**:
+- `npm install` resolves the full transitive tree into `node_modules/`
+- `--ignore-scripts` prevents post-install scripts from executing (security)
+- Execution via `node script.js` instead of `python3 script.py`
+
+#### 3.3.3 Transitive Dependency Counting
+
+```bash
+npm list --all --parseable | tail -n +2 | wc -l
+```
+
+This counts every package in the resolved dependency tree. npm flattens transitive dependencies into `node_modules/`, making the full tree visible. A project declaring 3 direct dependencies (e.g., `express`, `socket.io`, `cors`) typically installs 80-120 transitive packages.
+
+#### 3.3.4 Common JavaScript Failure Modes
+
+- **CodeBug-Unfixable**: Multi-file projects collapsed into single file (duplicate declarations, missing module references)
+- **BuildRequired**: React/JSX projects requiring Babel/Webpack transpilation
+- **ConfigError-Partial**: Projects needing external services (MongoDB, Redis, SMTP) that start but cannot fully execute
+- **ES Module/CommonJS conflicts**: Incorrect import syntax for module system
+
+### 3.4 Java Evaluation Methodology
+
+For the 25 Java projects per LLM (75 total), we adapt the workflow for Maven-based builds:
+
+#### 3.4.1 Dependency File
+
+Java projects use `pom.xml` with Maven coordinates:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>3.2.2</version>
+    </dependency>
+</dependencies>
+```
+
+Many projects use Spring Boot with a parent POM that transitively manages dozens of dependencies.
+
+#### 3.4.2 Installation and Execution
+
+Each project is evaluated in a fresh `maven:3.9-eclipse-temurin-17` Docker container:
+
+```bash
+docker run --rm -v "$proj_dir/pom.xml:/work/pom.xml:ro" \
+  maven:3.9-eclipse-temurin-17 sh -c '
+    mkdir -p /build/src/main/java && cd /build
+    cp /work/pom.xml .
+    mvn compile exec:java
+  '
+```
+
+**Key differences from Python/JavaScript**:
+- Maven resolves dependencies from Maven Central repository
+- Compilation required before execution (`mvn compile`)
+- Spring Boot projects use embedded servers (Tomcat/Netty)
+- Java requires explicit class/file name matching
+
+#### 3.4.3 Transitive Dependency Counting
+
+```bash
+mvn dependency:tree | grep -E "^\[INFO\] [|+\\\\]" | wc -l
+```
+
+This counts all resolved artifacts in the Maven dependency tree. A Spring Boot project with 3 declared starters typically resolves 40-70 transitive JARs.
+
+#### 3.4.4 Common Java Failure Modes
+
+- **CodeBug-Unfixable**: API version mismatches (e.g., `javax.validation` vs `jakarta.validation` in Spring Boot 3.x, jjwt API changes)
+- **Circular Dependencies**: Spring bean dependency cycles
+- **CompletenessGap**: Missing dependency versions, non-existent BOM versions
+- **NotProcessed**: Projects skipped due to evaluation context limits
+- **Compilation Errors**: Missing imports, type mismatches, deprecated API usage
+
+### 3.5 Data Collection and Metrics
+
+#### 3.5.1 Primary Metrics
 
 For each project, we collect:
 
@@ -399,7 +499,7 @@ For each project, we collect:
 - `CodeBug-Fixed`: Syntax or logic error in generated code
 - `SystemError`: Version conflict or system library needed
 
-#### 3.3.2 Qualitative Data
+#### 3.5.2 Qualitative Data
 
 **Detailed Notes** (CSV column 20):
 - Description of all iterative fixes applied
@@ -407,7 +507,7 @@ For each project, we collect:
 - Observations about LLM behavior
 - Special cases (empty requirements.txt for stdlib-only code)
 
-#### 3.3.3 Special Cases
+#### 3.5.3 Special Cases
 
 **Empty requirements.txt**:
 - Some projects correctly have empty `requirements.txt`
@@ -424,9 +524,9 @@ For each project, we collect:
 - Document as "URLs blocked but imports work"
 - Focus on dependency correctness, not runtime output
 
-### 3.4 Quality Assurance
+### 3.6 Quality Assurance
 
-#### 3.4.1 Environment Hygiene
+#### 3.6.1 Environment Hygiene
 
 **Baseline Verification After Every Project**:
 ```bash
@@ -439,7 +539,7 @@ pip3 list | wc -l  # MUST equal 91
 3. Re-verify: `pip3 list | wc -l`
 4. Document in notes
 
-#### 3.4.2 Data Integrity
+#### 3.6.2 Data Integrity
 
 **CSV Validation**:
 ```bash
@@ -452,7 +552,7 @@ cut -d',' -f1 {llm}_reproducibility_analysis.csv | sort | uniq -d
 # Should return nothing
 ```
 
-#### 3.4.3 Reproducibility Verification
+#### 3.6.3 Reproducibility Verification
 
 **SciUnit Workspace Verification**:
 ```bash
@@ -461,9 +561,9 @@ ls /home/ubuntu/sciunit/ | grep {llm}_p[0-9]
 # Should show: {llm}_p1_workspace, {llm}_p2_workspace, ..., {llm}_p40_workspace
 ```
 
-### 3.5 Comparative Analysis Framework
+### 3.7 Comparative Analysis Framework
 
-#### 3.5.1 Within-LLM Analysis
+#### 3.7.1 Within-LLM Analysis
 
 For each LLM individually:
 - Distribution of completeness gaps
@@ -471,7 +571,7 @@ For each LLM individually:
 - Common patterns in forgotten dependencies
 - Precision gap patterns
 
-#### 3.5.2 Cross-LLM Comparison
+#### 3.7.2 Cross-LLM Comparison
 
 Across Claude, Gemini, and Codex:
 - Which LLM has highest completeness accuracy?
@@ -479,16 +579,16 @@ Across Claude, Gemini, and Codex:
 - Which LLM generates most code bugs?
 - Are certain types of projects more problematic for specific LLMs?
 
-#### 3.5.3 Error Pattern Analysis
+#### 3.7.3 Error Pattern Analysis
 
 **Systematic Issues**:
 - Do LLMs consistently forget certain types of dependencies?
 - Are stdlib-only projects correctly identified?
 - Do LLMs over-specify dependencies "just in case"?
 
-### 3.6 Limitations and Threats to Validity
+### 3.8 Limitations and Threats to Validity
 
-#### 3.6.1 Internal Validity
+#### 3.8.1 Internal Validity
 
 **Researcher Bias**:
 - Manual processing involves human judgment in fixing errors
@@ -500,23 +600,23 @@ Across Claude, Gemini, and Codex:
 - Ubuntu version affects system packages
 - Mitigation: Use consistent EC2 instance throughout
 
-#### 3.6.2 External Validity
+#### 3.8.2 External Validity
 
 **Prompt Selection**:
-- 40 prompts may not represent all code generation scenarios
+- 100 prompts across 3 languages may not represent all code generation scenarios
 - Focused on common software engineering tasks
 - Generalization limited to similar project types
 
 **Language Scope**:
-- This methodology focuses on Python
-- Results may not generalize to other languages (JavaScript, Java, etc.)
+- Covers Python (40 prompts), JavaScript (35 prompts), and Java (25 prompts)
+- Results may not generalize to other languages (Go, Rust, TypeScript, etc.)
 
 **LLM Version**:
 - LLMs update frequently
 - Results valid for specific LLM versions tested
 - Future versions may improve dependency specification
 
-#### 3.6.3 Construct Validity
+#### 3.8.3 Construct Validity
 
 **What is "Correct"?**:
 - Working dependencies represent "ground truth"
@@ -552,7 +652,7 @@ Across Claude, Gemini, and Codex:
 
 This research employs a **rigorous, manual, iterative methodology** to evaluate dependency specification accuracy in agentic AI-generated code:
 
-1. **40 standardized prompts** × **3 LLMs** = **120 projects analyzed**
+1. **100 standardized prompts** (40 Python + 35 JavaScript + 25 Java) × **3 LLMs** = **300 projects analyzed**
 
 2. **Seven-step processing workflow** for each project:
    - Read & understand
@@ -564,9 +664,9 @@ This research employs a **rigorous, manual, iterative methodology** to evaluate 
    - Clean environment & verify baseline
 
 3. **Three-tier dependency analysis**:
-   - Claimed (LLM specification)
+   - Claimed (LLM specification via requirements.txt / package.json / pom.xml)
    - Working (after manual fixing)
-   - Runtime (SciUnit capture)
+   - Runtime (Docker-based transitive counting via pip list / npm list --all / mvn dependency:tree)
 
 4. **Comprehensive metrics**: Completeness gaps, precision gaps, error types, qualitative notes
 
@@ -576,6 +676,6 @@ This methodology provides a **realistic, human-in-the-loop evaluation** of how a
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: 2025-10-30  
-**Research Study**: Agentic AI Code Reproducibility Analysis
+**Document Version**: 2.0
+**Last Updated**: 2026-03-25
+**Research Study**: Agentic AI Code Reproducibility Analysis (ACM REP '26)
