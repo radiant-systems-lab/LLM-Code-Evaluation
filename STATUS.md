@@ -25,4 +25,4 @@
 The original evaluation used:
 - **OS**: Ubuntu 22.04 on AWS EC2 (c5.2xlarge)
 - **Docker images**: `python:3.10-slim`, `node:18-slim`, `maven:3.9-eclipse-temurin-17`
-- **Isolation**: Each project evaluated in a fresh container with no cached dependencies
+- **Isolation**: Each project evaluated in a fresh container with no cached dependencies inside each fresh ubunutu instance
