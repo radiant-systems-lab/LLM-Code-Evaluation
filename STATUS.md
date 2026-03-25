@@ -1,6 +1,4 @@
-# Artifact Status
 
-## ACM REP '26 Artifact Badges Claimed
 
 ### Artifact Available
 - All source code, data, and analysis scripts are publicly available in this repository.
