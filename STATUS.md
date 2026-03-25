@@ -6,7 +6,7 @@
 - Generated code: complete output from all 3 AI coding agents for all 100 prompts.
 - Analysis: single Python script (`analysis/regenerate_all.py`) regenerates all 6 figures and 6 tables.
 
-### Artifact Functional
+### Functional
 - **Reproduction steps**: `pip install -r requirements.txt && cd analysis && python regenerate_all.py`
 - **Expected output**: 6 figures (PNG + PDF) in `analysis/figures/`, 6 tables (CSV) in `analysis/tables/`, key statistics on stdout.
 - **Runtime**: < 10 seconds on any modern machine.
