@@ -53,6 +53,12 @@ LLM-Code-Evaluation/
 │   ├── figures/              # 6 publication figures (PNG + PDF)
 │   └── tables/               # 6 summary tables (CSV)
 │
+├── docker/                    # Docker evaluation environment
+│   ├── Dockerfile.python     # python:3.10-slim
+│   ├── Dockerfile.javascript # node:18-slim
+│   ├── Dockerfile.java       # maven:3.9-eclipse-temurin-17
+│   └── run_evaluation.sh     # Runs all 300 projects in isolated containers
+│
 └── docs/                      # Study documentation
     ├── METHODOLOGY.md         # Detailed experimental methodology
     └── CODE_GENERATION_STATISTICS.md
