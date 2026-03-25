@@ -1,6 +1,4 @@
-# Artifact Status
 
-## ACM REP '26 Artifact Badges Claimed
 
 ### Artifact Available
 - All source code, data, and analysis scripts are publicly available in this repository.
@@ -8,7 +6,7 @@
 - Generated code: complete output from all 3 AI coding agents for all 100 prompts.
 - Analysis: single Python script (`analysis/regenerate_all.py`) regenerates all 6 figures and 6 tables.
 
-### Artifact Functional
+### Functional
 - **Reproduction steps**: `pip install -r requirements.txt && cd analysis && python regenerate_all.py`
 - **Expected output**: 6 figures (PNG + PDF) in `analysis/figures/`, 6 tables (CSV) in `analysis/tables/`, key statistics on stdout.
 - **Runtime**: < 10 seconds on any modern machine.
@@ -25,4 +23,4 @@
 The original evaluation used:
 - **OS**: Ubuntu 22.04 on AWS EC2 (c5.2xlarge)
 - **Docker images**: `python:3.10-slim`, `node:18-slim`, `maven:3.9-eclipse-temurin-17`
-- **Isolation**: Each project evaluated in a fresh container with no cached dependencies
+- **Isolation**: Each project evaluated in a fresh container with no cached dependencies inside each fresh ubunutu instance
