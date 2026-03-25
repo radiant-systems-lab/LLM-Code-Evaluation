@@ -1,4 +1,4 @@
-# AAAI26 Agentic Reproducibility - Code Generation Statistics
+# Agentic Reproducibility - Code Generation Statistics
 
 ## Executive Summary
 Analysis of 300 projects (100 prompts × 3 agents) across Python, Java, and JavaScript.
