@@ -1,6 +1,6 @@
 # LLM Code Reproducibility: An Empirical Study of 300 AI-Generated Projects
 
-**ACM REP '26 Artifact Submission**
+
 
 ## Abstract
 
